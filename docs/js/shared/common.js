@@ -84,9 +84,6 @@ const I18N = {
     pubAddPlaceholder:'https://…/tei.xml',
     pubAdd:           'URL を追加',
     pubAddFile:       'ファイルを追加',
-    pubScopeBundled:  '同梱',
-    pubScopeRemote:   'オンライン',
-    pubScopeAdded:    '追加分',
     pubOpen:          '全画面表示で開く',
     pubPickXmlFirst:  '左で XML 文書を選択してください。',
     pubSelXml:        'XML:',
@@ -97,6 +94,13 @@ const I18N = {
     pubLicense:       '利用条件:',
     pubViewXml:       'XML を見る',
     pubViewXsl:       'XSL を見る',
+    pubFilterPh:      'タイトル・説明・カテゴリで絞り込み',
+    pubFilterCount:   '{visible} / {total}',
+    pubFilterNoHit:   '条件に一致する項目がありません',
+    pubFacetCategory: 'カテゴリ',
+    pubFacetLanguage: '言語',
+    pubShare:         '共有リンクをコピー',
+    pubShared:        '✓ コピーしました',
     metaLinkFromPub:  'ⓘ 一覧に表示される情報の出典について',
     metaPageTitle:    'メタデータの出典',
     metaSubtitle:     'TEI ギャラリーの一覧に並ぶ情報が、ファイルのどこから来ているか',
@@ -212,9 +216,6 @@ const I18N = {
     pubAddPlaceholder:'https://…/tei.xml',
     pubAdd:           'Add URL',
     pubAddFile:       'Add a file',
-    pubScopeBundled:  'Bundled',
-    pubScopeRemote:   'Online',
-    pubScopeAdded:    'Added',
     pubOpen:          'Open full-screen',
     pubPickXmlFirst:  'Select an XML document on the left first.',
     pubSelXml:        'XML:',
@@ -225,6 +226,13 @@ const I18N = {
     pubLicense:       'License:',
     pubViewXml:       'View XML',
     pubViewXsl:       'View XSL',
+    pubFilterPh:      'Filter by title, description, or category',
+    pubFilterCount:   '{visible} / {total}',
+    pubFilterNoHit:   'No items match the filter',
+    pubFacetCategory: 'Category',
+    pubFacetLanguage: 'Language',
+    pubShare:         'Copy share link',
+    pubShared:        '✓ Copied',
     metaLinkFromPub:  'ⓘ Where the listed information comes from',
     metaPageTitle:    'Where the metadata comes from',
     metaSubtitle:     'Which part of each file the TEI Gallery listing draws from',
@@ -311,6 +319,10 @@ function applyLang() {
         el.textContent = I18N[lang][key];
       }
     }
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.dataset.i18nPlaceholder;
+    if (I18N[lang][key] != null) el.placeholder = I18N[lang][key];
   });
 }
 

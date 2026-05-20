@@ -35,8 +35,10 @@
 <!-- GitHub link · site header · footer: injected by js/shared/common.js → renderChrome() -->
 
 <h1 class="page-title" data-i18n="modePublisher">TEI ギャラリー</h1>
-<p class="subtitle" data-i18n="publisherSubtitle">XML を選び、XSL を選んで、全画面表示で公開ビューを開く</p>
-<p class="meta-link"><a href="metadata.html" data-i18n="metaLinkFromPub">ⓘ 一覧に表示される情報の出典について</a></p>
+<p class="subtitle subtitle-with-link">
+  <span data-i18n="publisherSubtitle">XML を選び、XSL を選んで、全画面表示で公開ビューを開く</span>
+  <a class="meta-inline-link" href="metadata.html" data-i18n="metaLinkFromPub">ⓘ 一覧に表示される情報の出典について</a>
+</p>
 
 <div class="main-content">
 
@@ -46,11 +48,18 @@
     <section class="pub-pane" data-step="xml">
       <div class="pub-pane-head">
         <span class="pub-pane-num">1</span>
-        <div class="pub-pane-headtext">
-          <h2 class="pub-pane-title"><span data-i18n="pubStep1">XML 文書を選ぶ</span> <span class="pane-count" id="xmlCount"></span></h2>
-          <p class="pub-pane-hint" data-i18n="pubStep1Hint">表示したい資料を 1 つ選びます</p>
-        </div>
+        <h2 class="pub-pane-title">
+          <span data-i18n="pubStep1">XML 文書を選ぶ</span>
+          <span class="pane-count" id="xmlCount"></span>
+          <span class="pub-pane-hint" data-i18n="pubStep1Hint">表示したい資料を 1 つ選びます</span>
+        </h2>
       </div>
+      <div class="pub-filter">
+        <input type="search" id="xmlFilter" data-i18n-placeholder="pubFilterPh"
+            placeholder="タイトル・説明・カテゴリで絞り込み">
+        <span class="pub-filter-count" id="xmlFilterCount"></span>
+      </div>
+      <div class="pub-facets" id="xmlFacets"></div>
       <ul class="pub-list" id="xmlList"></ul>
       <details class="pub-add">
         <summary data-i18n="pubAddTitle">自分の XML を追加する</summary>
@@ -69,11 +78,17 @@
     <section class="pub-pane" data-step="xsl">
       <div class="pub-pane-head">
         <span class="pub-pane-num">2</span>
-        <div class="pub-pane-headtext">
-          <h2 class="pub-pane-title" data-i18n="pubStep2">XSL を選ぶ</h2>
-          <p class="pub-pane-hint" data-i18n="pubStep2Hint">表示方式（レイアウト）を 1 つ選びます</p>
-        </div>
+        <h2 class="pub-pane-title">
+          <span data-i18n="pubStep2">XSL を選ぶ</span>
+          <span class="pub-pane-hint" data-i18n="pubStep2Hint">表示方式（レイアウト）を 1 つ選びます</span>
+        </h2>
       </div>
+      <div class="pub-filter">
+        <input type="search" id="xslFilter" data-i18n-placeholder="pubFilterPh"
+            placeholder="タイトル・説明・カテゴリで絞り込み">
+        <span class="pub-filter-count" id="xslFilterCount"></span>
+      </div>
+      <div class="pub-facets" id="xslFacets"></div>
       <ul class="pub-list" id="xslList"></ul>
     </section>
 
@@ -85,10 +100,10 @@
   <div class="pub-bar" data-step="open">
     <div class="pub-pane-head">
       <span class="pub-pane-num">3</span>
-      <div class="pub-pane-headtext">
-        <h2 class="pub-pane-title" data-i18n="pubStep3">全画面表示で開く</h2>
-        <p class="pub-pane-hint" data-i18n="pubStep3Hint">選んだ XML と XSL を新しいタブで表示します</p>
-      </div>
+      <h2 class="pub-pane-title">
+        <span data-i18n="pubStep3">全画面表示で開く</span>
+        <span class="pub-pane-hint" data-i18n="pubStep3Hint">選んだ XML と XSL を新しいタブで表示します</span>
+      </h2>
     </div>
     <div class="pub-bar-main">
       <div class="pub-selection">
@@ -96,6 +111,7 @@
         <span><strong data-i18n="pubSelXsl">XSL:</strong> <span id="selXsl" class="pub-none" data-i18n="pubNone">未選択</span></span>
       </div>
       <button class="btn-primary" id="pubOpenBtn" data-i18n="pubOpen" disabled>全画面表示で開く</button>
+      <button class="pub-share" id="pubShareBtn" data-i18n="pubShare" title="共有リンクをコピー">共有リンクをコピー</button>
     </div>
   </div>
 
