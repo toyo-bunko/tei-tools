@@ -2,11 +2,13 @@
 <!--
   tei-ocr-facsimile.xsl — OCR transcription view / OCR 翻刻ビュー
 
+  Id:          ocr
+  Input:       folder
+  Sample (folder): xml/ocr-sample (xml: tei.xml)
   Title:       OCR transcription view / OCR 翻刻ビュー
   Description: OCR 出力の TEI を、ページ画像と行ごとの翻刻テキストを左右に並べて表示する検証ビューです。/ A verification view placing each page image beside its numbered OCR lines.
   Category:    汎用 / General-purpose
   License:     自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0).
-  Sample:      xml/ocr-sample/ （tei.xml + images/）
 
   facsimile の surface/zone/graphic と text の pb/lb を扱う。
   TEIScanner / NDL古典籍OCR などの OCR 結果を想定。

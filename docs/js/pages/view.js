@@ -4,21 +4,15 @@
    replaces the whole document with the result.
 
    ?url=  the TEI/XML URL to render (relative or absolute)        [required]
-   ?xsl=  a catalog id (reading / notes / bibliography / ocr)
-          or the URL of an arbitrary XSL stylesheet              [optional]
+   ?xsl=  a path/URL to an XSL stylesheet (preferred), or a
+          legacy catalog id (reading / notes / ocr / …) that we
+          resolve against catalog.json                            [optional]
           — omitted: guessed from the markup. */
 "use strict";
 (function () {
-  var XSL_BY_ID = {
-    reading:      'xsl/tei-reading.xsl',
-    notes:        'xsl/tei-notes.xsl',
-    bibliography: 'xsl/tei-bibliography.xsl',
-    analysis:     'xsl/tei-analysis.xsl',
-    ocr:          'xsl/tei-ocr-facsimile.xsl',
-    vellum:       'xsl/tei-vellum.xsl',
-    urenja:       'xsl/tei-urenja.xsl',
-    manchu:       'xsl/tei-manchu.xsl',
-  };
+  // Fallback URLs when ?xsl= is omitted and we have to guess from markup.
+  var DEFAULT_FACS = 'xsl/tei-ocr-facsimile.xsl';
+  var DEFAULT_TEXT = 'xsl/tei-reading.xsl';
 
   var statusEl = document.getElementById('status');
   function fail(msg) {
@@ -37,18 +31,25 @@
     return;
   }
 
-  // A ?xsl= value is treated as a URL when it looks like one, else a catalog id.
-  function resolveXslUrl(xslId, xmlText) {
-    if (xslId && (/^https?:/i.test(xslId) || xslId.indexOf('/') !== -1 ||
-                  /\.xslt?$/i.test(xslId))) {
-      return new URL(xslId, location.href).href;
+  // Decide what to fetch as the XSL.
+  //  - URL-shaped ?xsl= -> use as-is
+  //  - bare-id ?xsl=    -> look up in catalog.json (one extra fetch)
+  //  - missing ?xsl=    -> guess by markup (facsimile -> OCR, else reading)
+  function looksLikeUrl(s) {
+    return s && (/^https?:/i.test(s) || s.indexOf('/') !== -1 ||
+                 /\.xslt?$/i.test(s));
+  }
+  async function resolveXslUrl(xslId, xmlText) {
+    if (looksLikeUrl(xslId)) return new URL(xslId, location.href).href;
+    if (xslId) {
+      try {
+        var cat = await (await fetch('catalog.json')).json();
+        var hit = (cat.xsl || []).find(function (x) { return x.id === xslId; });
+        if (hit && hit.url) return new URL(hit.url, location.href).href;
+      } catch (e) { /* fall through to the markup guess */ }
     }
-    var id = xslId;
-    if (!id || !XSL_BY_ID[id]) {
-      id = (/<facsimile[\s>]/.test(xmlText) && /<graphic[\s>]/.test(xmlText))
-        ? 'ocr' : 'reading';
-    }
-    return XSL_BY_ID[id];
+    var hasFacs = /<facsimile[\s>]/.test(xmlText) && /<graphic[\s>]/.test(xmlText);
+    return new URL(hasFacs ? DEFAULT_FACS : DEFAULT_TEXT, location.href).href;
   }
 
   async function fetchOk(u, what) {
@@ -64,7 +65,7 @@
       // <graphic url> paths both resolve correctly.
       var absXml  = new URL(urlParam, location.href).href;
       var xmlText = await (await fetchOk(absXml, 'XML')).text();
-      var xslUrl  = resolveXslUrl(xslParam, xmlText);
+      var xslUrl  = await resolveXslUrl(xslParam, xmlText);
       var xslText = await (await fetchOk(xslUrl, 'XSL')).text();
 
       var parser = new DOMParser();

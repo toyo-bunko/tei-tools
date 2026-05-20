@@ -2,11 +2,13 @@
 <!--
   tei-urenja.xsl — Yūrensha transcription view / 酉蓮社 翻刻ビュー
 
+  Id:          urenja
+  Input:       file
+  Sample (file): https://u-renja.toyobunko-lab.jp/api/dts/document?resource=https://u-renja.toyobunko-lab.jp/api/iiif/2/001-01/manifest
   Title:       Yūrensha transcription view / 酉蓮社 翻刻ビュー
   Description: 酉蓮社（u-renja）プロジェクト専用。NDL古典籍OCR で生成した TEI を、左に縦書きの本文翻刻（全ページ連続スクロール）、右に OpenSeadragon の画像を 2 パネルで表示します。スクロールに連動して画像が切り替わります。/ The Yūrensha project stylesheet: a two-panel reader — a vertically-written, continuously scrolling transcription on the left, with a single OpenSeadragon viewer on the right that follows the scroll.
   Category:    プロジェクト専用 / Project-specific
   License:     自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0).
-  Sample:      u-renja DTS API の TEI（ライブ参照）
 
   facsimile の surface/zone/graphic と text の pb/lb を扱う。
 

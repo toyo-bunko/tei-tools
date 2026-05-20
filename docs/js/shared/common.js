@@ -122,7 +122,7 @@ const I18N = {
     metaNotesHeading: 'その他の挙動',
     metaNoteRemote:   'オンライン文書は取得した teiHeader を優先し、欠けた項目は sources.json の fallback で補います。取得に失敗した場合は fallback のみを使います。',
     metaNoteScope:    '「同梱／オンライン／追加分」バッジは、sources.json の登録区分（ファイル同梱か、リモート URL か）と、画面上で一時的に追加したものかを表します。',
-    metaNoteInput:    'XSL の「単一 XML／フォルダ」バッジは catalog.json ではなく、common.js の XSL_CATALOG の input 設定に基づきます。',
+    metaNoteInput:    'XSL の「単一 XML／フォルダ」バッジは catalog.json の input 値に基づきます。XSL 先頭コメントの「Input:」を更新し npm run catalog で反映されます。',
     metaNoteRebuild:  'catalog.json は生成物です。XML・XSL・sources.json を変更したら npm run catalog で再生成してください。',
     themeAuto:  '自動',
     themeLight: 'ライト',
@@ -250,7 +250,7 @@ const I18N = {
     metaNotesHeading: 'Other behavior',
     metaNoteRemote:   'For online documents the fetched teiHeader takes precedence, and any missing field is filled from the fallback in sources.json. If the fetch fails, only the fallback is used.',
     metaNoteScope:    'The Bundled / Online / Added badge reflects how the entry is registered in sources.json (a bundled file or a remote URL), or whether it was added on the page for the session.',
-    metaNoteInput:    'The Single XML / Folder badge on XSL entries comes from the input setting of XSL_CATALOG in common.js, not from catalog.json.',
+    metaNoteInput:    'The Single XML / Folder badge on XSL entries comes from the input value in catalog.json; edit the leading "Input:" line in the XSL and re-run npm run catalog.',
     metaNoteRebuild:  'catalog.json is a generated file. After changing any XML, XSL or sources.json, regenerate it with npm run catalog.',
     themeAuto:  'Auto',
     themeLight: 'Light',
@@ -258,100 +258,13 @@ const I18N = {
   }
 };
 
-/* ======== Shared XSL catalog ========
-   Used by the XSL gallery (examples.js) and the TEI Publisher (publisher.js).
-   Each entry is a standalone XSLT 1.0 stylesheet under xsl/. */
-const XSL_CATALOG = [
-  {
-    id: 'reading',
-    xsl: 'xsl/tei-reading.xsl',
-    input: 'file',
-    sample: { kind: 'file', path: 'xml/tei-guide/tei.xml' },
-    title: { ja: '本文リーディングビュー', en: 'Reading view' },
-    desc: {
-      ja: 'TEI 本文を、見出し・段落・リスト・表・強調・注として読みやすい HTML に整形します。',
-      en: 'Renders the TEI body as readable HTML with headings, paragraphs, lists, tables and notes.',
-    },
-  },
-  {
-    id: 'notes',
-    xsl: 'xsl/tei-notes.xsl',
-    input: 'file',
-    sample: { kind: 'file', path: 'xml/tei-guide/tei.xml' },
-    title: { ja: '注釈一覧', en: 'Notes list' },
-    desc: {
-      ja: '文書中の note 要素をすべて抽出し、種別・内容の一覧表にまとめます。',
-      en: 'Extracts every note element into a single table of place and content.',
-    },
-  },
-  {
-    id: 'bibliography',
-    xsl: 'xsl/tei-bibliography.xsl',
-    input: 'file',
-    sample: { kind: 'file', path: 'xml/tei-guide/tei.xml' },
-    title: { ja: '書誌情報テーブル', en: 'Bibliography table' },
-    desc: {
-      ja: 'teiHeader からタイトル・著者・出版情報・改訂履歴などのメタデータを抽出し表示します。',
-      en: 'Pulls title, author, publication details and revision history out of the teiHeader.',
-    },
-  },
-  {
-    id: 'analysis',
-    xsl: 'xsl/tei-analysis.xsl',
-    input: 'file',
-    sample: { kind: 'file', path: 'xml/tei-guide/tei.xml' },
-    title: { ja: 'タグ統計・可視化', en: 'Tag statistics' },
-    desc: {
-      ja: '全要素・全属性を名前ごとに集計し、出現頻度を棒グラフで可視化します。どんな TEI/XML にも適用できる構造分析ビューです。',
-      en: 'Counts every element and attribute by name and visualizes the frequencies as bar charts — a structure-analysis view for any TEI/XML.',
-    },
-  },
-  {
-    id: 'ocr',
-    xsl: 'xsl/tei-ocr-facsimile.xsl',
-    input: 'folder',
-    sample: { kind: 'folder', dir: 'xml/ocr-sample', xml: 'tei.xml' },
-    title: { ja: 'OCR 翻刻ビュー', en: 'OCR transcription view' },
-    desc: {
-      ja: 'OCR 出力の TEI を、ページ画像と行ごとの翻刻テキストを左右に並べて表示する検証ビューです。TEIScanner が生成する検証ビューと同じスタイルシートです。',
-      en: 'A verification view placing each page image beside its numbered OCR lines — the same stylesheet TEIScanner produces.',
-    },
-  },
-  {
-    id: 'vellum',
-    xsl: 'xsl/tei-vellum.xsl',
-    input: 'file',
-    sample: { kind: 'file', path: 'xml/vellum/tei.xml' },
-    title: { ja: 'Vellum 契約文書ビュー', en: 'Vellum contract document view' },
-    desc: {
-      ja: '東洋文庫「モロッコの羊皮紙契約文書」プロジェクト専用。写本記述・IIIF 画像・各証文（deed）のアラビア語翻刻（RTL）を表示します。',
-      en: 'Dedicated to the Toyo Bunko "Vellum Contract Documents from Morocco" project: manuscript description, IIIF image, and the right-to-left Arabic transcription of each deed.',
-    },
-  },
-  {
-    id: 'urenja',
-    xsl: 'xsl/tei-urenja.xsl',
-    input: 'file',
-    sample: { kind: 'file',
-      path: 'https://u-renja.toyobunko-lab.jp/api/dts/document?resource=https://u-renja.toyobunko-lab.jp/api/iiif/2/001-01/manifest' },
-    title: { ja: '酉蓮社 翻刻ビュー', en: 'Yūrensha transcription view' },
-    desc: {
-      ja: '酉蓮社プロジェクトのスタイルシート。NDL古典籍OCR で生成した TEI を、ページごとに本文翻刻と OpenSeadragon の画像（拡大縮小・行 zone）を並べ、ページャーで送って表示します。',
-      en: 'The Yūrensha project stylesheet: a paged view of NDL classical-book OCR TEI, each page showing the transcription beside an OpenSeadragon image (zoom/pan, line zones).',
-    },
-  },
-  {
-    id: 'manchu',
-    xsl: 'xsl/tei-manchu.xsl',
-    input: 'file',
-    sample: { kind: 'folder', dir: 'xml/manchu', xml: 'tei.xml' },
-    title: { ja: '清語老乞大 縦書きビュー', en: 'Cing gisun-i Lao Kida vertical view' },
-    desc: {
-      ja: '朝鮮司譯院刊『清語老乞大』専用のスタイルシート。影印画像と、満州文字（縦書き）＋ハングル音注＋割書諺解を再現した HTML 版面を左右に並べて表示します。',
-      en: 'The "Cing gisun-i Lao Kida" project stylesheet: the facsimile image beside an HTML reproduction of the vertical Manchu script with Hangul phonetic glosses and the interlinear Korean translation.',
-    },
-  },
-];
+/* ======== XSL catalog ========
+   The XSL list is now sourced from docs/catalog.json (generated by
+   scripts/build-catalog.mjs from each XSL's leading comment — Id, Input,
+   Sample, Title, Description, Category, License). Pages that need it
+   (publisher.js, examples.js) fetch catalog.json directly; view.js can
+   accept a ?xsl= URL straight from publisher.js. To add a new XSL,
+   drop it into docs/xsl/, write its leading comment, run `npm run catalog`. */
 
 /* ======== Shared site chrome (header / footer) ========
    Injected on every page that loads common.js, so the header and footer

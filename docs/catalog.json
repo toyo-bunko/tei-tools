@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-18T13:56:02.162Z",
+  "generated": "2026-05-20T09:28:07.901Z",
   "xml": [
     {
       "id": "tei-guide",
@@ -53,6 +53,19 @@
       "license": "CC BY 4.0"
     },
     {
+      "id": "persname-split",
+      "scope": "bundled",
+      "url": "xml/persname-split/tei.xml",
+      "title": "",
+      "description": "Each printed line is recorded as one <ab> bound to one <zone> rectangle (1 ab = 1 line = 1 zone). Personal and place names that visually break across two lines are split into pieces; each piece carries @xml:id and @next / @prev to link to its sibling fragment, and the canonical entity is referenced via @corresp into a <standOff> register. / 印字された各行は1つの <ab> として zone 矩形に1対1で結びつけ（1 ab = 1 行 = 1 zone）、視覚的に2行へ跨る人名・地名は分割して各断片を @xml:id と @next / @prev で連結し、@corresp で <standOff> の正規エンティティを参照する。",
+      "languages": [
+        "en",
+        "ja"
+      ],
+      "category": "Tutorial / 入門サンプル",
+      "license": "Demonstration sample — CC BY 4.0. Free to use and adapt. / デモンストレーション用サンプル — CC BY 4.0。自由に利用・改変できます。"
+    },
+    {
       "id": "urenja-001-01",
       "scope": "remote",
       "url": "https://u-renja.toyobunko-lab.jp/api/dts/document?resource=https://u-renja.toyobunko-lab.jp/api/iiif/2/001-01/manifest",
@@ -68,6 +81,12 @@
   "xsl": [
     {
       "url": "xsl/tei-analysis.xsl",
+      "id": "analysis",
+      "input": "file",
+      "sample": {
+        "kind": "file",
+        "path": "xml/tei-guide/tei.xml"
+      },
       "title": "Tag statistics / タグ統計・可視化",
       "description": "文書中の全要素・全属性を名前ごとに集計し、出現頻度を棒グラフ（HTML/CSS のみ）で可視化します。どんな TEI/XML にも適用できる構造分析ビューです。/ Counts every element and attribute by name and visualizes the frequencies as bar charts (pure HTML/CSS). A structure-analysis view that works with any TEI/XML.",
       "category": "汎用 / General-purpose",
@@ -75,6 +94,12 @@
     },
     {
       "url": "xsl/tei-bibliography.xsl",
+      "id": "bibliography",
+      "input": "file",
+      "sample": {
+        "kind": "file",
+        "path": "xml/tei-guide/tei.xml"
+      },
       "title": "Bibliography table / 書誌情報テーブル",
       "description": "teiHeader からタイトル・著者・出版情報・改訂履歴などのメタデータを抽出し、表にまとめます。/ Pulls title, author, publication details and revision history out of the teiHeader.",
       "category": "汎用 / General-purpose",
@@ -82,6 +107,13 @@
     },
     {
       "url": "xsl/tei-manchu.xsl",
+      "id": "manchu",
+      "input": "file",
+      "sample": {
+        "kind": "folder",
+        "dir": "xml/manchu",
+        "xml": "tei.xml"
+      },
       "title": "清語老乞大 縦書きビュー / Cing gisun-i Lao Kida vertical view",
       "description": "朝鮮司譯院刊『清語老乞大』巻之一・第一葉表の TEI 専用。影印画像と、満州文字（縦書き）＋ハングル音注＋割書諺解を再現した HTML 版面を左右に並べて表示します。/ Dedicated to the \"Cing gisun-i Lao Kida\" (Korean Saiyŏgwŏn edition, vol. 1, fol. 1a): the facsimile image beside an HTML reproduction of the vertical Manchu script with Hangul phonetic glosses and the interlinear Korean translation.",
       "category": "プロジェクト専用 / Project-specific",
@@ -89,6 +121,12 @@
     },
     {
       "url": "xsl/tei-notes.xsl",
+      "id": "notes",
+      "input": "file",
+      "sample": {
+        "kind": "file",
+        "path": "xml/tei-guide/tei.xml"
+      },
       "title": "Notes list / 注釈一覧",
       "description": "文書中の note 要素をすべて抽出し、種別・内容の一覧表にまとめます。/ Extracts every note element into a single table of place and content.",
       "category": "汎用 / General-purpose",
@@ -96,13 +134,39 @@
     },
     {
       "url": "xsl/tei-ocr-facsimile.xsl",
+      "id": "ocr",
+      "input": "folder",
+      "sample": {
+        "kind": "folder",
+        "dir": "xml/ocr-sample",
+        "xml": "tei.xml"
+      },
       "title": "OCR transcription view / OCR 翻刻ビュー",
       "description": "OCR 出力の TEI を、ページ画像と行ごとの翻刻テキストを左右に並べて表示する検証ビューです。/ A verification view placing each page image beside its numbered OCR lines.",
       "category": "汎用 / General-purpose",
       "license": "自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0)."
     },
     {
+      "url": "xsl/tei-persname-split.xsl",
+      "id": "persname-split",
+      "input": "file",
+      "sample": {
+        "kind": "file",
+        "path": "xml/persname-split/tei.xml"
+      },
+      "title": "Line-spanning entity view / 行をまたぐエンティティのビュー",
+      "description": "1 ab = 1 行 = 1 zone の構成で、行を跨いで分割された persName / placeName (@next/@prev) を断片ごとに描き、@corresp で同一エンティティ単位に再統合した出現一覧を併記する集計ビュー。/ Visualises <ab> blocks bound one-to-one with zones, plus persName / placeName fragments split across lines with @next / @prev, and aggregates them per canonical entity via @corresp.",
+      "category": "汎用 / General-purpose",
+      "license": "自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0)."
+    },
+    {
       "url": "xsl/tei-reading.xsl",
+      "id": "reading",
+      "input": "file",
+      "sample": {
+        "kind": "file",
+        "path": "xml/tei-guide/tei.xml"
+      },
       "title": "Reading view / 本文リーディングビュー",
       "description": "TEI 本文を、見出し・段落・リスト・表・強調・注として読みやすい HTML に整形する完結したスタイルシート。/ Renders the TEI body as readable HTML with headings, paragraphs, lists, tables and notes.",
       "category": "汎用 / General-purpose",
@@ -110,6 +174,12 @@
     },
     {
       "url": "xsl/tei-urenja.xsl",
+      "id": "urenja",
+      "input": "file",
+      "sample": {
+        "kind": "file",
+        "path": "https://u-renja.toyobunko-lab.jp/api/dts/document?resource=https://u-renja.toyobunko-lab.jp/api/iiif/2/001-01/manifest"
+      },
       "title": "Yūrensha transcription view / 酉蓮社 翻刻ビュー",
       "description": "酉蓮社（u-renja）プロジェクト専用。NDL古典籍OCR で生成した TEI を、左に縦書きの本文翻刻（全ページ連続スクロール）、右に OpenSeadragon の画像を 2 パネルで表示します。スクロールに連動して画像が切り替わります。/ The Yūrensha project stylesheet: a two-panel reader — a vertically-written, continuously scrolling transcription on the left, with a single OpenSeadragon viewer on the right that follows the scroll.",
       "category": "プロジェクト専用 / Project-specific",
@@ -117,6 +187,12 @@
     },
     {
       "url": "xsl/tei-vellum.xsl",
+      "id": "vellum",
+      "input": "file",
+      "sample": {
+        "kind": "file",
+        "path": "xml/vellum/tei.xml"
+      },
       "title": "Vellum contract document view / Vellum 契約文書ビュー",
       "description": "東洋文庫「モロッコの羊皮紙契約文書」プロジェクト専用。写本記述・IIIF 画像・各証文（deed）のアラビア語翻刻（RTL）を表示します。/ Dedicated to the Toyo Bunko \"Vellum Contract Documents from Morocco\" project: manuscript description, IIIF image and the right-to-left Arabic transcription of each deed.",
       "category": "プロジェクト専用 / Project-specific",

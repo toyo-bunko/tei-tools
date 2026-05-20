@@ -124,7 +124,7 @@
     <ul>
       <li data-i18n="metaNoteRemote">オンライン文書は取得した teiHeader を優先し、欠けた項目は sources.json の fallback で補います。取得に失敗した場合は fallback のみを使います。</li>
       <li data-i18n="metaNoteScope">「同梱／オンライン／追加分」バッジは、sources.json の登録区分（ファイル同梱か、リモート URL か）と、画面上で一時的に追加したものかを表します。</li>
-      <li data-i18n="metaNoteInput">XSL の「単一 XML／フォルダ」バッジは catalog.json ではなく、common.js の XSL_CATALOG の input 設定に基づきます。</li>
+      <li data-i18n="metaNoteInput">XSL の「単一 XML／フォルダ」バッジは catalog.json の input 値に基づきます。XSL 先頭コメントの「Input:」を更新し npm run catalog で反映されます。</li>
       <li data-i18n="metaNoteRebuild">catalog.json は生成物です。XML・XSL・sources.json を変更したら npm run catalog で再生成してください。</li>
     </ul>
   </section>

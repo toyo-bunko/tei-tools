@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Line-spanning entity markup sample / 行をまたぐエンティティの符号化サンプル</title>
+        <title type="sub">A worked example of @next / @prev fragmentation for persName and placeName / persName・placeName を @next・@prev で分割する作例</title>
+        <author>Anonymous (fictional) / 匿名（架空）</author>
+        <editor role="general">TEI Tools Project / TEI Tools プロジェクト</editor>
+        <respStmt>
+          <resp>Markup / マークアップ</resp>
+          <name>TEI Tools Project / TEI Tools プロジェクト</name>
+        </respStmt>
+        <respStmt>
+          <resp>Review / レビュー</resp>
+          <name>Toyo Bunko Sample Review Team / 東洋文庫サンプル査読チーム</name>
+        </respStmt>
+        <funder>Demonstration funding (dummy) / 架空助成（ダミー）</funder>
+      </titleStmt>
+      <editionStmt>
+        <edition n="1.0">First demonstration edition / 第1回デモンストレーション版<date when="2026-05-20"/></edition>
+      </editionStmt>
+      <extent>4 facsimile surfaces, 20 lines (8 English ab + 8 Japanese ab + 4 milestone-variant) / 影印 4 面・20 行（英語 ab 8・日本語 ab 8・milestone 4）</extent>
+      <publicationStmt>
+        <publisher>The Toyo Bunko / 東洋文庫</publisher>
+        <pubPlace>Tokyo / 東京</pubPlace>
+        <date when="2026-05-20">2026-05-20</date>
+        <idno type="sample-id">persname-split</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by/4.0/">Demonstration sample — CC BY 4.0. Free to use and adapt. / デモンストレーション用サンプル — CC BY 4.0。自由に利用・改変できます。</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Two parallel fictional narratives — one in English, one in Japanese — authored solely to demonstrate how <hi rend="italic">persName</hi> and <hi rend="italic">placeName</hi> can be fragmented with <hi rend="italic">@next</hi> / <hi rend="italic">@prev</hi> when an entity visually breaks across line boundaries. No real persons or places are described. / 行をまたぐ <hi rend="italic">persName</hi> / <hi rend="italic">placeName</hi> を <hi rend="italic">@next</hi> / <hi rend="italic">@prev</hi> で分割する記法を解説するための架空英文・架空和文の対照サンプル。実在の人物・地名とは無関係。</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>This sample is part of the TEI Tools gallery and illustrates how to keep one &lt;ab&gt; per OCR-detected line (1 ab = 1 zone) while still expressing personal and place names that span line boundaries. / 本サンプルは TEI Tools ギャラリーの一部で、OCR 行ごとに &lt;ab&gt; を 1 つ割り当てる構成（1 ab = 1 zone）を維持したまま、行を跨ぐ人名・地名をどのように表現するかを示す。</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Personal and place names are fragmented at line boundaries. Each fragment carries <hi rend="italic">@xml:id</hi> plus <hi rend="italic">@next</hi> or <hi rend="italic">@prev</hi> (or both, for chains longer than two) to link to its sibling fragment, and <hi rend="italic">@corresp</hi> to point at a canonical entity in &lt;standOff&gt;. / 人名・地名は行境界で分割し、各断片に @xml:id と @next / @prev（3 断片以上の鎖では両方）を付与して兄弟断片を連結、@corresp で &lt;standOff&gt; の正規エンティティを参照する。</p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <abstract>
+        <p>Each printed line is recorded as one <hi rend="italic">&lt;ab&gt;</hi> bound to one <hi rend="italic">&lt;zone&gt;</hi> rectangle (1 ab = 1 line = 1 zone). Personal and place names that visually break across two lines are split into pieces; each piece carries <hi rend="italic">@xml:id</hi> and <hi rend="italic">@next</hi> / <hi rend="italic">@prev</hi> to link to its sibling fragment, and the canonical entity is referenced via <hi rend="italic">@corresp</hi> into a <hi rend="italic">&lt;standOff&gt;</hi> register. / 印字された各行は1つの &lt;ab&gt; として zone 矩形に1対1で結びつけ（1 ab = 1 行 = 1 zone）、視覚的に2行へ跨る人名・地名は分割して各断片を @xml:id と @next / @prev で連結し、@corresp で &lt;standOff&gt; の正規エンティティを参照する。</p>
+      </abstract>
+      <langUsage>
+        <language ident="en">English / 英語</language>
+        <language ident="ja">Japanese (header glosses) / 日本語（ヘッダ注釈）</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term>Tutorial / 入門サンプル</term>
+          <term>TEI markup techniques / TEI マークアップ技法</term>
+          <term>Named entities / 固有表現</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-05-20" who="#tei-tools">Initial sample created. / 初版サンプル作成。</change>
+    </revisionDesc>
+  </teiHeader>
+
+  <facsimile>
+    <surface xml:id="f1" ulx="0" uly="0" lrx="800" lry="540">
+      <zone xml:id="z1" ulx="40" uly="40"  lrx="760" lry="80"/>
+      <zone xml:id="z2" ulx="40" uly="100" lrx="760" lry="140"/>
+      <zone xml:id="z3" ulx="40" uly="160" lrx="760" lry="200"/>
+      <zone xml:id="z4" ulx="40" uly="220" lrx="760" lry="260"/>
+      <zone xml:id="z5" ulx="40" uly="280" lrx="760" lry="320"/>
+      <zone xml:id="z6" ulx="40" uly="340" lrx="760" lry="380"/>
+      <zone xml:id="z7" ulx="40" uly="400" lrx="760" lry="440"/>
+      <zone xml:id="z8" ulx="40" uly="460" lrx="760" lry="500"/>
+    </surface>
+    <surface xml:id="f2" ulx="0" uly="0" lrx="800" lry="540">
+      <zone xml:id="z9"  ulx="40" uly="40"  lrx="760" lry="80"/>
+      <zone xml:id="z10" ulx="40" uly="100" lrx="760" lry="140"/>
+      <zone xml:id="z11" ulx="40" uly="160" lrx="760" lry="200"/>
+      <zone xml:id="z12" ulx="40" uly="220" lrx="760" lry="260"/>
+      <zone xml:id="z13" ulx="40" uly="280" lrx="760" lry="320"/>
+      <zone xml:id="z14" ulx="40" uly="340" lrx="760" lry="380"/>
+      <zone xml:id="z15" ulx="40" uly="400" lrx="760" lry="440"/>
+      <zone xml:id="z16" ulx="40" uly="460" lrx="760" lry="500"/>
+    </surface>
+    <surface xml:id="f3" ulx="0" uly="0" lrx="800" lry="240">
+      <zone xml:id="z17" ulx="40" uly="40"  lrx="760" lry="80"/>
+      <zone xml:id="z18" ulx="40" uly="100" lrx="760" lry="140"/>
+    </surface>
+    <surface xml:id="f4" ulx="0" uly="0" lrx="800" lry="240">
+      <zone xml:id="z19" ulx="40" uly="40"  lrx="760" lry="80"/>
+      <zone xml:id="z20" ulx="40" uly="100" lrx="760" lry="140"/>
+    </surface>
+  </facsimile>
+
+  <standOff>
+    <listPerson>
+      <person xml:id="JW">
+        <persName xml:lang="en">Captain Jonathan Whitfield</persName>
+      </person>
+      <person xml:id="LMA">
+        <persName xml:lang="en">Lady Margaret Ashford</persName>
+      </person>
+      <person xml:id="HP">
+        <persName xml:lang="en">Mr. Henry Pembridge</persName>
+      </person>
+      <person xml:id="TT">
+        <persName xml:lang="ja">船長　田中太郎</persName>
+      </person>
+      <person xml:id="YH">
+        <persName xml:lang="ja">令嬢　山田花子</persName>
+      </person>
+      <person xml:id="SR">
+        <persName xml:lang="ja">家庭教師　佐藤良介</persName>
+      </person>
+      <person xml:id="RA">
+        <persName xml:lang="en">Mr. Reginald Ainsworth</persName>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="PSM"><placeName xml:lang="en">Portsmouth</placeName></place>
+      <place xml:id="NC"><placeName xml:lang="en">New Caledonia</placeName></place>
+      <place xml:id="SH"><placeName xml:lang="en">Saint Helier</placeName></place>
+      <place xml:id="JE"><placeName xml:lang="en">Jersey</placeName></place>
+      <place xml:id="YOK"><placeName xml:lang="ja">横浜</placeName></place>
+      <place xml:id="HAK"><placeName xml:lang="ja">函館</placeName></place>
+      <place xml:id="HOK"><placeName xml:lang="ja">北海道</placeName></place>
+      <place xml:id="KSR"><placeName xml:lang="ja">釧路</placeName></place>
+      <place xml:id="IZU"><placeName xml:lang="ja">伊豆</placeName></place>
+      <place xml:id="AJI"><placeName xml:lang="ja">網代</placeName></place>
+      <place xml:id="CST"><placeName xml:lang="en">Constantinople</placeName></place>
+    </listPlace>
+  </standOff>
+
+  <text>
+    <body>
+      <div xml:lang="en">
+        <head>English sample / 英語サンプル</head>
+        <pb n="1" facs="#f1"/>
+        <ab facs="#z1" n="1">In the spring of 1885, Captain <persName xml:id="JW-1a" corresp="#JW" next="#JW-1b">Jonathan</persName></ab>
+        <ab facs="#z2" n="2"><persName xml:id="JW-1b" corresp="#JW" prev="#JW-1a">Whitfield</persName> departed from the port of</ab>
+        <ab facs="#z3" n="3"><placeName corresp="#PSM">Portsmouth</placeName>, bound for the colony of <placeName xml:id="NC-1a" corresp="#NC" next="#NC-1b">New</placeName></ab>
+        <ab facs="#z4" n="4"><placeName xml:id="NC-1b" corresp="#NC" prev="#NC-1a">Caledonia</placeName>. He was accompanied by <persName xml:id="LMA-1a" corresp="#LMA" next="#LMA-1b">Lady</persName></ab>
+        <ab facs="#z5" n="5"><persName xml:id="LMA-1b" corresp="#LMA" prev="#LMA-1a">Margaret Ashford</persName> and her tutor, <persName xml:id="HP-1a" corresp="#HP" next="#HP-1b">Mr.</persName></ab>
+        <ab facs="#z6" n="6"><persName xml:id="HP-1b" corresp="#HP" prev="#HP-1a">Henry Pembridge</persName>. They had spent the</ab>
+        <ab facs="#z7" n="7">winter at the seaside town of <placeName xml:id="SH-1a" corresp="#SH" next="#SH-1b">Saint</placeName></ab>
+        <ab facs="#z8" n="8"><placeName xml:id="SH-1b" corresp="#SH" prev="#SH-1a">Helier</placeName> on the island of <placeName corresp="#JE">Jersey</placeName>.</ab>
+      </div>
+      <div xml:lang="ja">
+        <head>日本語サンプル / Japanese sample</head>
+        <pb n="2" facs="#f2"/>
+        <ab facs="#z9"  n="9">明治十八年の春、船長の<persName xml:id="TT-1a" corresp="#TT" next="#TT-1b">田中</persName></ab>
+        <ab facs="#z10" n="10"><persName xml:id="TT-1b" corresp="#TT" prev="#TT-1a">太郎</persName>は<placeName corresp="#YOK">横浜</placeName>の港から汽船で</ab>
+        <ab facs="#z11" n="11">出帆し、<placeName corresp="#HAK">函館</placeName>を経て<placeName xml:id="HOK-1a" corresp="#HOK" next="#HOK-1b">北海</placeName></ab>
+        <ab facs="#z12" n="12"><placeName xml:id="HOK-1b" corresp="#HOK" prev="#HOK-1a">道</placeName>の<placeName corresp="#KSR">釧路</placeName>へと向かった。同行者は</ab>
+        <ab facs="#z13" n="13">令嬢の<persName xml:id="YH-1a" corresp="#YH" next="#YH-1b">山田</persName></ab>
+        <ab facs="#z14" n="14"><persName xml:id="YH-1b" corresp="#YH" prev="#YH-1a">花子</persName>と、その家庭教師の<persName xml:id="SR-1a" corresp="#SR" next="#SR-1b">佐</persName></ab>
+        <ab facs="#z15" n="15"><persName xml:id="SR-1b" corresp="#SR" prev="#SR-1a">藤良介</persName>であった。一行は前年の</ab>
+        <ab facs="#z16" n="16">冬を<placeName corresp="#IZU">伊豆</placeName>の<placeName corresp="#AJI">網代</placeName>で過ごしていた。</ab>
+      </div>
+      <div xml:lang="en" type="milestone-variant">
+        <head>Milestone-based variant / milestone 構造での同例（分割不要）</head>
+        <pb n="3" facs="#f3"/>
+        <p>
+          <lb facs="#z17" n="1"/>While travelling east toward
+          <lb facs="#z18" n="2"/><placeName corresp="#CST">Constanti<pb n="4" facs="#f4"/><lb facs="#z19" n="1"/>nople</placeName>, <persName corresp="#RA">Reginald
+          <lb facs="#z20" n="2"/>Ainsworth</persName> fell gravely ill.
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -2,11 +2,13 @@
 <!--
   tei-reading.xsl — Reading view / 本文リーディングビュー
 
+  Id:          reading
+  Input:       file
+  Sample (file): xml/tei-guide/tei.xml
   Title:       Reading view / 本文リーディングビュー
   Description: TEI 本文を、見出し・段落・リスト・表・強調・注として読みやすい HTML に整形する完結したスタイルシート。/ Renders the TEI body as readable HTML with headings, paragraphs, lists, tables and notes.
   Category:    汎用 / General-purpose
   License:     自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0).
-  Sample:      xml/tei-guide/tei.xml
 -->
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"

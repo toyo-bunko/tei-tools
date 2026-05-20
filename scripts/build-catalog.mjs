@@ -120,7 +120,24 @@ function xslMeta(xslText) {
     const m = c.match(new RegExp('^\\s*' + name + ':\\s*(.+?)\\s*$', 'm'));
     return m ? m[1] : '';
   };
+  /* Parse Sample field. Supported forms in the leading comment:
+   *   Sample (file):   xml/tei-guide/tei.xml
+   *   Sample (file):   https://example.org/some.xml
+   *   Sample (folder): xml/ocr-sample (xml: tei.xml)
+   * Optional — only used by the XSL gallery as a default input. */
+  let sample = null;
+  const fileLine   = c.match(/^\s*Sample\s*\(\s*file\s*\)\s*:\s*(\S.+?)\s*$/mi);
+  const folderLine = c.match(/^\s*Sample\s*\(\s*folder\s*\)\s*:\s*([^\s(]+)(?:\s*\(\s*xml\s*:\s*([^)]+)\))?\s*$/mi);
+  if (fileLine) {
+    sample = { kind: 'file', path: fileLine[1] };
+  } else if (folderLine) {
+    sample = { kind: 'folder', dir: folderLine[1].replace(/\/$/, ''),
+               xml: (folderLine[2] || 'tei.xml').trim() };
+  }
   return {
+    id:          field('Id'),
+    input:       field('Input'),   // 'file' or 'folder'
+    sample,
     title:       field('Title'),
     description: field('Description'),
     category:    field('Category'),

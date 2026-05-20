@@ -2,11 +2,13 @@
 <!--
   tei-analysis.xsl — Tag statistics / タグ統計・可視化
 
+  Id:          analysis
+  Input:       file
+  Sample (file): xml/tei-guide/tei.xml
   Title:       Tag statistics / タグ統計・可視化
   Description: 文書中の全要素・全属性を名前ごとに集計し、出現頻度を棒グラフ（HTML/CSS のみ）で可視化します。どんな TEI/XML にも適用できる構造分析ビューです。/ Counts every element and attribute by name and visualizes the frequencies as bar charts (pure HTML/CSS). A structure-analysis view that works with any TEI/XML.
   Category:    汎用 / General-purpose
   License:     自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0).
-  Sample:      xml/tei-guide/tei.xml
 
   どんな TEI/XML にも適用できる汎用の分析スタイルシート。特定のタグ構造を
   前提とせず、文書を走査して統計を出す:

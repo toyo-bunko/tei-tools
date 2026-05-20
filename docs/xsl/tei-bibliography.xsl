@@ -2,11 +2,13 @@
 <!--
   tei-bibliography.xsl — Bibliography table / 書誌情報テーブル
 
+  Id:          bibliography
+  Input:       file
+  Sample (file): xml/tei-guide/tei.xml
   Title:       Bibliography table / 書誌情報テーブル
   Description: teiHeader からタイトル・著者・出版情報・改訂履歴などのメタデータを抽出し、表にまとめます。/ Pulls title, author, publication details and revision history out of the teiHeader.
   Category:    汎用 / General-purpose
   License:     自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0).
-  Sample:      xml/tei-guide/tei.xml
 -->
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"

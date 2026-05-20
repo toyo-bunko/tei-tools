@@ -2,11 +2,13 @@
 <!--
   tei-manchu.xsl — 清語老乞大 縦書きビュー / Cing gisun-i Lao Kida vertical view
 
+  Id:          manchu
+  Input:       file
+  Sample (folder): xml/manchu (xml: tei.xml)
   Title:       清語老乞大 縦書きビュー / Cing gisun-i Lao Kida vertical view
   Description: 朝鮮司譯院刊『清語老乞大』巻之一・第一葉表の TEI 専用。影印画像と、満州文字（縦書き）＋ハングル音注＋割書諺解を再現した HTML 版面を左右に並べて表示します。/ Dedicated to the "Cing gisun-i Lao Kida" (Korean Saiyŏgwŏn edition, vol. 1, fol. 1a): the facsimile image beside an HTML reproduction of the vertical Manchu script with Hangul phonetic glosses and the interlinear Korean translation.
   Category:    プロジェクト専用 / Project-specific
   License:     自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0).
-  Sample:      xml/manchu/tei.xml
 
   「清語老乞大」（朝鮮司譯院刊・満州語会話教本）の版面再現用スタイルシート。
 

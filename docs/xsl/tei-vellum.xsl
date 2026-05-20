@@ -2,11 +2,13 @@
 <!--
   tei-vellum.xsl — Vellum contract document view / Vellum 契約文書ビュー
 
+  Id:          vellum
+  Input:       file
+  Sample (file): xml/vellum/tei.xml
   Title:       Vellum contract document view / Vellum 契約文書ビュー
   Description: 東洋文庫「モロッコの羊皮紙契約文書」プロジェクト専用。写本記述・IIIF 画像・各証文（deed）のアラビア語翻刻（RTL）を表示します。/ Dedicated to the Toyo Bunko "Vellum Contract Documents from Morocco" project: manuscript description, IIIF image and the right-to-left Arabic transcription of each deed.
   Category:    プロジェクト専用 / Project-specific
   License:     自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0).
-  Sample:      xml/vellum/tei.xml
 
   東洋文庫「モロッコの羊皮紙契約文書（Vellum Contract Documents）」プロジェクトの
   TEI 専用スタイルシート。

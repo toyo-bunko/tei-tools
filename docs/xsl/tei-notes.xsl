@@ -2,11 +2,13 @@
 <!--
   tei-notes.xsl — Notes list / 注釈一覧
 
+  Id:          notes
+  Input:       file
+  Sample (file): xml/tei-guide/tei.xml
   Title:       Notes list / 注釈一覧
   Description: 文書中の note 要素をすべて抽出し、種別・内容の一覧表にまとめます。/ Extracts every note element into a single table of place and content.
   Category:    汎用 / General-purpose
   License:     自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0).
-  Sample:      xml/tei-guide/tei.xml
 -->
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
