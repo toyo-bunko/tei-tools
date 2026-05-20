@@ -18,7 +18,7 @@
     * facsimile/surface/graphic … IIIF 画像（@sameAs が IIIF 画像 ID）
     * facsimile//zone … 証文(@type='deed')・署名(@type='signature')の領域
     * body/div[@type='deed'] … 証文 1 通ごと（全 10 通）
-    * ab[@type='nass'] … 証文内の「nāṣṣ（本文）」ブロック
+    * seg[@type='nass'] … 証文内の「nāṣṣ（本文）」ブロック（外側は <ab> で全体を包む）
     * seg[@rend='underline'] … nāṣṣ の見出しラベル
     * seg[@type='sigil'] … 署名記号（{I-S1} など）
     * note[@place='foot'] … 校訂注
@@ -362,7 +362,12 @@
   <!-- ====== Inline elements within a deed ====== -->
   <xsl:template match="tei:lb"><br/></xsl:template>
 
-  <xsl:template match="tei:ab">
+  <!-- Outer <ab> wraps each deed's content (added to make the surrounding
+       <div> validate). Pass it through transparently. -->
+  <xsl:template match="tei:ab"><xsl:apply-templates/></xsl:template>
+
+  <!-- Each named subsection (formerly <ab type="nass">) is now <seg type="nass">. -->
+  <xsl:template match="tei:seg[@type='nass']">
     <span class="nass"><xsl:apply-templates/></span>
   </xsl:template>
 
