@@ -157,30 +157,63 @@
     /* Source links: when this page was opened via view.html?url=…&xsl=…
        (the typical full-screen render route), expose the underlying
        TEI/XML and XSL as inline links in the bar so a reader can jump
-       to the raw markup. Quietly skipped when the params aren't set. */
+       to the raw markup. Quietly skipped when the params aren't set.
+
+       ?xsl= may be a bare catalog id (legacy form) — in that case the
+       value is not a usable href, so we resolve it through catalog.json
+       (same logic as view.js) before adding the link. */
+    function makeSrcLink(label, href) {
+      var a = document.createElement("a");
+      a.className = "tei-srclink";
+      a.href = href;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.title = href;
+      a.innerHTML =
+        '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">' +
+          '<path d="M9 1a1 1 0 0 0 0 2h2.59L6.3 8.29a1 1 0 1 0 1.42 1.42L13 4.41V7a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1H9zM3.5 3A2.5 2.5 0 0 0 1 5.5v7A2.5 2.5 0 0 0 3.5 15h7a2.5 2.5 0 0 0 2.5-2.5V9a1 1 0 1 0-2 0v3.5a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7a1 1 0 0 0 0-2H3.5z"/>' +
+        '</svg>' + label;
+      return a;
+    }
+    function looksLikeUrl(s) {
+      return !!s && (/^https?:/i.test(s) || s.indexOf("/") !== -1 ||
+                     /\.xslt?$/i.test(s));
+    }
     try {
       var params = new URLSearchParams(location.search);
       var srcUrl = params.get("url");
       var xslUrl = params.get("xsl");
-      function makeSrcLink(label, href) {
-        var a = document.createElement("a");
-        a.className = "tei-srclink";
-        a.href = href;
-        a.target = "_blank";
-        a.rel = "noopener";
-        a.title = href;
-        a.innerHTML =
-          '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">' +
-            '<path d="M9 1a1 1 0 0 0 0 2h2.59L6.3 8.29a1 1 0 1 0 1.42 1.42L13 4.41V7a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1H9zM3.5 3A2.5 2.5 0 0 0 1 5.5v7A2.5 2.5 0 0 0 3.5 15h7a2.5 2.5 0 0 0 2.5-2.5V9a1 1 0 1 0-2 0v3.5a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7a1 1 0 0 0 0-2H3.5z"/>' +
-          '</svg>' + label;
-        return a;
-      }
       if (srcUrl || xslUrl) {
         var sep = document.createElement("span");
         sep.className = "tei-srclink-sep";
         nav.appendChild(sep);
         if (srcUrl) nav.appendChild(makeSrcLink("TEI/XML", srcUrl));
-        if (xslUrl) nav.appendChild(makeSrcLink("XSL",     xslUrl));
+        if (xslUrl) {
+          if (looksLikeUrl(xslUrl)) {
+            nav.appendChild(makeSrcLink("XSL", xslUrl));
+          } else {
+            // bare id — resolve via catalog.json, then add the link
+            var xslLink = makeSrcLink("XSL", "#");
+            xslLink.style.visibility = "hidden";
+            nav.appendChild(xslLink);
+            fetch("catalog.json").then(function (r) { return r.json(); })
+              .then(function (cat) {
+                var hit = (cat.xsl || []).find(function (x) {
+                  return x.id === xslUrl;
+                });
+                if (hit && hit.url) {
+                  xslLink.href = hit.url;
+                  xslLink.title = hit.url;
+                  xslLink.style.visibility = "";
+                } else {
+                  xslLink.parentNode.removeChild(xslLink);
+                }
+              })
+              .catch(function () {
+                xslLink.parentNode.removeChild(xslLink);
+              });
+          }
+        }
       }
     } catch (e) { /* no URLSearchParams or no location — ignore */ }
 
