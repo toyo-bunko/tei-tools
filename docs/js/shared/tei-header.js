@@ -34,6 +34,12 @@
       ".tei-topbar { position: sticky; top: 0; z-index: 40;" +
         " height: var(--tei-bar-h); display: flex; align-items: center;" +
         " gap: 1rem; padding: 0 1rem; background: #2c2622; color: #f3f1ea; }" +
+      ".tei-home { flex: none; font-size: .85rem; font-weight: 600;" +
+        " color: #d8b88a; text-decoration: none; white-space: nowrap;" +
+        " padding: .35rem .55rem; border-radius: 6px;" +
+        " display: inline-flex; align-items: center; gap: .35em; }" +
+      ".tei-home:hover { background: rgba(255,255,255,.10); }" +
+      ".tei-home svg { width: 1em; height: 1em; opacity: .8; }" +
       ".tei-brand { font-size: .9rem; font-weight: 600; flex: 1; min-width: 0;" +
         " white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }" +
       ".tei-nav { display: flex; gap: .25rem; flex: none; flex-wrap: wrap;" +
@@ -124,12 +130,21 @@
     /* ---- top bar ---- */
     var bar = document.createElement("header");
     bar.className = "tei-topbar";
+    var home = document.createElement("a");
+    home.className = "tei-home";
+    home.href = "https://toyo-bunko.github.io/tei-tools/";
+    home.title = "TEI Tools home";
+    home.innerHTML =
+      '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">' +
+        '<path d="M8 1.4L1 7.5V14a1 1 0 0 0 1 1h3.5v-4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v4H14a1 1 0 0 0 1-1V7.5L8 1.4z"/>' +
+      '</svg><span>TEI Tools</span>';
     var brand = document.createElement("div");
     brand.className = "tei-brand";
     brand.textContent = title;
     brand.title = title;
     var nav = document.createElement("nav");
     nav.className = "tei-nav";
+    bar.appendChild(home);
     bar.appendChild(brand);
     bar.appendChild(nav);
 
