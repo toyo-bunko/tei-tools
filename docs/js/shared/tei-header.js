@@ -32,10 +32,8 @@
     var css =
       ":root { --tei-bar-h: 52px; }" +
       ".tei-topbar { position: sticky; top: 0; z-index: 40;" +
-        " min-height: var(--tei-bar-h); display: flex; align-items: center;" +
-        " flex-wrap: wrap;" +
-        " gap: .35rem 1rem; padding: .35rem 1rem;" +
-        " background: #2c2622; color: #f3f1ea; }" +
+        " height: var(--tei-bar-h); display: flex; align-items: center;" +
+        " gap: 1rem; padding: 0 1rem; background: #2c2622; color: #f3f1ea; }" +
       ".tei-brand { font-size: .9rem; font-weight: 600; flex: 1; min-width: 0;" +
         " white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }" +
       ".tei-nav { display: flex; gap: .25rem; flex: none; flex-wrap: wrap;" +
@@ -189,24 +187,6 @@
     document.body.insertBefore(bar, document.body.firstChild);
     document.body.appendChild(modal);
     src.parentNode.removeChild(src);
-
-    /* Keep --tei-bar-h in sync with the actual bar height so that any
-       page CSS that offsets content for the sticky bar (e.g. anchored
-       line items in the OCR view) still lines up when the nav wraps
-       to a second row on narrow screens or with long titles. */
-    function syncBarHeight() {
-      var h = bar.getBoundingClientRect().height;
-      if (h > 0) {
-        document.documentElement.style.setProperty(
-          "--tei-bar-h", h + "px");
-      }
-    }
-    syncBarHeight();
-    if (typeof ResizeObserver !== "undefined") {
-      new ResizeObserver(syncBarHeight).observe(bar);
-    } else {
-      window.addEventListener("resize", syncBarHeight);
-    }
   }
 
   if (document.readyState === "loading") {
