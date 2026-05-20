@@ -43,6 +43,15 @@
         " padding: .4rem .7rem; border-radius: 6px; }" +
       ".tei-nav button:hover { background: rgba(255,255,255,.14); }" +
       ".tei-nav button.tei-extra-on { background: rgba(216,184,138,.3); }" +
+      ".tei-nav a.tei-srclink { font: inherit; font-size: .8rem;" +
+        " color: #f3f1ea; text-decoration: none;" +
+        " padding: .4rem .7rem; border-radius: 6px;" +
+        " display: inline-flex; align-items: center; gap: .3em; }" +
+      ".tei-nav a.tei-srclink:hover { background: rgba(255,255,255,.14); }" +
+      ".tei-nav a.tei-srclink svg { width: .85em; height: .85em;" +
+        " opacity: .6; }" +
+      ".tei-srclink-sep { width: 1px; align-self: stretch;" +
+        " background: rgba(255,255,255,.18); margin: .5rem .25rem; }" +
       ".tei-modal { display: none; position: fixed; inset: 0; z-index: 50;" +
         " background: rgba(20,17,14,.55);" +
         " padding: calc(var(--tei-bar-h) + 1rem) 1rem 1rem; }" +
@@ -144,6 +153,36 @@
 
     /* extras (e.g. a zone-toggle button) move into the bar untouched */
     extras.forEach(function (el) { nav.appendChild(el); });
+
+    /* Source links: when this page was opened via view.html?url=…&xsl=…
+       (the typical full-screen render route), expose the underlying
+       TEI/XML and XSL as inline links in the bar so a reader can jump
+       to the raw markup. Quietly skipped when the params aren't set. */
+    try {
+      var params = new URLSearchParams(location.search);
+      var srcUrl = params.get("url");
+      var xslUrl = params.get("xsl");
+      function makeSrcLink(label, href) {
+        var a = document.createElement("a");
+        a.className = "tei-srclink";
+        a.href = href;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.title = href;
+        a.innerHTML =
+          '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">' +
+            '<path d="M9 1a1 1 0 0 0 0 2h2.59L6.3 8.29a1 1 0 1 0 1.42 1.42L13 4.41V7a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1H9zM3.5 3A2.5 2.5 0 0 0 1 5.5v7A2.5 2.5 0 0 0 3.5 15h7a2.5 2.5 0 0 0 2.5-2.5V9a1 1 0 1 0-2 0v3.5a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7a1 1 0 0 0 0-2H3.5z"/>' +
+          '</svg>' + label;
+        return a;
+      }
+      if (srcUrl || xslUrl) {
+        var sep = document.createElement("span");
+        sep.className = "tei-srclink-sep";
+        nav.appendChild(sep);
+        if (srcUrl) nav.appendChild(makeSrcLink("TEI/XML", srcUrl));
+        if (xslUrl) nav.appendChild(makeSrcLink("XSL",     xslUrl));
+      }
+    } catch (e) { /* no URLSearchParams or no location — ignore */ }
 
     document.body.insertBefore(bar, document.body.firstChild);
     document.body.appendChild(modal);
