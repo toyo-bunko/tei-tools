@@ -760,7 +760,10 @@ a.btn-primary, a.btn-secondary {
 
 .publisher {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* minmax(0, 1fr) — the explicit 0 minimum prevents a long unbreakable
+     title or chip from inflating its column past the viewport, which
+     otherwise causes horizontal overflow at narrow widths. */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 1.25rem;
 }
 .pub-pane {
@@ -768,6 +771,7 @@ a.btn-primary, a.btn-secondary {
   border: 1px solid #e5e5ea;
   border-radius: 12px;
   padding: 1.1rem 1.2rem;
+  min-width: 0;
   transition: border-color .15s, box-shadow .15s;
 }
 .pub-pane.active { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,113,227,.12); }
@@ -929,6 +933,7 @@ a.btn-primary, a.btn-secondary {
   border-radius: 9px;
   padding: .7rem .85rem .75rem;
   cursor: pointer;
+  min-width: 0;
   transition: border-color .15s, box-shadow .15s;
 }
 .pub-item:hover { border-color: var(--accent); }
@@ -941,8 +946,9 @@ a.btn-primary, a.btn-secondary {
   align-items: center;
   justify-content: space-between;
   gap: .5rem;
+  min-width: 0;
 }
-.pub-item-title { font-size: .85rem; font-weight: 600; min-width: 0; }
+.pub-item-title { font-size: .85rem; font-weight: 600; min-width: 0; overflow: hidden; }
 .pub-item-title-text {
   display: inline-block;
   max-width: 100%;
@@ -956,6 +962,7 @@ a.btn-primary, a.btn-secondary {
   line-height: 1.55;
   color: #6e6e73;
   margin-top: .4rem;
+  overflow-wrap: anywhere;
 }
 /* Compact "↗ XML を見る" / "↗ XSL を見る" link sitting at the right
    end of .pub-item-head (replaces the old bottom action row). */
@@ -1005,6 +1012,7 @@ a.pub-open:hover { background: rgba(0,113,227,.08); }
   line-height: 1.5;
   color: #8a8a8f;
   margin-top: .45rem;
+  overflow-wrap: anywhere;
 }
 .pub-license-label { font-weight: 600; color: #6e6e73; }
 .pub-add {
@@ -1146,6 +1154,85 @@ a.pub-open:hover { background: rgba(0,113,227,.08); }
   .process-flow { grid-template-columns: 1fr; gap: 2rem; }
   .hero { padding: 3.5rem 1.5rem 3rem; }
   .hero-title { font-size: 2.1rem; }
+}
+
+/* ---- publisher responsive ---- */
+/* Below ~960px the side-by-side two-pane layout starts to feel cramped:
+   long titles wrap, facet chips push the input into a single column.
+   Collapse to a single stacked column. */
+@media (max-width: 960px) {
+  .publisher { grid-template-columns: 1fr; gap: 1.1rem; }
+}
+
+/* Phone-class width: trim padding, surface controls full-width, prevent
+   iOS Safari auto-zoom (input font-size must be >= 16px). */
+@media (max-width: 700px) {
+  .main-content:has(.publisher) {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+  .page-title { font-size: 1.4rem; margin: 1.6rem 0 .25rem; }
+  .subtitle-with-link { gap: .25rem .9rem; padding: 0 .6rem; }
+  .meta-inline-link { font-size: .78rem; }
+
+  .pub-pane { padding: .95rem .9rem; }
+  .pub-pane-head { gap: .45rem; align-items: flex-start; }
+  .pub-pane-title { font-size: .95rem; }
+  .pub-pane-hint {
+    display: block;       /* push hint onto its own line again on phones */
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+
+  .pub-filter { flex-wrap: wrap; gap: .4rem; }
+  .pub-filter input[type="search"] {
+    flex: 1 1 100%;
+    font-size: 16px;      /* avoid iOS zoom on focus */
+  }
+  .pub-filter-count {
+    flex: 1 0 100%;
+    text-align: right;
+    margin-top: -.15rem;
+  }
+
+  .pub-facets { gap: .3rem; margin-bottom: .8rem; }
+  .pub-chip { font-size: .78rem; padding: .25rem .55rem; }
+  .pub-chip-n { font-size: .7rem; }
+
+  .pub-item { padding: .65rem .75rem .7rem; }
+  .pub-item-head { gap: .4rem; flex-wrap: wrap; }
+  .pub-item-title { flex: 1 1 100%; }
+  a.pub-open {
+    /* On a phone keep the View link compact and right-aligned under
+       the title so a wrapping title doesn't collide with it. */
+    align-self: flex-end;
+    font-size: .72rem;
+    padding: .2rem .45rem;
+  }
+
+  .pub-bar {
+    padding: .85rem .95rem;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: .65rem;
+  }
+  .pub-bar .pub-pane-head { margin-bottom: .15rem; }
+  .pub-bar-main {
+    flex-direction: column;
+    align-items: stretch;
+    gap: .6rem;
+  }
+  .pub-bar-main .btn-primary,
+  .pub-bar-main .pub-share {
+    width: 100%;
+    margin-left: 0;
+  }
+  .pub-selection { font-size: .82rem; }
+
+  .pub-add-row { flex-wrap: wrap; }
+  .pub-add-row input { flex: 1 1 100%; font-size: 16px; }
+  .pub-add-row .btn-secondary { width: 100%; }
 }
 
 @media (max-width: 600px) {
