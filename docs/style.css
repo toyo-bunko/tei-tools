@@ -3,22 +3,23 @@
    Light values live in :root; .dark (further down) redefines them.
    ==================================================================== */
 :root {
-  --primary:       #2c3e50;   /* slate — header / footer / headings */
-  --primary-dark:  #1a2a3a;
-  --primary-mid:   #34495e;
-  --accent:        #8b4513;   /* saddle brown — links, borders, accents */
-  --accent-light:  #a0522d;
-  --accent-fill:   #8b4513;   /* solid backgrounds that carry white text */
-  --accent-wash:   #f4ece2;   /* faint warm tint behind external-link cards */
-  --text:          #2d2a26;
-  --text-light:    #5a554e;
+  /* Toyo Bunko brand (臙脂 enji #76161b on warm cream). See @toyo/design-system. */
+  --primary:       #76161b;   /* 臙脂 — header / footer / headings */
+  --primary-dark:  #5f1216;
+  --primary-mid:   #8c2a2f;
+  --accent:        #76161b;   /* enji — links, borders, accents */
+  --accent-light:  #8c2a2f;
+  --accent-fill:   #76161b;   /* solid backgrounds that carry white text */
+  --accent-wash:   #fbf2f2;   /* faint enji tint behind external-link cards */
+  --text:          #1a1714;
+  --text-light:    #5a5a5a;
   --text-muted:    #8a857c;
-  --border:        #ddd6cc;
-  --bg:            #faf8f4;
-  --bg-alt:        #f3ede4;
+  --border:        #e0d8cf;
+  --bg:            #f5f0ed;
+  --bg-alt:        #ece4dd;
   --card:          #ffffff;
-  --font-serif: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", "Times New Roman", serif;
-  --font-sans:  "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "EB Garamond", "BIZ UDPMincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-sans:  "BIZ UDPGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1296,17 +1297,17 @@ a.pub-open:hover { background: rgba(0,113,227,.08); }
    The header / footer keep their slate band in both modes, so the old
    .dark .site-header / .site-title / nav / lang-btn overrides are gone. */
 .dark {
-  --accent:       #d49a63;
-  --accent-light: #e0ab74;
-  --accent-fill:  #9a5a2a;
-  --accent-wash:  #332a1d;
-  --text:         #ece9e4;
-  --text-light:   #b7b2aa;
+  --accent:       #db9598;   /* enji-300 — readable enji on dark */
+  --accent-light: #ecc1c3;
+  --accent-fill:  #8c2a2f;
+  --accent-wash:  #2d090b;
+  --text:         #ece6df;
+  --text-light:   #b7b0a6;
   --text-muted:   #8f8a82;
-  --border:       #3a3a3c;
-  --bg:           #1c1c1e;
-  --bg-alt:       #242422;
-  --card:         #2c2c2e;
+  --border:       #3a342d;
+  --bg:           #1c1a18;
+  --bg-alt:       #242220;
+  --card:         #26231f;
   background: var(--bg);
   color: var(--text);
 }
