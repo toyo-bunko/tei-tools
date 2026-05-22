@@ -1,11 +1,12 @@
 {
-  "_comment": "XML document manifest for the TEI Gallery. Edited by hand; scripts/build-catalog.mjs reads this and each tei.xml to generate docs/catalog.json. `bundled` documents live under docs/xml/<id>/tei.xml; `remote` documents are fetched live (the host must allow CORS). `fallback` metadata is used only when the remote fetch fails at generation time.",
+  "_comment": "XML document manifest for the TEI Gallery. `bundled` XML are AUTO-DISCOVERED by scripts/build-catalog.mjs from docs/xml/<id>/tei.xml — just drop a folder and run `npm run catalog`, no edit here needed. List a `bundled` entry below only to pin its order (manifest entries come first, in this order; auto-discovered extras follow, sorted by id). `remote` documents must be listed here (they can't be scanned); they are fetched live (host must allow CORS) and `fallback` metadata is used only when the fetch fails at generation time.",
   "xml": [
     { "id": "tei-guide",  "scope": "bundled", "path": "xml/tei-guide/tei.xml" },
     { "id": "ocr-sample", "scope": "bundled", "path": "xml/ocr-sample/tei.xml" },
     { "id": "vellum",     "scope": "bundled", "path": "xml/vellum/tei.xml" },
     { "id": "manchu",     "scope": "bundled", "path": "xml/manchu/tei.xml" },
     { "id": "persname-split", "scope": "bundled", "path": "xml/persname-split/tei.xml" },
+    { "id": "morrison-ner", "scope": "bundled", "path": "xml/morrison-ner/tei.xml" },
     {
       "id": "urenja-001-01",
       "scope": "remote",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-20T09:28:07.901Z",
+  "generated": "2026-05-22T09:01:32.654Z",
   "xml": [
     {
       "id": "tei-guide",
@@ -66,6 +66,18 @@
       "license": "Demonstration sample — CC BY 4.0. Free to use and adapt. / デモンストレーション用サンプル — CC BY 4.0。自由に利用・改変できます。"
     },
     {
+      "id": "morrison-ner",
+      "scope": "bundled",
+      "url": "xml/morrison-ner/tei.xml",
+      "title": "Morrison Pamphlet P-I-a-0001",
+      "description": "TEI facsimile document with one <surface> per page image and one <zone> per recognized line, converted from ALTO OCR output.",
+      "languages": [
+        "en"
+      ],
+      "category": "OCR transcription / OCR 翻刻",
+      "license": "Morrison Pamphlets collection, provided by Toyo Bunko under CC BY 4.0."
+    },
+    {
       "id": "urenja-001-01",
       "scope": "remote",
       "url": "https://u-renja.toyobunko-lab.jp/api/dts/document?resource=https://u-renja.toyobunko-lab.jp/api/iiif/2/001-01/manifest",
@@ -117,6 +129,19 @@
       "title": "清語老乞大 縦書きビュー / Cing gisun-i Lao Kida vertical view",
       "description": "朝鮮司譯院刊『清語老乞大』巻之一・第一葉表の TEI 専用。影印画像と、満州文字（縦書き）＋ハングル音注＋割書諺解を再現した HTML 版面を左右に並べて表示します。/ Dedicated to the \"Cing gisun-i Lao Kida\" (Korean Saiyŏgwŏn edition, vol. 1, fol. 1a): the facsimile image beside an HTML reproduction of the vertical Manchu script with Hangul phonetic glosses and the interlinear Korean translation.",
       "category": "プロジェクト専用 / Project-specific",
+      "license": "自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0)."
+    },
+    {
+      "url": "xsl/tei-ner.xsl",
+      "id": "ner",
+      "input": "file",
+      "sample": {
+        "kind": "file",
+        "path": "xml/morrison-ner/tei.xml"
+      },
+      "title": "Named-entity overview / 固有表現の一覧・可視化",
+      "description": "本文中にインライン付与された固有表現 (persName / placeName / orgName / date) を集計し、種別ごとの件数・頻出表現の棒グラフ（HTML/CSS のみ）と、異なり一覧テーブルで可視化します。LLM 等で NE タグを付けた TEI の俯瞰に。/ Aggregates inline named entities (persName / placeName / orgName / date) and visualizes them with per-type and top-frequency bar charts (pure HTML/CSS) plus a distinct-entity table. For surveying TEI marked up with NE tags (e.g. by an LLM).",
+      "category": "分析 / Analysis",
       "license": "自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0)."
     },
     {

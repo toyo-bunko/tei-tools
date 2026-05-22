@@ -1,0 +1,941 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Morrison Pamphlet P-I-a-0001</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Toyo Bunko</publisher>
+        <date when="2026-05-22" />
+        <availability status="free">
+          <licence>Morrison Pamphlets collection, provided by Toyo Bunko under CC BY 4.0.</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Generated from ALTO XML OCR (Azure Document Intelligence) of scanned page images.</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <abstract>
+        <p>TEI facsimile document with one &lt;surface&gt; per page image and one &lt;zone&gt; per recognized line, converted from ALTO OCR output.</p>
+      </abstract>
+      <langUsage>
+        <language ident="en">en</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term>OCR transcription / OCR 翻刻</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <facsimile>
+    <surface xml:id="f1" ulx="0" uly="0" lrx="6613" lry="4677">
+      <graphic url="images/f1.png" width="6613px" height="4677px" />
+      <zone xml:id="f1_l1" ulx="3185" uly="965" lrx="3440" lry="1030" />
+      <zone xml:id="f1_l2" ulx="3157" uly="1075" lrx="3447" lry="1146" />
+      <zone xml:id="f1_l3" ulx="3226" uly="1440" lrx="3353" lry="1511" />
+    </surface>
+    <surface xml:id="f2" ulx="0" uly="0" lrx="6613" lry="4677">
+      <graphic url="images/f2.png" width="6613px" height="4677px" />
+      <zone xml:id="f2_l1" ulx="3487" uly="542" lrx="4032" lry="791" />
+      <zone xml:id="f2_l2" ulx="3506" uly="811" lrx="4227" lry="1025" />
+      <zone xml:id="f2_l3" ulx="3629" uly="3048" lrx="4068" lry="3167" />
+      <zone xml:id="f2_l4" ulx="3736" uly="3241" lrx="3916" lry="3325" />
+      <zone xml:id="f2_l5" ulx="3106" uly="3318" lrx="3176" lry="3408" />
+      <zone xml:id="f2_l6" ulx="3836" uly="3395" lrx="3870" lry="3461" />
+      <zone xml:id="f2_l7" ulx="3430" uly="3911" lrx="3623" lry="4058" />
+    </surface>
+    <surface xml:id="f3" ulx="0" uly="0" lrx="6613" lry="4677">
+      <graphic url="images/f3.png" width="6613px" height="4677px" />
+      <zone xml:id="f3_l1" ulx="3551" uly="684" lrx="5268" lry="780" />
+      <zone xml:id="f3_l2" ulx="3602" uly="816" lrx="4793" lry="898" />
+      <zone xml:id="f3_l3" ulx="4872" uly="870" lrx="5261" lry="932" />
+      <zone xml:id="f3_l4" ulx="3661" uly="877" lrx="4793" lry="963" />
+      <zone xml:id="f3_l5" ulx="4940" uly="925" lrx="5251" lry="988" />
+      <zone xml:id="f3_l6" ulx="3667" uly="957" lrx="4029" lry="1017" />
+      <zone xml:id="f3_l7" ulx="4510" uly="1044" lrx="5263" lry="1115" />
+      <zone xml:id="f3_l8" ulx="3618" uly="1136" lrx="5266" lry="1228" />
+      <zone xml:id="f3_l9" ulx="3556" uly="1194" lrx="5275" lry="1292" />
+      <zone xml:id="f3_l10" ulx="3559" uly="1252" lrx="5278" lry="1347" />
+      <zone xml:id="f3_l11" ulx="3561" uly="1313" lrx="5281" lry="1405" />
+      <zone xml:id="f3_l12" ulx="3564" uly="1370" lrx="5286" lry="1464" />
+      <zone xml:id="f3_l13" ulx="3562" uly="1427" lrx="5284" lry="1528" />
+      <zone xml:id="f3_l14" ulx="3564" uly="1486" lrx="5290" lry="1584" />
+      <zone xml:id="f3_l15" ulx="3569" uly="1542" lrx="5288" lry="1641" />
+      <zone xml:id="f3_l16" ulx="3569" uly="1604" lrx="5285" lry="1700" />
+      <zone xml:id="f3_l17" ulx="3574" uly="1662" lrx="5294" lry="1760" />
+      <zone xml:id="f3_l18" ulx="3577" uly="1723" lrx="5292" lry="1820" />
+      <zone xml:id="f3_l19" ulx="3574" uly="1795" lrx="4636" lry="1877" />
+      <zone xml:id="f3_l20" ulx="3631" uly="1837" lrx="5294" lry="1927" />
+      <zone xml:id="f3_l21" ulx="3571" uly="1901" lrx="5290" lry="1992" />
+      <zone xml:id="f3_l22" ulx="3577" uly="1959" lrx="5296" lry="2051" />
+      <zone xml:id="f3_l23" ulx="3574" uly="2017" lrx="5300" lry="2111" />
+      <zone xml:id="f3_l24" ulx="3577" uly="2097" lrx="4412" lry="2165" />
+      <zone xml:id="f3_l25" ulx="3643" uly="2140" lrx="5308" lry="2220" />
+      <zone xml:id="f3_l26" ulx="3592" uly="2194" lrx="5303" lry="2285" />
+      <zone xml:id="f3_l27" ulx="3584" uly="2254" lrx="5310" lry="2343" />
+      <zone xml:id="f3_l28" ulx="3589" uly="2318" lrx="5304" lry="2402" />
+      <zone xml:id="f3_l29" ulx="3592" uly="2371" lrx="5310" lry="2461" />
+      <zone xml:id="f3_l30" ulx="3594" uly="2432" lrx="5318" lry="2516" />
+      <zone xml:id="f3_l31" ulx="3599" uly="2490" lrx="5323" lry="2577" />
+      <zone xml:id="f3_l32" ulx="3599" uly="2550" lrx="5317" lry="2637" />
+      <zone xml:id="f3_l33" ulx="3600" uly="2606" lrx="5317" lry="2696" />
+      <zone xml:id="f3_l34" ulx="3602" uly="2664" lrx="5323" lry="2753" />
+      <zone xml:id="f3_l35" ulx="3602" uly="2718" lrx="5325" lry="2811" />
+      <zone xml:id="f3_l36" ulx="3602" uly="2781" lrx="5336" lry="2865" />
+      <zone xml:id="f3_l37" ulx="3605" uly="2842" lrx="5323" lry="2926" />
+      <zone xml:id="f3_l38" ulx="3605" uly="2903" lrx="5330" lry="2985" />
+      <zone xml:id="f3_l39" ulx="3607" uly="2972" lrx="4533" lry="3043" />
+      <zone xml:id="f3_l40" ulx="3666" uly="3019" lrx="5330" lry="3093" />
+      <zone xml:id="f3_l41" ulx="3608" uly="3073" lrx="5342" lry="3160" />
+      <zone xml:id="f3_l42" ulx="3616" uly="3158" lrx="3972" lry="3216" />
+      <zone xml:id="f3_l43" ulx="3664" uly="3230" lrx="4453" lry="3297" />
+      <zone xml:id="f3_l44" ulx="4561" uly="3217" lrx="5339" lry="3289" />
+      <zone xml:id="f3_l45" ulx="3969" uly="3288" lrx="4446" lry="3348" />
+      <zone xml:id="f3_l46" ulx="3977" uly="3349" lrx="4441" lry="3406" />
+      <zone xml:id="f3_l47" ulx="3979" uly="3409" lrx="4452" lry="3465" />
+      <zone xml:id="f3_l48" ulx="3979" uly="3467" lrx="4458" lry="3527" />
+      <zone xml:id="f3_l49" ulx="4856" uly="3279" lrx="5343" lry="3335" />
+      <zone xml:id="f3_l50" ulx="4857" uly="3337" lrx="5342" lry="3393" />
+      <zone xml:id="f3_l51" ulx="4862" uly="3395" lrx="5349" lry="3452" />
+      <zone xml:id="f3_l52" ulx="4869" uly="3458" lrx="5345" lry="3510" />
+      <zone xml:id="f3_l53" ulx="5220" uly="3529" lrx="5342" lry="3566" />
+      <zone xml:id="f3_l54" ulx="3494" uly="3629" lrx="3934" lry="3743" />
+      <zone xml:id="f3_l55" ulx="3567" uly="3760" lrx="3955" lry="3851" />
+      <zone xml:id="f3_l56" ulx="4047" uly="3759" lrx="4252" lry="3856" />
+      <zone xml:id="f3_l57" ulx="4369" uly="3581" lrx="4459" lry="3637" />
+      <zone xml:id="f3_l58" ulx="5227" uly="3574" lrx="5341" lry="3621" />
+      <zone xml:id="f3_l59" ulx="5293" uly="3709" lrx="5352" lry="3758" />
+      <zone xml:id="f3_l60" ulx="3710" uly="3884" lrx="3752" lry="3953" />
+      <zone xml:id="f3_l61" ulx="4136" uly="3879" lrx="4193" lry="3956" />
+    </surface>
+    <surface xml:id="f4" ulx="0" uly="0" lrx="6613" lry="4677">
+      <graphic url="images/f4.png" width="6613px" height="4677px" />
+      <zone xml:id="f4_l1" ulx="1415" uly="643" lrx="3125" lry="748" />
+      <zone xml:id="f4_l2" ulx="1470" uly="771" lrx="2239" lry="845" />
+      <zone xml:id="f4_l3" ulx="1755" uly="842" lrx="2239" lry="902" />
+      <zone xml:id="f4_l4" ulx="1762" uly="899" lrx="2240" lry="962" />
+      <zone xml:id="f4_l5" ulx="1763" uly="959" lrx="2239" lry="1020" />
+      <zone xml:id="f4_l6" ulx="1762" uly="1018" lrx="2239" lry="1078" />
+      <zone xml:id="f4_l7" ulx="2345" uly="790" lrx="3119" lry="857" />
+      <zone xml:id="f4_l8" ulx="2636" uly="854" lrx="3121" lry="922" />
+      <zone xml:id="f4_l9" ulx="2639" uly="915" lrx="3119" lry="976" />
+      <zone xml:id="f4_l10" ulx="2639" uly="975" lrx="3117" lry="1033" />
+      <zone xml:id="f4_l11" ulx="2636" uly="1033" lrx="3116" lry="1097" />
+      <zone xml:id="f4_l12" ulx="2144" uly="1145" lrx="2233" lry="1192" />
+      <zone xml:id="f4_l13" ulx="2988" uly="1154" lrx="3110" lry="1206" />
+      <zone xml:id="f4_l14" ulx="1454" uly="1244" lrx="3109" lry="1330" />
+      <zone xml:id="f4_l15" ulx="1396" uly="1304" lrx="3105" lry="1387" />
+      <zone xml:id="f4_l16" ulx="1394" uly="1364" lrx="3109" lry="1446" />
+      <zone xml:id="f4_l17" ulx="1389" uly="1423" lrx="3108" lry="1507" />
+      <zone xml:id="f4_l18" ulx="1391" uly="1481" lrx="2935" lry="1559" />
+      <zone xml:id="f4_l19" ulx="1447" uly="1538" lrx="3098" lry="1628" />
+      <zone xml:id="f4_l20" ulx="1387" uly="1593" lrx="3102" lry="1685" />
+      <zone xml:id="f4_l21" ulx="1381" uly="1658" lrx="3094" lry="1747" />
+      <zone xml:id="f4_l22" ulx="1377" uly="1711" lrx="3096" lry="1800" />
+      <zone xml:id="f4_l23" ulx="1379" uly="1770" lrx="3092" lry="1861" />
+      <zone xml:id="f4_l24" ulx="1372" uly="1827" lrx="3090" lry="1914" />
+      <zone xml:id="f4_l25" ulx="1374" uly="1887" lrx="3092" lry="1979" />
+      <zone xml:id="f4_l26" ulx="1376" uly="1942" lrx="3095" lry="2033" />
+      <zone xml:id="f4_l27" ulx="1374" uly="2007" lrx="3089" lry="2094" />
+      <zone xml:id="f4_l28" ulx="1373" uly="2065" lrx="3090" lry="2151" />
+      <zone xml:id="f4_l29" ulx="1371" uly="2119" lrx="3088" lry="2211" />
+      <zone xml:id="f4_l30" ulx="1368" uly="2182" lrx="3086" lry="2269" />
+      <zone xml:id="f4_l31" ulx="1369" uly="2235" lrx="3084" lry="2328" />
+      <zone xml:id="f4_l32" ulx="1364" uly="2293" lrx="3078" lry="2388" />
+      <zone xml:id="f4_l33" ulx="1363" uly="2357" lrx="3084" lry="2449" />
+      <zone xml:id="f4_l34" ulx="1363" uly="2412" lrx="2002" lry="2485" />
+      <zone xml:id="f4_l35" ulx="1356" uly="2693" lrx="3081" lry="2788" />
+      <zone xml:id="f4_l36" ulx="1427" uly="2762" lrx="3069" lry="2849" />
+      <zone xml:id="f4_l37" ulx="1429" uly="2826" lrx="3069" lry="2914" />
+      <zone xml:id="f4_l38" ulx="1424" uly="2888" lrx="3068" lry="2981" />
+      <zone xml:id="f4_l39" ulx="1425" uly="2952" lrx="3073" lry="3047" />
+      <zone xml:id="f4_l40" ulx="1424" uly="3018" lrx="2390" lry="3097" />
+      <zone xml:id="f4_l41" ulx="1352" uly="3140" lrx="3061" lry="3242" />
+      <zone xml:id="f4_l42" ulx="1420" uly="3209" lrx="3059" lry="3297" />
+      <zone xml:id="f4_l43" ulx="1352" uly="3271" lrx="3060" lry="3362" />
+      <zone xml:id="f4_l44" ulx="1348" uly="3334" lrx="3063" lry="3431" />
+      <zone xml:id="f4_l45" ulx="1348" uly="3407" lrx="3062" lry="3490" />
+      <zone xml:id="f4_l46" ulx="1350" uly="3468" lrx="3060" lry="3560" />
+      <zone xml:id="f4_l47" ulx="1346" uly="3528" lrx="3058" lry="3623" />
+      <zone xml:id="f4_l48" ulx="1347" uly="3595" lrx="3064" lry="3688" />
+      <zone xml:id="f4_l49" ulx="2991" uly="3684" lrx="3055" lry="3743" />
+      <zone xml:id="f4_l50" ulx="3496" uly="646" lrx="5027" lry="729" />
+      <zone xml:id="f4_l51" ulx="5134" uly="647" lrx="5195" lry="706" />
+      <zone xml:id="f4_l52" ulx="3490" uly="762" lrx="5212" lry="852" />
+      <zone xml:id="f4_l53" ulx="3492" uly="833" lrx="5222" lry="917" />
+      <zone xml:id="f4_l54" ulx="3496" uly="902" lrx="5216" lry="981" />
+      <zone xml:id="f4_l55" ulx="3497" uly="964" lrx="5222" lry="1048" />
+      <zone xml:id="f4_l56" ulx="3497" uly="1029" lrx="5219" lry="1113" />
+      <zone xml:id="f4_l57" ulx="3500" uly="1088" lrx="5227" lry="1176" />
+      <zone xml:id="f4_l58" ulx="3498" uly="1157" lrx="5222" lry="1238" />
+      <zone xml:id="f4_l59" ulx="3503" uly="1220" lrx="5220" lry="1308" />
+      <zone xml:id="f4_l60" ulx="3500" uly="1286" lrx="5228" lry="1372" />
+      <zone xml:id="f4_l61" ulx="3500" uly="1350" lrx="5223" lry="1443" />
+      <zone xml:id="f4_l62" ulx="3505" uly="1421" lrx="5224" lry="1504" />
+      <zone xml:id="f4_l63" ulx="3510" uly="1481" lrx="5227" lry="1566" />
+      <zone xml:id="f4_l64" ulx="3505" uly="1547" lrx="5225" lry="1628" />
+      <zone xml:id="f4_l65" ulx="3508" uly="1610" lrx="5231" lry="1698" />
+      <zone xml:id="f4_l66" ulx="3508" uly="1676" lrx="5235" lry="1759" />
+      <zone xml:id="f4_l67" ulx="3510" uly="1739" lrx="5235" lry="1823" />
+      <zone xml:id="f4_l68" ulx="3511" uly="1802" lrx="5234" lry="1894" />
+      <zone xml:id="f4_l69" ulx="3515" uly="1868" lrx="5233" lry="1952" />
+      <zone xml:id="f4_l70" ulx="3512" uly="1931" lrx="5237" lry="2020" />
+      <zone xml:id="f4_l71" ulx="3521" uly="1996" lrx="5242" lry="2078" />
+      <zone xml:id="f4_l72" ulx="3528" uly="2060" lrx="5231" lry="2144" />
+      <zone xml:id="f4_l73" ulx="3518" uly="2128" lrx="5236" lry="2211" />
+      <zone xml:id="f4_l74" ulx="3523" uly="2190" lrx="5236" lry="2271" />
+      <zone xml:id="f4_l75" ulx="3520" uly="2256" lrx="5242" lry="2336" />
+      <zone xml:id="f4_l76" ulx="3525" uly="2320" lrx="5246" lry="2402" />
+      <zone xml:id="f4_l77" ulx="3528" uly="2388" lrx="5246" lry="2465" />
+      <zone xml:id="f4_l78" ulx="3533" uly="2449" lrx="5250" lry="2534" />
+      <zone xml:id="f4_l79" ulx="3532" uly="2516" lrx="5252" lry="2593" />
+      <zone xml:id="f4_l80" ulx="3530" uly="2579" lrx="5245" lry="2659" />
+      <zone xml:id="f4_l81" ulx="3531" uly="2650" lrx="5250" lry="2725" />
+      <zone xml:id="f4_l82" ulx="3533" uly="2713" lrx="5249" lry="2786" />
+      <zone xml:id="f4_l83" ulx="3600" uly="2772" lrx="5248" lry="2855" />
+      <zone xml:id="f4_l84" ulx="3533" uly="2843" lrx="5247" lry="2916" />
+      <zone xml:id="f4_l85" ulx="3538" uly="2906" lrx="5253" lry="2980" />
+      <zone xml:id="f4_l86" ulx="3532" uly="2969" lrx="5252" lry="3043" />
+      <zone xml:id="f4_l87" ulx="3535" uly="3037" lrx="5251" lry="3114" />
+      <zone xml:id="f4_l88" ulx="3543" uly="3094" lrx="5255" lry="3180" />
+      <zone xml:id="f4_l89" ulx="3539" uly="3162" lrx="5261" lry="3240" />
+      <zone xml:id="f4_l90" ulx="3541" uly="3228" lrx="5260" lry="3304" />
+      <zone xml:id="f4_l91" ulx="3543" uly="3293" lrx="5258" lry="3371" />
+      <zone xml:id="f4_l92" ulx="3546" uly="3360" lrx="5258" lry="3435" />
+      <zone xml:id="f4_l93" ulx="3543" uly="3422" lrx="5261" lry="3501" />
+      <zone xml:id="f4_l94" ulx="3544" uly="3485" lrx="5265" lry="3561" />
+      <zone xml:id="f4_l95" ulx="3548" uly="3555" lrx="5263" lry="3626" />
+      <zone xml:id="f4_l96" ulx="3551" uly="3625" lrx="4095" lry="3695" />
+      <zone xml:id="f4_l97" ulx="3621" uly="3699" lrx="4115" lry="3757" />
+      <zone xml:id="f4_l98" ulx="5166" uly="3678" lrx="5269" lry="3736" />
+    </surface>
+    <surface xml:id="f5" ulx="0" uly="0" lrx="6613" lry="4677">
+      <graphic url="images/f5.png" width="6613px" height="4677px" />
+      <zone xml:id="f5_l1" ulx="1452" uly="680" lrx="1529" lry="731" />
+      <zone xml:id="f5_l2" ulx="1634" uly="660" lrx="3167" lry="742" />
+      <zone xml:id="f5_l3" ulx="1515" uly="786" lrx="3157" lry="865" />
+      <zone xml:id="f5_l4" ulx="1452" uly="853" lrx="3157" lry="930" />
+      <zone xml:id="f5_l5" ulx="1453" uly="917" lrx="3158" lry="988" />
+      <zone xml:id="f5_l6" ulx="1452" uly="981" lrx="3158" lry="1053" />
+      <zone xml:id="f5_l7" ulx="1450" uly="1039" lrx="3157" lry="1120" />
+      <zone xml:id="f5_l8" ulx="1451" uly="1117" lrx="1663" lry="1177" />
+      <zone xml:id="f5_l9" ulx="1522" uly="1171" lrx="3165" lry="1245" />
+      <zone xml:id="f5_l10" ulx="1450" uly="1238" lrx="3162" lry="1311" />
+      <zone xml:id="f5_l11" ulx="1453" uly="1302" lrx="3166" lry="1378" />
+      <zone xml:id="f5_l12" ulx="1453" uly="1364" lrx="3159" lry="1438" />
+      <zone xml:id="f5_l13" ulx="1452" uly="1433" lrx="3159" lry="1505" />
+      <zone xml:id="f5_l14" ulx="1448" uly="1493" lrx="3157" lry="1570" />
+      <zone xml:id="f5_l15" ulx="1455" uly="1558" lrx="3165" lry="1630" />
+      <zone xml:id="f5_l16" ulx="1453" uly="1628" lrx="3160" lry="1695" />
+      <zone xml:id="f5_l17" ulx="1455" uly="1683" lrx="3161" lry="1763" />
+      <zone xml:id="f5_l18" ulx="1453" uly="1753" lrx="3162" lry="1824" />
+      <zone xml:id="f5_l19" ulx="1455" uly="1818" lrx="3165" lry="1889" />
+      <zone xml:id="f5_l20" ulx="1451" uly="1883" lrx="3167" lry="1957" />
+      <zone xml:id="f5_l21" ulx="1451" uly="1943" lrx="3168" lry="2018" />
+      <zone xml:id="f5_l22" ulx="1452" uly="2005" lrx="3166" lry="2083" />
+      <zone xml:id="f5_l23" ulx="1452" uly="2075" lrx="3167" lry="2143" />
+      <zone xml:id="f5_l24" ulx="1448" uly="2134" lrx="3169" lry="2212" />
+      <zone xml:id="f5_l25" ulx="1452" uly="2201" lrx="3170" lry="2282" />
+      <zone xml:id="f5_l26" ulx="1445" uly="2269" lrx="3166" lry="2341" />
+      <zone xml:id="f5_l27" ulx="1456" uly="2327" lrx="3168" lry="2401" />
+      <zone xml:id="f5_l28" ulx="1450" uly="2392" lrx="3166" lry="2472" />
+      <zone xml:id="f5_l29" ulx="1460" uly="2457" lrx="3167" lry="2532" />
+      <zone xml:id="f5_l30" ulx="1460" uly="2518" lrx="3168" lry="2594" />
+      <zone xml:id="f5_l31" ulx="1458" uly="2593" lrx="2271" lry="2661" />
+      <zone xml:id="f5_l32" ulx="2107" uly="2654" lrx="2592" lry="2719" />
+      <zone xml:id="f5_l33" ulx="1837" uly="2714" lrx="2799" lry="2789" />
+      <zone xml:id="f5_l34" ulx="1456" uly="2784" lrx="2522" lry="2854" />
+      <zone xml:id="f5_l35" ulx="1524" uly="2846" lrx="3165" lry="2914" />
+      <zone xml:id="f5_l36" ulx="1455" uly="2912" lrx="3168" lry="2983" />
+      <zone xml:id="f5_l37" ulx="1455" uly="2974" lrx="3168" lry="3048" />
+      <zone xml:id="f5_l38" ulx="1458" uly="3040" lrx="3166" lry="3113" />
+      <zone xml:id="f5_l39" ulx="1453" uly="3106" lrx="3167" lry="3183" />
+      <zone xml:id="f5_l40" ulx="1412" uly="3172" lrx="3174" lry="3248" />
+      <zone xml:id="f5_l41" ulx="1457" uly="3233" lrx="3173" lry="3307" />
+      <zone xml:id="f5_l42" ulx="1455" uly="3300" lrx="3174" lry="3373" />
+      <zone xml:id="f5_l43" ulx="1448" uly="3361" lrx="3174" lry="3436" />
+      <zone xml:id="f5_l44" ulx="1460" uly="3426" lrx="3172" lry="3495" />
+      <zone xml:id="f5_l45" ulx="1459" uly="3492" lrx="3180" lry="3561" />
+      <zone xml:id="f5_l46" ulx="1457" uly="3556" lrx="3175" lry="3634" />
+      <zone xml:id="f5_l47" ulx="1457" uly="3619" lrx="3175" lry="3696" />
+      <zone xml:id="f5_l48" ulx="2872" uly="3690" lrx="3172" lry="3759" />
+      <zone xml:id="f5_l49" ulx="3492" uly="629" lrx="5025" lry="723" />
+      <zone xml:id="f5_l50" ulx="5130" uly="635" lrx="5204" lry="692" />
+      <zone xml:id="f5_l51" ulx="3487" uly="751" lrx="5204" lry="853" />
+      <zone xml:id="f5_l52" ulx="3492" uly="819" lrx="5205" lry="918" />
+      <zone xml:id="f5_l53" ulx="3490" uly="896" lrx="4467" lry="974" />
+      <zone xml:id="f5_l54" ulx="3556" uly="945" lrx="5209" lry="1043" />
+      <zone xml:id="f5_l55" ulx="3485" uly="1013" lrx="5215" lry="1108" />
+      <zone xml:id="f5_l56" ulx="3487" uly="1077" lrx="5210" lry="1168" />
+      <zone xml:id="f5_l57" ulx="3488" uly="1140" lrx="5206" lry="1232" />
+      <zone xml:id="f5_l58" ulx="3494" uly="1203" lrx="5210" lry="1298" />
+      <zone xml:id="f5_l59" ulx="3487" uly="1268" lrx="5214" lry="1366" />
+      <zone xml:id="f5_l60" ulx="3490" uly="1333" lrx="5217" lry="1424" />
+      <zone xml:id="f5_l61" ulx="3495" uly="1400" lrx="5214" lry="1491" />
+      <zone xml:id="f5_l62" ulx="3492" uly="1484" lrx="4219" lry="1555" />
+      <zone xml:id="f5_l63" ulx="3560" uly="1525" lrx="5216" lry="1615" />
+      <zone xml:id="f5_l64" ulx="3492" uly="1591" lrx="5214" lry="1686" />
+      <zone xml:id="f5_l65" ulx="3500" uly="1659" lrx="5215" lry="1749" />
+      <zone xml:id="f5_l66" ulx="3502" uly="1732" lrx="4429" lry="1815" />
+      <zone xml:id="f5_l67" ulx="3558" uly="1804" lrx="5215" lry="1893" />
+      <zone xml:id="f5_l68" ulx="3505" uly="1865" lrx="5218" lry="1953" />
+      <zone xml:id="f5_l69" ulx="3500" uly="1926" lrx="5217" lry="2009" />
+      <zone xml:id="f5_l70" ulx="3506" uly="1980" lrx="5219" lry="2068" />
+      <zone xml:id="f5_l71" ulx="3505" uly="2054" lrx="4551" lry="2137" />
+      <zone xml:id="f5_l72" ulx="3564" uly="2136" lrx="5221" lry="2227" />
+      <zone xml:id="f5_l73" ulx="3500" uly="2201" lrx="5229" lry="2295" />
+      <zone xml:id="f5_l74" ulx="3500" uly="2264" lrx="5222" lry="2355" />
+      <zone xml:id="f5_l75" ulx="3503" uly="2331" lrx="5220" lry="2422" />
+      <zone xml:id="f5_l76" ulx="3503" uly="2395" lrx="5223" lry="2486" />
+      <zone xml:id="f5_l77" ulx="3512" uly="2463" lrx="5220" lry="2545" />
+      <zone xml:id="f5_l78" ulx="3506" uly="2524" lrx="5233" lry="2613" />
+      <zone xml:id="f5_l79" ulx="3515" uly="2587" lrx="5227" lry="2673" />
+      <zone xml:id="f5_l80" ulx="3512" uly="2652" lrx="5223" lry="2737" />
+      <zone xml:id="f5_l81" ulx="3508" uly="2719" lrx="5230" lry="2802" />
+      <zone xml:id="f5_l82" ulx="3510" uly="2780" lrx="5225" lry="2867" />
+      <zone xml:id="f5_l83" ulx="3512" uly="2850" lrx="5230" lry="2936" />
+      <zone xml:id="f5_l84" ulx="3512" uly="2915" lrx="5225" lry="2996" />
+      <zone xml:id="f5_l85" ulx="3513" uly="2977" lrx="5235" lry="3060" />
+      <zone xml:id="f5_l86" ulx="3512" uly="3038" lrx="5231" lry="3129" />
+      <zone xml:id="f5_l87" ulx="3518" uly="3104" lrx="5233" lry="3187" />
+      <zone xml:id="f5_l88" ulx="3517" uly="3169" lrx="5230" lry="3256" />
+      <zone xml:id="f5_l89" ulx="3520" uly="3250" lrx="4186" lry="3319" />
+      <zone xml:id="f5_l90" ulx="3576" uly="3315" lrx="5246" lry="3397" />
+      <zone xml:id="f5_l91" ulx="3521" uly="3377" lrx="5238" lry="3458" />
+      <zone xml:id="f5_l92" ulx="3523" uly="3442" lrx="5238" lry="3517" />
+      <zone xml:id="f5_l93" ulx="3518" uly="3501" lrx="5246" lry="3578" />
+      <zone xml:id="f5_l94" ulx="3520" uly="3562" lrx="5245" lry="3635" />
+      <zone xml:id="f5_l95" ulx="3524" uly="3618" lrx="5242" lry="3699" />
+      <zone xml:id="f5_l96" ulx="4292" uly="3693" lrx="4390" lry="3745" />
+      <zone xml:id="f5_l97" ulx="5143" uly="3681" lrx="5245" lry="3729" />
+    </surface>
+    <surface xml:id="f6" ulx="0" uly="0" lrx="6613" lry="4677">
+      <graphic url="images/f6.png" width="6613px" height="4677px" />
+      <zone xml:id="f6_l1" ulx="1470" uly="689" lrx="1554" lry="743" />
+      <zone xml:id="f6_l2" ulx="1658" uly="676" lrx="3166" lry="757" />
+      <zone xml:id="f6_l3" ulx="1471" uly="799" lrx="3172" lry="873" />
+      <zone xml:id="f6_l4" ulx="1475" uly="863" lrx="3171" lry="931" />
+      <zone xml:id="f6_l5" ulx="1476" uly="923" lrx="2763" lry="990" />
+      <zone xml:id="f6_l6" ulx="1532" uly="994" lrx="3173" lry="1070" />
+      <zone xml:id="f6_l7" ulx="1470" uly="1066" lrx="3175" lry="1134" />
+      <zone xml:id="f6_l8" ulx="1470" uly="1124" lrx="3176" lry="1204" />
+      <zone xml:id="f6_l9" ulx="1471" uly="1191" lrx="3176" lry="1262" />
+      <zone xml:id="f6_l10" ulx="1470" uly="1257" lrx="3177" lry="1326" />
+      <zone xml:id="f6_l11" ulx="1478" uly="1319" lrx="3178" lry="1388" />
+      <zone xml:id="f6_l12" ulx="1475" uly="1386" lrx="3029" lry="1454" />
+      <zone xml:id="f6_l13" ulx="1473" uly="1449" lrx="3155" lry="1514" />
+      <zone xml:id="f6_l14" ulx="1491" uly="1506" lrx="3175" lry="1575" />
+      <zone xml:id="f6_l15" ulx="1647" uly="1572" lrx="1806" lry="1629" />
+      <zone xml:id="f6_l16" ulx="1533" uly="1639" lrx="3176" lry="1715" />
+      <zone xml:id="f6_l17" ulx="1474" uly="1707" lrx="3180" lry="1780" />
+      <zone xml:id="f6_l18" ulx="1473" uly="1772" lrx="3178" lry="1849" />
+      <zone xml:id="f6_l19" ulx="1476" uly="1834" lrx="3173" lry="1908" />
+      <zone xml:id="f6_l20" ulx="1478" uly="1904" lrx="3178" lry="1972" />
+      <zone xml:id="f6_l21" ulx="1476" uly="1967" lrx="3174" lry="2038" />
+      <zone xml:id="f6_l22" ulx="1478" uly="2033" lrx="3174" lry="2103" />
+      <zone xml:id="f6_l23" ulx="1478" uly="2095" lrx="3178" lry="2169" />
+      <zone xml:id="f6_l24" ulx="1471" uly="2163" lrx="3185" lry="2231" />
+      <zone xml:id="f6_l25" ulx="1478" uly="2229" lrx="3183" lry="2298" />
+      <zone xml:id="f6_l26" ulx="1483" uly="2293" lrx="2383" lry="2363" />
+      <zone xml:id="f6_l27" ulx="1496" uly="2372" lrx="3182" lry="2442" />
+      <zone xml:id="f6_l28" ulx="1476" uly="2433" lrx="3182" lry="2498" />
+      <zone xml:id="f6_l29" ulx="1478" uly="2490" lrx="3180" lry="2560" />
+      <zone xml:id="f6_l30" ulx="1465" uly="2551" lrx="3180" lry="2621" />
+      <zone xml:id="f6_l31" ulx="1478" uly="2607" lrx="3183" lry="2678" />
+      <zone xml:id="f6_l32" ulx="1486" uly="2669" lrx="3183" lry="2735" />
+      <zone xml:id="f6_l33" ulx="1477" uly="2723" lrx="3177" lry="2795" />
+      <zone xml:id="f6_l34" ulx="1478" uly="2784" lrx="3188" lry="2853" />
+      <zone xml:id="f6_l35" ulx="1483" uly="2848" lrx="3184" lry="2910" />
+      <zone xml:id="f6_l36" ulx="1481" uly="2902" lrx="3181" lry="2970" />
+      <zone xml:id="f6_l37" ulx="1481" uly="2963" lrx="3183" lry="3028" />
+      <zone xml:id="f6_l38" ulx="1476" uly="3019" lrx="3183" lry="3088" />
+      <zone xml:id="f6_l39" ulx="1478" uly="3078" lrx="3184" lry="3148" />
+      <zone xml:id="f6_l40" ulx="1476" uly="3137" lrx="3178" lry="3207" />
+      <zone xml:id="f6_l41" ulx="1479" uly="3197" lrx="3183" lry="3264" />
+      <zone xml:id="f6_l42" ulx="1483" uly="3255" lrx="3185" lry="3325" />
+      <zone xml:id="f6_l43" ulx="1481" uly="3315" lrx="3186" lry="3383" />
+      <zone xml:id="f6_l44" ulx="1480" uly="3375" lrx="3193" lry="3442" />
+      <zone xml:id="f6_l45" ulx="1481" uly="3434" lrx="2612" lry="3504" />
+      <zone xml:id="f6_l46" ulx="1540" uly="3507" lrx="3191" lry="3580" />
+      <zone xml:id="f6_l47" ulx="1471" uly="3573" lrx="3183" lry="3648" />
+      <zone xml:id="f6_l48" ulx="1470" uly="3638" lrx="3191" lry="3720" />
+      <zone xml:id="f6_l49" ulx="3129" uly="3712" lrx="3188" lry="3763" />
+      <zone xml:id="f6_l50" ulx="3484" uly="646" lrx="5005" lry="742" />
+      <zone xml:id="f6_l51" ulx="5106" uly="645" lrx="5181" lry="710" />
+      <zone xml:id="f6_l52" ulx="3479" uly="765" lrx="5187" lry="865" />
+      <zone xml:id="f6_l53" ulx="3482" uly="832" lrx="5196" lry="931" />
+      <zone xml:id="f6_l54" ulx="3482" uly="897" lrx="5190" lry="997" />
+      <zone xml:id="f6_l55" ulx="3482" uly="957" lrx="5193" lry="1069" />
+      <zone xml:id="f6_l56" ulx="3487" uly="1029" lrx="5190" lry="1128" />
+      <zone xml:id="f6_l57" ulx="3482" uly="1087" lrx="5197" lry="1189" />
+      <zone xml:id="f6_l58" ulx="3492" uly="1152" lrx="5200" lry="1255" />
+      <zone xml:id="f6_l59" ulx="3490" uly="1219" lrx="5197" lry="1322" />
+      <zone xml:id="f6_l60" ulx="3488" uly="1290" lrx="4918" lry="1384" />
+      <zone xml:id="f6_l61" ulx="3561" uly="1348" lrx="5202" lry="1450" />
+      <zone xml:id="f6_l62" ulx="3495" uly="1410" lrx="5203" lry="1519" />
+      <zone xml:id="f6_l63" ulx="3495" uly="1476" lrx="5207" lry="1588" />
+      <zone xml:id="f6_l64" ulx="3504" uly="1540" lrx="5210" lry="1644" />
+      <zone xml:id="f6_l65" ulx="3502" uly="1603" lrx="5216" lry="1709" />
+      <zone xml:id="f6_l66" ulx="3503" uly="1669" lrx="5206" lry="1770" />
+      <zone xml:id="f6_l67" ulx="3510" uly="1733" lrx="5215" lry="1839" />
+      <zone xml:id="f6_l68" ulx="3508" uly="1797" lrx="5220" lry="1904" />
+      <zone xml:id="f6_l69" ulx="3507" uly="1865" lrx="5216" lry="1970" />
+      <zone xml:id="f6_l70" ulx="3508" uly="1929" lrx="5220" lry="2033" />
+      <zone xml:id="f6_l71" ulx="3515" uly="1996" lrx="5221" lry="2101" />
+      <zone xml:id="f6_l72" ulx="3515" uly="2057" lrx="5229" lry="2166" />
+      <zone xml:id="f6_l73" ulx="3518" uly="2120" lrx="5227" lry="2226" />
+      <zone xml:id="f6_l74" ulx="3522" uly="2186" lrx="5227" lry="2289" />
+      <zone xml:id="f6_l75" ulx="3525" uly="2266" lrx="4514" lry="2357" />
+      <zone xml:id="f6_l76" ulx="3587" uly="2314" lrx="5235" lry="2414" />
+      <zone xml:id="f6_l77" ulx="3524" uly="2381" lrx="5229" lry="2488" />
+      <zone xml:id="f6_l78" ulx="3525" uly="2447" lrx="5238" lry="2551" />
+      <zone xml:id="f6_l79" ulx="3526" uly="2508" lrx="5239" lry="2612" />
+      <zone xml:id="f6_l80" ulx="3525" uly="2573" lrx="5245" lry="2677" />
+      <zone xml:id="f6_l81" ulx="3536" uly="2638" lrx="5244" lry="2739" />
+      <zone xml:id="f6_l82" ulx="3531" uly="2703" lrx="5247" lry="2805" />
+      <zone xml:id="f6_l83" ulx="3536" uly="2769" lrx="5253" lry="2869" />
+      <zone xml:id="f6_l84" ulx="3536" uly="2839" lrx="5250" lry="2933" />
+      <zone xml:id="f6_l85" ulx="3543" uly="2908" lrx="4897" lry="2994" />
+      <zone xml:id="f6_l86" ulx="3597" uly="2981" lrx="5252" lry="3071" />
+      <zone xml:id="f6_l87" ulx="3539" uly="3045" lrx="5252" lry="3134" />
+      <zone xml:id="f6_l88" ulx="3543" uly="3104" lrx="5258" lry="3193" />
+      <zone xml:id="f6_l89" ulx="3544" uly="3162" lrx="5261" lry="3252" />
+      <zone xml:id="f6_l90" ulx="3548" uly="3218" lrx="5265" lry="3311" />
+      <zone xml:id="f6_l91" ulx="3551" uly="3279" lrx="5266" lry="3372" />
+      <zone xml:id="f6_l92" ulx="3553" uly="3339" lrx="5268" lry="3434" />
+      <zone xml:id="f6_l93" ulx="3554" uly="3400" lrx="5272" lry="3490" />
+      <zone xml:id="f6_l94" ulx="3558" uly="3457" lrx="5271" lry="3548" />
+      <zone xml:id="f6_l95" ulx="3554" uly="3515" lrx="5277" lry="3610" />
+      <zone xml:id="f6_l96" ulx="3558" uly="3578" lrx="5282" lry="3670" />
+      <zone xml:id="f6_l97" ulx="3562" uly="3634" lrx="5284" lry="3728" />
+      <zone xml:id="f6_l98" ulx="4325" uly="3719" lrx="4420" lry="3771" />
+      <zone xml:id="f6_l99" ulx="5161" uly="3697" lrx="5283" lry="3755" />
+    </surface>
+    <surface xml:id="f7" ulx="0" uly="0" lrx="6613" lry="4677">
+      <graphic url="images/f7.png" width="6613px" height="4677px" />
+      <zone xml:id="f7_l1" ulx="1488" uly="696" lrx="1553" lry="754" />
+      <zone xml:id="f7_l2" ulx="1673" uly="694" lrx="3188" lry="777" />
+      <zone xml:id="f7_l3" ulx="1488" uly="818" lrx="3193" lry="892" />
+      <zone xml:id="f7_l4" ulx="1484" uly="878" lrx="3195" lry="952" />
+      <zone xml:id="f7_l5" ulx="1488" uly="935" lrx="2082" lry="1006" />
+      <zone xml:id="f7_l6" ulx="1552" uly="1029" lrx="3190" lry="1110" />
+      <zone xml:id="f7_l7" ulx="1483" uly="1092" lrx="3192" lry="1172" />
+      <zone xml:id="f7_l8" ulx="1485" uly="1158" lrx="3190" lry="1240" />
+      <zone xml:id="f7_l9" ulx="1480" uly="1225" lrx="3189" lry="1305" />
+      <zone xml:id="f7_l10" ulx="1481" uly="1287" lrx="3186" lry="1366" />
+      <zone xml:id="f7_l11" ulx="1481" uly="1345" lrx="2040" lry="1423" />
+      <zone xml:id="f7_l12" ulx="1542" uly="1415" lrx="3185" lry="1495" />
+      <zone xml:id="f7_l13" ulx="1478" uly="1484" lrx="3185" lry="1560" />
+      <zone xml:id="f7_l14" ulx="1480" uly="1543" lrx="3182" lry="1621" />
+      <zone xml:id="f7_l15" ulx="1476" uly="1609" lrx="3182" lry="1684" />
+      <zone xml:id="f7_l16" ulx="1476" uly="1671" lrx="3176" lry="1748" />
+      <zone xml:id="f7_l17" ulx="1475" uly="1736" lrx="3174" lry="1812" />
+      <zone xml:id="f7_l18" ulx="1473" uly="1803" lrx="3183" lry="1880" />
+      <zone xml:id="f7_l19" ulx="1473" uly="1867" lrx="3179" lry="1944" />
+      <zone xml:id="f7_l20" ulx="1473" uly="1931" lrx="3177" lry="2010" />
+      <zone xml:id="f7_l21" ulx="1475" uly="1993" lrx="3178" lry="2071" />
+      <zone xml:id="f7_l22" ulx="1467" uly="2059" lrx="3174" lry="2138" />
+      <zone xml:id="f7_l23" ulx="1471" uly="2125" lrx="3173" lry="2199" />
+      <zone xml:id="f7_l24" ulx="1471" uly="2185" lrx="3179" lry="2274" />
+      <zone xml:id="f7_l25" ulx="1470" uly="2249" lrx="3006" lry="2325" />
+      <zone xml:id="f7_l26" ulx="1529" uly="2356" lrx="3171" lry="2431" />
+      <zone xml:id="f7_l27" ulx="1463" uly="2415" lrx="3174" lry="2491" />
+      <zone xml:id="f7_l28" ulx="1461" uly="2472" lrx="3173" lry="2545" />
+      <zone xml:id="f7_l29" ulx="1461" uly="2535" lrx="3169" lry="2603" />
+      <zone xml:id="f7_l30" ulx="1460" uly="2597" lrx="1644" lry="2655" />
+      <zone xml:id="f7_l31" ulx="1527" uly="2684" lrx="3171" lry="2767" />
+      <zone xml:id="f7_l32" ulx="1457" uly="2749" lrx="3174" lry="2829" />
+      <zone xml:id="f7_l33" ulx="1466" uly="2816" lrx="3171" lry="2895" />
+      <zone xml:id="f7_l34" ulx="1461" uly="2883" lrx="3169" lry="2963" />
+      <zone xml:id="f7_l35" ulx="1460" uly="2944" lrx="3171" lry="3029" />
+      <zone xml:id="f7_l36" ulx="1463" uly="3010" lrx="3170" lry="3094" />
+      <zone xml:id="f7_l37" ulx="1463" uly="3070" lrx="3172" lry="3156" />
+      <zone xml:id="f7_l38" ulx="1461" uly="3141" lrx="3171" lry="3220" />
+      <zone xml:id="f7_l39" ulx="1462" uly="3204" lrx="3170" lry="3282" />
+      <zone xml:id="f7_l40" ulx="1458" uly="3266" lrx="3173" lry="3348" />
+      <zone xml:id="f7_l41" ulx="1456" uly="3331" lrx="3174" lry="3418" />
+      <zone xml:id="f7_l42" ulx="1456" uly="3392" lrx="3163" lry="3477" />
+      <zone xml:id="f7_l43" ulx="1453" uly="3463" lrx="3103" lry="3543" />
+      <zone xml:id="f7_l44" ulx="1517" uly="3544" lrx="3167" lry="3624" />
+      <zone xml:id="f7_l45" ulx="1453" uly="3605" lrx="3162" lry="3681" />
+      <zone xml:id="f7_l46" ulx="1452" uly="3664" lrx="3166" lry="3740" />
+      <zone xml:id="f7_l47" ulx="3084" uly="3743" lrx="3161" lry="3793" />
+      <zone xml:id="f7_l48" ulx="3510" uly="640" lrx="5039" lry="743" />
+      <zone xml:id="f7_l49" ulx="5158" uly="645" lrx="5227" lry="707" />
+      <zone xml:id="f7_l50" ulx="3507" uly="760" lrx="5233" lry="866" />
+      <zone xml:id="f7_l51" ulx="3505" uly="825" lrx="5106" lry="926" />
+      <zone xml:id="f7_l52" ulx="3582" uly="885" lrx="5242" lry="996" />
+      <zone xml:id="f7_l53" ulx="3508" uly="956" lrx="5238" lry="1070" />
+      <zone xml:id="f7_l54" ulx="3516" uly="1017" lrx="5250" lry="1126" />
+      <zone xml:id="f7_l55" ulx="3513" uly="1080" lrx="5239" lry="1195" />
+      <zone xml:id="f7_l56" ulx="3520" uly="1149" lrx="5244" lry="1256" />
+      <zone xml:id="f7_l57" ulx="3518" uly="1210" lrx="5250" lry="1325" />
+      <zone xml:id="f7_l58" ulx="3516" uly="1277" lrx="5248" lry="1388" />
+      <zone xml:id="f7_l59" ulx="3516" uly="1338" lrx="5248" lry="1451" />
+      <zone xml:id="f7_l60" ulx="3520" uly="1405" lrx="5256" lry="1513" />
+      <zone xml:id="f7_l61" ulx="3521" uly="1467" lrx="5258" lry="1580" />
+      <zone xml:id="f7_l62" ulx="3523" uly="1530" lrx="5256" lry="1640" />
+      <zone xml:id="f7_l63" ulx="3533" uly="1596" lrx="5256" lry="1709" />
+      <zone xml:id="f7_l64" ulx="3531" uly="1663" lrx="5257" lry="1777" />
+      <zone xml:id="f7_l65" ulx="3528" uly="1726" lrx="5263" lry="1838" />
+      <zone xml:id="f7_l66" ulx="3530" uly="1825" lrx="3967" lry="1898" />
+      <zone xml:id="f7_l67" ulx="3592" uly="1869" lrx="5262" lry="1969" />
+      <zone xml:id="f7_l68" ulx="3533" uly="1928" lrx="5268" lry="2032" />
+      <zone xml:id="f7_l69" ulx="3536" uly="1991" lrx="5261" lry="2091" />
+      <zone xml:id="f7_l70" ulx="3534" uly="2049" lrx="5214" lry="2151" />
+      <zone xml:id="f7_l71" ulx="3603" uly="2116" lrx="5273" lry="2218" />
+      <zone xml:id="f7_l72" ulx="3538" uly="2184" lrx="5274" lry="2289" />
+      <zone xml:id="f7_l73" ulx="3539" uly="2244" lrx="5271" lry="2355" />
+      <zone xml:id="f7_l74" ulx="3539" uly="2310" lrx="5279" lry="2413" />
+      <zone xml:id="f7_l75" ulx="3544" uly="2369" lrx="5274" lry="2482" />
+      <zone xml:id="f7_l76" ulx="3546" uly="2435" lrx="5284" lry="2548" />
+      <zone xml:id="f7_l77" ulx="3543" uly="2502" lrx="5284" lry="2608" />
+      <zone xml:id="f7_l78" ulx="3541" uly="2565" lrx="5286" lry="2676" />
+      <zone xml:id="f7_l79" ulx="3548" uly="2642" lrx="4851" lry="2734" />
+      <zone xml:id="f7_l80" ulx="3617" uly="2691" lrx="5285" lry="2801" />
+      <zone xml:id="f7_l81" ulx="3553" uly="2762" lrx="5284" lry="2868" />
+      <zone xml:id="f7_l82" ulx="3553" uly="2825" lrx="5289" lry="2928" />
+      <zone xml:id="f7_l83" ulx="3558" uly="2889" lrx="5285" lry="2998" />
+      <zone xml:id="f7_l84" ulx="3559" uly="2955" lrx="5290" lry="3062" />
+      <zone xml:id="f7_l85" ulx="3562" uly="3025" lrx="5294" lry="3123" />
+      <zone xml:id="f7_l86" ulx="3561" uly="3089" lrx="5115" lry="3185" />
+      <zone xml:id="f7_l87" ulx="3633" uly="3146" lrx="5292" lry="3249" />
+      <zone xml:id="f7_l88" ulx="3559" uly="3215" lrx="5298" lry="3318" />
+      <zone xml:id="f7_l89" ulx="3567" uly="3276" lrx="5294" lry="3378" />
+      <zone xml:id="f7_l90" ulx="3564" uly="3346" lrx="5297" lry="3446" />
+      <zone xml:id="f7_l91" ulx="3571" uly="3411" lrx="5301" lry="3509" />
+      <zone xml:id="f7_l92" ulx="3577" uly="3508" lrx="4011" lry="3569" />
+      <zone xml:id="f7_l93" ulx="3574" uly="3551" lrx="5294" lry="3645" />
+      <zone xml:id="f7_l94" ulx="3600" uly="3609" lrx="5278" lry="3704" />
+      <zone xml:id="f7_l95" ulx="4422" uly="3691" lrx="4532" lry="3748" />
+      <zone xml:id="f7_l96" ulx="5191" uly="3672" lrx="5310" lry="3728" />
+    </surface>
+    <surface xml:id="f8" ulx="0" uly="0" lrx="6613" lry="4677">
+      <graphic url="images/f8.png" width="6613px" height="4677px" />
+      <zone xml:id="f8_l1" ulx="1463" uly="663" lrx="1530" lry="720" />
+      <zone xml:id="f8_l2" ulx="1655" uly="663" lrx="3174" lry="750" />
+      <zone xml:id="f8_l3" ulx="1527" uly="785" lrx="3174" lry="871" />
+      <zone xml:id="f8_l4" ulx="1463" uly="847" lrx="3171" lry="931" />
+      <zone xml:id="f8_l5" ulx="1463" uly="912" lrx="3173" lry="995" />
+      <zone xml:id="f8_l6" ulx="1463" uly="975" lrx="2767" lry="1060" />
+      <zone xml:id="f8_l7" ulx="1524" uly="1039" lrx="3173" lry="1122" />
+      <zone xml:id="f8_l8" ulx="1452" uly="1106" lrx="3167" lry="1186" />
+      <zone xml:id="f8_l9" ulx="1457" uly="1169" lrx="3172" lry="1252" />
+      <zone xml:id="f8_l10" ulx="1455" uly="1232" lrx="3170" lry="1321" />
+      <zone xml:id="f8_l11" ulx="1453" uly="1300" lrx="3165" lry="1380" />
+      <zone xml:id="f8_l12" ulx="1452" uly="1365" lrx="3169" lry="1447" />
+      <zone xml:id="f8_l13" ulx="1453" uly="1432" lrx="3171" lry="1512" />
+      <zone xml:id="f8_l14" ulx="1452" uly="1493" lrx="3168" lry="1576" />
+      <zone xml:id="f8_l15" ulx="1447" uly="1551" lrx="3142" lry="1637" />
+      <zone xml:id="f8_l16" ulx="1517" uly="1616" lrx="3163" lry="1702" />
+      <zone xml:id="f8_l17" ulx="1448" uly="1684" lrx="3161" lry="1768" />
+      <zone xml:id="f8_l18" ulx="1455" uly="1745" lrx="3172" lry="1832" />
+      <zone xml:id="f8_l19" ulx="1448" uly="1806" lrx="3163" lry="1899" />
+      <zone xml:id="f8_l20" ulx="1447" uly="1883" lrx="3156" lry="1964" />
+      <zone xml:id="f8_l21" ulx="1447" uly="1939" lrx="3159" lry="2026" />
+      <zone xml:id="f8_l22" ulx="1448" uly="2002" lrx="3159" lry="2087" />
+      <zone xml:id="f8_l23" ulx="1443" uly="2075" lrx="3155" lry="2152" />
+      <zone xml:id="f8_l24" ulx="1443" uly="2134" lrx="3162" lry="2217" />
+      <zone xml:id="f8_l25" ulx="1442" uly="2193" lrx="3160" lry="2282" />
+      <zone xml:id="f8_l26" ulx="1440" uly="2263" lrx="3164" lry="2348" />
+      <zone xml:id="f8_l27" ulx="1440" uly="2326" lrx="3159" lry="2415" />
+      <zone xml:id="f8_l28" ulx="1442" uly="2395" lrx="3156" lry="2478" />
+      <zone xml:id="f8_l29" ulx="1437" uly="2456" lrx="3152" lry="2548" />
+      <zone xml:id="f8_l30" ulx="1438" uly="2520" lrx="3154" lry="2613" />
+      <zone xml:id="f8_l31" ulx="1434" uly="2586" lrx="3153" lry="2673" />
+      <zone xml:id="f8_l32" ulx="1439" uly="2648" lrx="2213" lry="2727" />
+      <zone xml:id="f8_l33" ulx="1489" uly="2740" lrx="3149" lry="2823" />
+      <zone xml:id="f8_l34" ulx="1427" uly="2801" lrx="3152" lry="2884" />
+      <zone xml:id="f8_l35" ulx="1430" uly="2862" lrx="3150" lry="2946" />
+      <zone xml:id="f8_l36" ulx="1432" uly="2925" lrx="3146" lry="3006" />
+      <zone xml:id="f8_l37" ulx="1429" uly="2976" lrx="3146" lry="3061" />
+      <zone xml:id="f8_l38" ulx="1433" uly="3041" lrx="3142" lry="3122" />
+      <zone xml:id="f8_l39" ulx="1429" uly="3096" lrx="3151" lry="3180" />
+      <zone xml:id="f8_l40" ulx="1428" uly="3154" lrx="3147" lry="3244" />
+      <zone xml:id="f8_l41" ulx="1418" uly="3211" lrx="3153" lry="3303" />
+      <zone xml:id="f8_l42" ulx="1424" uly="3273" lrx="3143" lry="3358" />
+      <zone xml:id="f8_l43" ulx="1419" uly="3339" lrx="3148" lry="3416" />
+      <zone xml:id="f8_l44" ulx="1420" uly="3390" lrx="3146" lry="3477" />
+      <zone xml:id="f8_l45" ulx="1424" uly="3449" lrx="1922" lry="3519" />
+      <zone xml:id="f8_l46" ulx="1483" uly="3541" lrx="3147" lry="3630" />
+      <zone xml:id="f8_l47" ulx="1412" uly="3611" lrx="3146" lry="3694" />
+      <zone xml:id="f8_l48" ulx="3056" uly="3690" lrx="3139" lry="3758" />
+      <zone xml:id="f8_l49" ulx="3488" uly="641" lrx="5014" lry="739" />
+      <zone xml:id="f8_l50" ulx="5130" uly="645" lrx="5204" lry="709" />
+      <zone xml:id="f8_l51" ulx="3487" uly="761" lrx="5212" lry="868" />
+      <zone xml:id="f8_l52" ulx="3485" uly="828" lrx="5212" lry="933" />
+      <zone xml:id="f8_l53" ulx="3487" uly="892" lrx="5214" lry="993" />
+      <zone xml:id="f8_l54" ulx="3487" uly="955" lrx="5224" lry="1057" />
+      <zone xml:id="f8_l55" ulx="3490" uly="1026" lrx="5215" lry="1122" />
+      <zone xml:id="f8_l56" ulx="3494" uly="1085" lrx="5220" lry="1189" />
+      <zone xml:id="f8_l57" ulx="3488" uly="1148" lrx="5225" lry="1256" />
+      <zone xml:id="f8_l58" ulx="3490" uly="1214" lrx="5218" lry="1319" />
+      <zone xml:id="f8_l59" ulx="3495" uly="1282" lrx="5227" lry="1382" />
+      <zone xml:id="f8_l60" ulx="3499" uly="1353" lrx="5227" lry="1445" />
+      <zone xml:id="f8_l61" ulx="3499" uly="1410" lrx="5224" lry="1509" />
+      <zone xml:id="f8_l62" ulx="3499" uly="1489" lrx="4482" lry="1571" />
+      <zone xml:id="f8_l63" ulx="3567" uly="1538" lrx="5230" lry="1637" />
+      <zone xml:id="f8_l64" ulx="3502" uly="1606" lrx="5232" lry="1705" />
+      <zone xml:id="f8_l65" ulx="3510" uly="1667" lrx="5232" lry="1771" />
+      <zone xml:id="f8_l66" ulx="3508" uly="1734" lrx="5234" lry="1835" />
+      <zone xml:id="f8_l67" ulx="3507" uly="1795" lrx="5237" lry="1900" />
+      <zone xml:id="f8_l68" ulx="3507" uly="1862" lrx="5234" lry="1957" />
+      <zone xml:id="f8_l69" ulx="3506" uly="1929" lrx="5248" lry="2025" />
+      <zone xml:id="f8_l70" ulx="3512" uly="1989" lrx="5245" lry="2090" />
+      <zone xml:id="f8_l71" ulx="3515" uly="2059" lrx="5250" lry="2153" />
+      <zone xml:id="f8_l72" ulx="3518" uly="2123" lrx="5246" lry="2221" />
+      <zone xml:id="f8_l73" ulx="3518" uly="2186" lrx="5255" lry="2282" />
+      <zone xml:id="f8_l74" ulx="3518" uly="2269" lrx="4425" lry="2349" />
+      <zone xml:id="f8_l75" ulx="3581" uly="2334" lrx="5273" lry="2421" />
+      <zone xml:id="f8_l76" ulx="3521" uly="2397" lrx="5259" lry="2485" />
+      <zone xml:id="f8_l77" ulx="3526" uly="2455" lrx="5265" lry="2544" />
+      <zone xml:id="f8_l78" ulx="3528" uly="2514" lrx="5262" lry="2600" />
+      <zone xml:id="f8_l79" ulx="3523" uly="2574" lrx="5264" lry="2659" />
+      <zone xml:id="f8_l80" ulx="3530" uly="2634" lrx="5259" lry="2718" />
+      <zone xml:id="f8_l81" ulx="3531" uly="2690" lrx="5263" lry="2777" />
+      <zone xml:id="f8_l82" ulx="3535" uly="2755" lrx="5264" lry="2835" />
+      <zone xml:id="f8_l83" ulx="3534" uly="2813" lrx="5270" lry="2894" />
+      <zone xml:id="f8_l84" ulx="3533" uly="2868" lrx="5292" lry="2954" />
+      <zone xml:id="f8_l85" ulx="3531" uly="2939" lrx="4485" lry="3014" />
+      <zone xml:id="f8_l86" ulx="3595" uly="3012" lrx="5273" lry="3105" />
+      <zone xml:id="f8_l87" ulx="3535" uly="3081" lrx="5277" lry="3170" />
+      <zone xml:id="f8_l88" ulx="3538" uly="3145" lrx="5277" lry="3237" />
+      <zone xml:id="f8_l89" ulx="3541" uly="3211" lrx="5287" lry="3303" />
+      <zone xml:id="f8_l90" ulx="3538" uly="3278" lrx="5286" lry="3369" />
+      <zone xml:id="f8_l91" ulx="3539" uly="3346" lrx="5277" lry="3433" />
+      <zone xml:id="f8_l92" ulx="3541" uly="3401" lrx="5283" lry="3498" />
+      <zone xml:id="f8_l93" ulx="3548" uly="3470" lrx="5284" lry="3553" />
+      <zone xml:id="f8_l94" ulx="3551" uly="3534" lrx="5288" lry="3623" />
+      <zone xml:id="f8_l95" ulx="3544" uly="3605" lrx="5279" lry="3689" />
+      <zone xml:id="f8_l96" ulx="5163" uly="3680" lrx="5285" lry="3734" />
+    </surface>
+    <surface xml:id="f9" ulx="0" uly="0" lrx="6613" lry="4677">
+      <graphic url="images/f9.png" width="6613px" height="4677px" />
+      <zone xml:id="f9_l1" ulx="1485" uly="671" lrx="1574" lry="737" />
+      <zone xml:id="f9_l2" ulx="1676" uly="670" lrx="3199" lry="762" />
+      <zone xml:id="f9_l3" ulx="1483" uly="796" lrx="3194" lry="886" />
+      <zone xml:id="f9_l4" ulx="1483" uly="857" lrx="3194" lry="948" />
+      <zone xml:id="f9_l5" ulx="1481" uly="923" lrx="3197" lry="1016" />
+      <zone xml:id="f9_l6" ulx="1481" uly="983" lrx="2739" lry="1069" />
+      <zone xml:id="f9_l7" ulx="1540" uly="1044" lrx="3194" lry="1141" />
+      <zone xml:id="f9_l8" ulx="1478" uly="1114" lrx="3196" lry="1200" />
+      <zone xml:id="f9_l9" ulx="1474" uly="1183" lrx="3192" lry="1267" />
+      <zone xml:id="f9_l10" ulx="1473" uly="1245" lrx="3192" lry="1336" />
+      <zone xml:id="f9_l11" ulx="1475" uly="1310" lrx="3196" lry="1398" />
+      <zone xml:id="f9_l12" ulx="1471" uly="1375" lrx="3188" lry="1456" />
+      <zone xml:id="f9_l13" ulx="1479" uly="1432" lrx="3189" lry="1524" />
+      <zone xml:id="f9_l14" ulx="1472" uly="1501" lrx="3189" lry="1589" />
+      <zone xml:id="f9_l15" ulx="1471" uly="1560" lrx="3186" lry="1656" />
+      <zone xml:id="f9_l16" ulx="1473" uly="1625" lrx="3186" lry="1717" />
+      <zone xml:id="f9_l17" ulx="1470" uly="1696" lrx="3185" lry="1780" />
+      <zone xml:id="f9_l18" ulx="1470" uly="1754" lrx="3184" lry="1843" />
+      <zone xml:id="f9_l19" ulx="1468" uly="1819" lrx="3185" lry="1904" />
+      <zone xml:id="f9_l20" ulx="1466" uly="1891" lrx="3183" lry="1971" />
+      <zone xml:id="f9_l21" ulx="1464" uly="1943" lrx="3185" lry="2033" />
+      <zone xml:id="f9_l22" ulx="1463" uly="2009" lrx="3185" lry="2099" />
+      <zone xml:id="f9_l23" ulx="1465" uly="2076" lrx="3177" lry="2167" />
+      <zone xml:id="f9_l24" ulx="1463" uly="2140" lrx="3177" lry="2229" />
+      <zone xml:id="f9_l25" ulx="1461" uly="2208" lrx="3179" lry="2296" />
+      <zone xml:id="f9_l26" ulx="1460" uly="2270" lrx="3178" lry="2355" />
+      <zone xml:id="f9_l27" ulx="1458" uly="2338" lrx="3179" lry="2420" />
+      <zone xml:id="f9_l28" ulx="1461" uly="2402" lrx="3175" lry="2487" />
+      <zone xml:id="f9_l29" ulx="1460" uly="2463" lrx="3179" lry="2551" />
+      <zone xml:id="f9_l30" ulx="1458" uly="2527" lrx="3174" lry="2613" />
+      <zone xml:id="f9_l31" ulx="1459" uly="2592" lrx="3174" lry="2682" />
+      <zone xml:id="f9_l32" ulx="1455" uly="2659" lrx="3174" lry="2744" />
+      <zone xml:id="f9_l33" ulx="1450" uly="2719" lrx="3171" lry="2812" />
+      <zone xml:id="f9_l34" ulx="1455" uly="2783" lrx="3174" lry="2876" />
+      <zone xml:id="f9_l35" ulx="1455" uly="2851" lrx="3176" lry="2943" />
+      <zone xml:id="f9_l36" ulx="1452" uly="2919" lrx="3178" lry="3001" />
+      <zone xml:id="f9_l37" ulx="1452" uly="2979" lrx="3168" lry="3067" />
+      <zone xml:id="f9_l38" ulx="1452" uly="3047" lrx="3167" lry="3129" />
+      <zone xml:id="f9_l39" ulx="1452" uly="3105" lrx="3168" lry="3191" />
+      <zone xml:id="f9_l40" ulx="1448" uly="3176" lrx="3170" lry="3258" />
+      <zone xml:id="f9_l41" ulx="1450" uly="3231" lrx="3173" lry="3328" />
+      <zone xml:id="f9_l42" ulx="1445" uly="3303" lrx="1785" lry="3369" />
+      <zone xml:id="f9_l43" ulx="1508" uly="3365" lrx="3164" lry="3451" />
+      <zone xml:id="f9_l44" ulx="1443" uly="3426" lrx="3169" lry="3516" />
+      <zone xml:id="f9_l45" ulx="1445" uly="3495" lrx="3168" lry="3583" />
+      <zone xml:id="f9_l46" ulx="1441" uly="3559" lrx="2782" lry="3648" />
+      <zone xml:id="f9_l47" ulx="1504" uly="3624" lrx="3168" lry="3715" />
+      <zone xml:id="f9_l48" ulx="3031" uly="3710" lrx="3161" lry="3773" />
+      <zone xml:id="f9_l49" ulx="3513" uly="660" lrx="5034" lry="759" />
+      <zone xml:id="f9_l50" ulx="5058" uly="655" lrx="5145" lry="732" />
+      <zone xml:id="f9_l51" ulx="5143" uly="660" lrx="5215" lry="722" />
+      <zone xml:id="f9_l52" ulx="3510" uly="777" lrx="5229" lry="881" />
+      <zone xml:id="f9_l53" ulx="3508" uly="843" lrx="5233" lry="948" />
+      <zone xml:id="f9_l54" ulx="3513" uly="907" lrx="5239" lry="1013" />
+      <zone xml:id="f9_l55" ulx="3516" uly="975" lrx="5234" lry="1082" />
+      <zone xml:id="f9_l56" ulx="3515" uly="1035" lrx="5240" lry="1150" />
+      <zone xml:id="f9_l57" ulx="3513" uly="1124" lrx="4387" lry="1216" />
+      <zone xml:id="f9_l58" ulx="3576" uly="1158" lrx="5239" lry="1272" />
+      <zone xml:id="f9_l59" ulx="3521" uly="1228" lrx="5241" lry="1345" />
+      <zone xml:id="f9_l60" ulx="3521" uly="1293" lrx="5248" lry="1410" />
+      <zone xml:id="f9_l61" ulx="3525" uly="1356" lrx="5241" lry="1474" />
+      <zone xml:id="f9_l62" ulx="3525" uly="1422" lrx="5252" lry="1532" />
+      <zone xml:id="f9_l63" ulx="3528" uly="1488" lrx="5246" lry="1597" />
+      <zone xml:id="f9_l64" ulx="3528" uly="1556" lrx="5244" lry="1663" />
+      <zone xml:id="f9_l65" ulx="3533" uly="1617" lrx="5246" lry="1721" />
+      <zone xml:id="f9_l66" ulx="3528" uly="1678" lrx="5247" lry="1789" />
+      <zone xml:id="f9_l67" ulx="3531" uly="1747" lrx="5253" lry="1852" />
+      <zone xml:id="f9_l68" ulx="3536" uly="1817" lrx="5256" lry="1920" />
+      <zone xml:id="f9_l69" ulx="3531" uly="1878" lrx="5256" lry="1985" />
+      <zone xml:id="f9_l70" ulx="3539" uly="1940" lrx="5263" lry="2048" />
+      <zone xml:id="f9_l71" ulx="3536" uly="2000" lrx="5256" lry="2110" />
+      <zone xml:id="f9_l72" ulx="3535" uly="2065" lrx="5264" lry="2169" />
+      <zone xml:id="f9_l73" ulx="3538" uly="2136" lrx="5263" lry="2238" />
+      <zone xml:id="f9_l74" ulx="3541" uly="2193" lrx="5266" lry="2299" />
+      <zone xml:id="f9_l75" ulx="3541" uly="2260" lrx="5269" lry="2368" />
+      <zone xml:id="f9_l76" ulx="3541" uly="2325" lrx="5266" lry="2434" />
+      <zone xml:id="f9_l77" ulx="3541" uly="2392" lrx="5265" lry="2498" />
+      <zone xml:id="f9_l78" ulx="3544" uly="2457" lrx="5264" lry="2560" />
+      <zone xml:id="f9_l79" ulx="3546" uly="2518" lrx="5265" lry="2630" />
+      <zone xml:id="f9_l80" ulx="3546" uly="2588" lrx="5270" lry="2687" />
+      <zone xml:id="f9_l81" ulx="3551" uly="2683" lrx="4069" lry="2750" />
+      <zone xml:id="f9_l82" ulx="3613" uly="2732" lrx="5270" lry="2831" />
+      <zone xml:id="f9_l83" ulx="3552" uly="2792" lrx="5271" lry="2894" />
+      <zone xml:id="f9_l84" ulx="3551" uly="2856" lrx="5273" lry="2954" />
+      <zone xml:id="f9_l85" ulx="3554" uly="2914" lrx="5279" lry="3008" />
+      <zone xml:id="f9_l86" ulx="3556" uly="2967" lrx="5284" lry="3069" />
+      <zone xml:id="f9_l87" ulx="3558" uly="3028" lrx="5276" lry="3131" />
+      <zone xml:id="f9_l88" ulx="3557" uly="3090" lrx="5247" lry="3193" />
+      <zone xml:id="f9_l89" ulx="3625" uly="3164" lrx="5291" lry="3268" />
+      <zone xml:id="f9_l90" ulx="3559" uly="3229" lrx="5282" lry="3331" />
+      <zone xml:id="f9_l91" ulx="3559" uly="3294" lrx="5286" lry="3400" />
+      <zone xml:id="f9_l92" ulx="3562" uly="3359" lrx="5288" lry="3462" />
+      <zone xml:id="f9_l93" ulx="3562" uly="3423" lrx="5290" lry="3524" />
+      <zone xml:id="f9_l94" ulx="3562" uly="3489" lrx="5297" lry="3591" />
+      <zone xml:id="f9_l95" ulx="3567" uly="3557" lrx="5291" lry="3661" />
+      <zone xml:id="f9_l96" ulx="3567" uly="3637" lrx="4685" lry="3729" />
+      <zone xml:id="f9_l97" ulx="5152" uly="3686" lrx="5301" lry="3748" />
+    </surface>
+    <surface xml:id="f10" ulx="0" uly="0" lrx="6613" lry="4677">
+      <graphic url="images/f10.png" width="6613px" height="4677px" />
+      <zone xml:id="f10_l1" ulx="1468" uly="660" lrx="1553" lry="722" />
+      <zone xml:id="f10_l2" ulx="1655" uly="658" lrx="3172" lry="750" />
+      <zone xml:id="f10_l3" ulx="1527" uly="783" lrx="3169" lry="873" />
+      <zone xml:id="f10_l4" ulx="1461" uly="846" lrx="3171" lry="935" />
+      <zone xml:id="f10_l5" ulx="1463" uly="908" lrx="3173" lry="1002" />
+      <zone xml:id="f10_l6" ulx="1463" uly="977" lrx="3170" lry="1062" />
+      <zone xml:id="f10_l7" ulx="1463" uly="1039" lrx="3180" lry="1128" />
+      <zone xml:id="f10_l8" ulx="1460" uly="1107" lrx="3169" lry="1196" />
+      <zone xml:id="f10_l9" ulx="1460" uly="1163" lrx="3172" lry="1259" />
+      <zone xml:id="f10_l10" ulx="1460" uly="1230" lrx="3173" lry="1323" />
+      <zone xml:id="f10_l11" ulx="1458" uly="1295" lrx="3173" lry="1391" />
+      <zone xml:id="f10_l12" ulx="1459" uly="1358" lrx="3173" lry="1452" />
+      <zone xml:id="f10_l13" ulx="1458" uly="1425" lrx="3168" lry="1514" />
+      <zone xml:id="f10_l14" ulx="1457" uly="1488" lrx="3171" lry="1580" />
+      <zone xml:id="f10_l15" ulx="1457" uly="1559" lrx="3169" lry="1641" />
+      <zone xml:id="f10_l16" ulx="1455" uly="1613" lrx="3176" lry="1707" />
+      <zone xml:id="f10_l17" ulx="1458" uly="1681" lrx="3170" lry="1769" />
+      <zone xml:id="f10_l18" ulx="1463" uly="1744" lrx="3000" lry="1828" />
+      <zone xml:id="f10_l19" ulx="1525" uly="1810" lrx="3163" lry="1898" />
+      <zone xml:id="f10_l20" ulx="1451" uly="1873" lrx="3167" lry="1962" />
+      <zone xml:id="f10_l21" ulx="1454" uly="1941" lrx="3167" lry="2030" />
+      <zone xml:id="f10_l22" ulx="1451" uly="2001" lrx="3168" lry="2095" />
+      <zone xml:id="f10_l23" ulx="1456" uly="2066" lrx="3172" lry="2159" />
+      <zone xml:id="f10_l24" ulx="1455" uly="2133" lrx="3168" lry="2225" />
+      <zone xml:id="f10_l25" ulx="1453" uly="2196" lrx="3164" lry="2289" />
+      <zone xml:id="f10_l26" ulx="1453" uly="2257" lrx="3168" lry="2356" />
+      <zone xml:id="f10_l27" ulx="1453" uly="2323" lrx="3171" lry="2414" />
+      <zone xml:id="f10_l28" ulx="1453" uly="2387" lrx="3163" lry="2486" />
+      <zone xml:id="f10_l29" ulx="1452" uly="2455" lrx="3164" lry="2545" />
+      <zone xml:id="f10_l30" ulx="1450" uly="2513" lrx="3166" lry="2607" />
+      <zone xml:id="f10_l31" ulx="1453" uly="2579" lrx="3163" lry="2672" />
+      <zone xml:id="f10_l32" ulx="1452" uly="2647" lrx="3165" lry="2742" />
+      <zone xml:id="f10_l33" ulx="1453" uly="2712" lrx="3159" lry="2810" />
+      <zone xml:id="f10_l34" ulx="1448" uly="2781" lrx="3160" lry="2867" />
+      <zone xml:id="f10_l35" ulx="1450" uly="2835" lrx="3161" lry="2933" />
+      <zone xml:id="f10_l36" ulx="1448" uly="2904" lrx="3166" lry="3000" />
+      <zone xml:id="f10_l37" ulx="1447" uly="2967" lrx="3163" lry="3066" />
+      <zone xml:id="f10_l38" ulx="1445" uly="3036" lrx="3164" lry="3135" />
+      <zone xml:id="f10_l39" ulx="1440" uly="3097" lrx="3161" lry="3190" />
+      <zone xml:id="f10_l40" ulx="1447" uly="3169" lrx="3161" lry="3262" />
+      <zone xml:id="f10_l41" ulx="1443" uly="3226" lrx="3158" lry="3325" />
+      <zone xml:id="f10_l42" ulx="1447" uly="3288" lrx="3160" lry="3389" />
+      <zone xml:id="f10_l43" ulx="1450" uly="3354" lrx="3166" lry="3459" />
+      <zone xml:id="f10_l44" ulx="1443" uly="3421" lrx="3161" lry="3522" />
+      <zone xml:id="f10_l45" ulx="1445" uly="3491" lrx="3156" lry="3587" />
+      <zone xml:id="f10_l46" ulx="1440" uly="3559" lrx="3156" lry="3650" />
+      <zone xml:id="f10_l47" ulx="1442" uly="3615" lrx="3157" lry="3714" />
+      <zone xml:id="f10_l48" ulx="2944" uly="3722" lrx="3154" lry="3780" />
+      <zone xml:id="f10_l49" ulx="3492" uly="625" lrx="5210" lry="742" />
+      <zone xml:id="f10_l50" ulx="3495" uly="759" lrx="5215" lry="855" />
+      <zone xml:id="f10_l51" ulx="3497" uly="826" lrx="5213" lry="917" />
+      <zone xml:id="f10_l52" ulx="3498" uly="898" lrx="5222" lry="984" />
+      <zone xml:id="f10_l53" ulx="3500" uly="951" lrx="5222" lry="1050" />
+      <zone xml:id="f10_l54" ulx="3497" uly="1018" lrx="5220" lry="1115" />
+      <zone xml:id="f10_l55" ulx="3500" uly="1084" lrx="5223" lry="1174" />
+      <zone xml:id="f10_l56" ulx="3502" uly="1150" lrx="5229" lry="1241" />
+      <zone xml:id="f10_l57" ulx="3499" uly="1216" lrx="5228" lry="1301" />
+      <zone xml:id="f10_l58" ulx="3507" uly="1279" lrx="5224" lry="1364" />
+      <zone xml:id="f10_l59" ulx="3510" uly="1335" lrx="5232" lry="1430" />
+      <zone xml:id="f10_l60" ulx="3512" uly="1402" lrx="5233" lry="1493" />
+      <zone xml:id="f10_l61" ulx="3513" uly="1472" lrx="5235" lry="1559" />
+      <zone xml:id="f10_l62" ulx="3510" uly="1535" lrx="5236" lry="1625" />
+      <zone xml:id="f10_l63" ulx="3514" uly="1596" lrx="5238" lry="1692" />
+      <zone xml:id="f10_l64" ulx="3517" uly="1663" lrx="5241" lry="1752" />
+      <zone xml:id="f10_l65" ulx="3505" uly="1731" lrx="5245" lry="1819" />
+      <zone xml:id="f10_l66" ulx="3518" uly="1815" lrx="4092" lry="1882" />
+      <zone xml:id="f10_l67" ulx="3528" uly="2044" lrx="5246" lry="2132" />
+      <zone xml:id="f10_l68" ulx="3579" uly="2110" lrx="5243" lry="2200" />
+      <zone xml:id="f10_l69" ulx="3585" uly="2175" lrx="5254" lry="2263" />
+      <zone xml:id="f10_l70" ulx="3590" uly="2236" lrx="5252" lry="2325" />
+      <zone xml:id="f10_l71" ulx="3593" uly="2307" lrx="5257" lry="2392" />
+      <zone xml:id="f10_l72" ulx="3587" uly="2373" lrx="5255" lry="2453" />
+      <zone xml:id="f10_l73" ulx="3541" uly="2500" lrx="5256" lry="2608" />
+      <zone xml:id="f10_l74" ulx="3657" uly="2564" lrx="5261" lry="2650" />
+      <zone xml:id="f10_l75" ulx="3529" uly="2629" lrx="5263" lry="2717" />
+      <zone xml:id="f10_l76" ulx="3530" uly="2694" lrx="5259" lry="2784" />
+      <zone xml:id="f10_l77" ulx="3536" uly="2759" lrx="5263" lry="2846" />
+      <zone xml:id="f10_l78" ulx="3539" uly="2824" lrx="5267" lry="2914" />
+      <zone xml:id="f10_l79" ulx="3546" uly="2887" lrx="5264" lry="2971" />
+      <zone xml:id="f10_l80" ulx="3543" uly="2958" lrx="5269" lry="3038" />
+      <zone xml:id="f10_l81" ulx="3543" uly="3019" lrx="5270" lry="3102" />
+      <zone xml:id="f10_l82" ulx="3546" uly="3085" lrx="5274" lry="3166" />
+      <zone xml:id="f10_l83" ulx="3541" uly="3150" lrx="5276" lry="3234" />
+      <zone xml:id="f10_l84" ulx="3543" uly="3212" lrx="5275" lry="3301" />
+      <zone xml:id="f10_l85" ulx="3544" uly="3276" lrx="5276" lry="3370" />
+      <zone xml:id="f10_l86" ulx="3549" uly="3341" lrx="5280" lry="3427" />
+      <zone xml:id="f10_l87" ulx="3549" uly="3401" lrx="5283" lry="3489" />
+      <zone xml:id="f10_l88" ulx="3556" uly="3467" lrx="5281" lry="3553" />
+      <zone xml:id="f10_l89" ulx="3553" uly="3532" lrx="5281" lry="3620" />
+      <zone xml:id="f10_l90" ulx="3555" uly="3621" lrx="3780" lry="3680" />
+      <zone xml:id="f10_l91" ulx="5198" uly="3661" lrx="5279" lry="3723" />
+    </surface>
+    <surface xml:id="f11" ulx="0" uly="0" lrx="6613" lry="4677">
+      <graphic url="images/f11.png" width="6613px" height="4677px" />
+      <zone xml:id="f11_l1" ulx="1461" uly="641" lrx="1541" lry="702" />
+      <zone xml:id="f11_l2" ulx="1747" uly="641" lrx="3181" lry="740" />
+      <zone xml:id="f11_l3" ulx="1529" uly="764" lrx="3179" lry="850" />
+      <zone xml:id="f11_l4" ulx="1461" uly="825" lrx="3177" lry="915" />
+      <zone xml:id="f11_l5" ulx="1466" uly="893" lrx="3173" lry="977" />
+      <zone xml:id="f11_l6" ulx="1464" uly="958" lrx="3171" lry="1036" />
+      <zone xml:id="f11_l7" ulx="1466" uly="1020" lrx="3175" lry="1102" />
+      <zone xml:id="f11_l8" ulx="1462" uly="1086" lrx="3169" lry="1169" />
+      <zone xml:id="f11_l9" ulx="1458" uly="1149" lrx="3174" lry="1228" />
+      <zone xml:id="f11_l10" ulx="1464" uly="1214" lrx="3168" lry="1294" />
+      <zone xml:id="f11_l11" ulx="1459" uly="1280" lrx="3170" lry="1357" />
+      <zone xml:id="f11_l12" ulx="1455" uly="1346" lrx="3161" lry="1425" />
+      <zone xml:id="f11_l13" ulx="1456" uly="1404" lrx="3163" lry="1486" />
+      <zone xml:id="f11_l14" ulx="1457" uly="1474" lrx="3160" lry="1546" />
+      <zone xml:id="f11_l15" ulx="1459" uly="1535" lrx="3126" lry="1616" />
+      <zone xml:id="f11_l16" ulx="1506" uly="1598" lrx="3164" lry="1679" />
+      <zone xml:id="f11_l17" ulx="1450" uly="1667" lrx="3055" lry="1746" />
+      <zone xml:id="f11_l18" ulx="1509" uly="1747" lrx="3157" lry="1824" />
+      <zone xml:id="f11_l19" ulx="1448" uly="1805" lrx="3156" lry="1881" />
+      <zone xml:id="f11_l20" ulx="1452" uly="1864" lrx="3152" lry="1941" />
+      <zone xml:id="f11_l21" ulx="1448" uly="1926" lrx="3155" lry="2002" />
+      <zone xml:id="f11_l22" ulx="1445" uly="1985" lrx="3152" lry="2060" />
+      <zone xml:id="f11_l23" ulx="1442" uly="2041" lrx="3152" lry="2114" />
+      <zone xml:id="f11_l24" ulx="1447" uly="2099" lrx="3154" lry="2176" />
+      <zone xml:id="f11_l25" ulx="1448" uly="2153" lrx="3151" lry="2232" />
+      <zone xml:id="f11_l26" ulx="1442" uly="2218" lrx="3149" lry="2293" />
+      <zone xml:id="f11_l27" ulx="1445" uly="2275" lrx="3149" lry="2352" />
+      <zone xml:id="f11_l28" ulx="1445" uly="2334" lrx="3144" lry="2408" />
+      <zone xml:id="f11_l29" ulx="1440" uly="2395" lrx="3150" lry="2468" />
+      <zone xml:id="f11_l30" ulx="1438" uly="2455" lrx="3144" lry="2530" />
+      <zone xml:id="f11_l31" ulx="1440" uly="2515" lrx="3143" lry="2589" />
+      <zone xml:id="f11_l32" ulx="1440" uly="2571" lrx="3144" lry="2644" />
+      <zone xml:id="f11_l33" ulx="1442" uly="2630" lrx="3144" lry="2705" />
+      <zone xml:id="f11_l34" ulx="1440" uly="2694" lrx="3143" lry="2764" />
+      <zone xml:id="f11_l35" ulx="1437" uly="2746" lrx="3138" lry="2819" />
+      <zone xml:id="f11_l36" ulx="1440" uly="2805" lrx="3136" lry="2882" />
+      <zone xml:id="f11_l37" ulx="1435" uly="2862" lrx="3139" lry="2943" />
+      <zone xml:id="f11_l38" ulx="1434" uly="2929" lrx="3144" lry="2998" />
+      <zone xml:id="f11_l39" ulx="1428" uly="2985" lrx="3141" lry="3056" />
+      <zone xml:id="f11_l40" ulx="1433" uly="3040" lrx="3139" lry="3112" />
+      <zone xml:id="f11_l41" ulx="1430" uly="3108" lrx="3138" lry="3176" />
+      <zone xml:id="f11_l42" ulx="1429" uly="3168" lrx="3139" lry="3235" />
+      <zone xml:id="f11_l43" ulx="1432" uly="3219" lrx="3137" lry="3291" />
+      <zone xml:id="f11_l44" ulx="1430" uly="3276" lrx="3138" lry="3352" />
+      <zone xml:id="f11_l45" ulx="1426" uly="3340" lrx="3136" lry="3410" />
+      <zone xml:id="f11_l46" ulx="1424" uly="3397" lrx="3145" lry="3470" />
+      <zone xml:id="f11_l47" ulx="1427" uly="3456" lrx="3136" lry="3530" />
+      <zone xml:id="f11_l48" ulx="1420" uly="3515" lrx="3135" lry="3585" />
+      <zone xml:id="f11_l49" ulx="1429" uly="3577" lrx="3139" lry="3643" />
+      <zone xml:id="f11_l50" ulx="1423" uly="3637" lrx="3133" lry="3702" />
+      <zone xml:id="f11_l51" ulx="3002" uly="3710" lrx="3136" lry="3758" />
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <p>
+        <pb n="1" facs="#f1" />
+        <lb corresp="#f1_l1" n="1" type="line" />MORRISON<lb corresp="#f1_l2" n="2" type="line" />LAMPELEIS<lb corresp="#f1_l3" n="3" type="line" />NO<pb n="2" facs="#f2" />
+        <lb corresp="#f2_l1" n="1" type="line" />2. 92.<lb corresp="#f2_l2" n="2" type="line" />Tot. 4. 18 10<lb corresp="#f2_l3" n="3" type="line" />東洋文庫<lb corresp="#f2_l4" n="4" type="line" />P-I-a<lb corresp="#f2_l5" n="5" type="line" />bul<lb corresp="#f2_l6" n="6" type="line" />1<lb corresp="#f2_l7" n="7" type="line" />83<pb n="3" facs="#f3" />
+        <lb corresp="#f3_l1" n="1" type="line" />
+        <date>1810</date>. <persName>Dr. Wordsworth</persName> &amp; <persName>Ld. Teignmouth</persName> on the <orgName>Bible Society</orgName>. 79<lb corresp="#f3_l2" n="2" type="line" />' Again : another thing to be remarked is this :-<lb corresp="#f3_l3" n="3" type="line" />£. 4379 12 0<lb corresp="#f3_l4" n="4" type="line" />The receipts for packets in the year <date>1808</date> were<lb corresp="#f3_l5" n="5" type="line" />3126 12 1<lb corresp="#f3_l6" n="6" type="line" />Ditto for <date>1807</date>
+        <lb corresp="#f3_l7" n="7" type="line" />Difference - £. 1252 19 11<lb corresp="#f3_l8" n="8" type="line" />" Now, though this increase is the pride and glory of our Society,<lb corresp="#f3_l9" n="9" type="line" />yet, in any calculation respecting the actual funds of the Institution,<lb corresp="#f3_l10" n="10" type="line" />it must be very cautiously appealed to. In fact, in a religious sense, it<lb corresp="#f3_l11" n="11" type="line" />is our riches, but in a financial sense it is our poverty. The greater our<lb corresp="#f3_l12" n="12" type="line" />" receipts" are of this kind, the smaller does our monied capital become.<lb corresp="#f3_l13" n="13" type="line" />Every pound begets its corresponding loss of cash to the Society. At<lb corresp="#f3_l14" n="14" type="line" />any rate, such an increase may well indeed be adduced as a proof of<lb corresp="#f3_l15" n="15" type="line" />the growing sense among ourselves of the value of our Society, and the<lb corresp="#f3_l16" n="16" type="line" />increasing zeal and efforts of its subscribers, and of our need of much<lb corresp="#f3_l17" n="17" type="line" />further support and patronage ; but it supplies at best a very inadequate<lb corresp="#f3_l18" n="18" type="line" />medium of proof, that " the <orgName>Bible Society</orgName> does not injure ours by draw-<lb corresp="#f3_l19" n="19" type="line" />ing away its subscriptions." (<persName>Mr. D.</persName> p. 16.)<lb corresp="#f3_l20" n="20" type="line" />' Look down to the foot of the report of receipts for the year <date>1808</date>,<lb corresp="#f3_l21" n="21" type="line" />and you will see another item, which has still less right to come into<lb corresp="#f3_l22" n="22" type="line" />
+        <persName>Mr. Dealtry</persName>'s calculation, and to be blended with his average of " re-<lb corresp="#f3_l23" n="23" type="line" />ceipts" in the years subsequent to the establishment of the <orgName>Bible Society</orgName>.<lb corresp="#f3_l24" n="24" type="line" />The article which I allude to is --<lb corresp="#f3_l25" n="25" type="line" />' " The produce of sale of 1765l. 3s. 3d. three per cent. cons .-<lb corresp="#f3_l26" n="26" type="line" />1195l. 15s. 9d." a part of the capital stock of the Society. How much<lb corresp="#f3_l27" n="27" type="line" />more triumphant and decisive would <persName>Mr. Dealtry</persName>'s calculations of ave-<lb corresp="#f3_l28" n="28" type="line" />rages have become, than even now they are, if he had possessed a copy<lb corresp="#f3_l29" n="29" type="line" />of the Report (not yet printed) of " Receipts" for the year <date>1809</date>. There<lb corresp="#f3_l30" n="30" type="line" />he would have seen, among other particulars of a like character, a sum<lb corresp="#f3_l31" n="31" type="line" />not less than 3000l. instead of 1195l. 15s. 9d. added to the receipts of<lb corresp="#f3_l32" n="32" type="line" />that year from the sale of capital. This would indeed have made a<lb corresp="#f3_l33" n="33" type="line" />very noble accession to his averages ; but yet, it would supply, surely,<lb corresp="#f3_l34" n="34" type="line" />a very indirect and imperfect species of proof, that " the <orgName>Bible Society</orgName>
+        <lb corresp="#f3_l35" n="35" type="line" />does not injure ours by drawing away its subscriptions," (p. 16.) still<lb corresp="#f3_l36" n="36" type="line" />less would it shew that the permanent state of our receipts and finances<lb corresp="#f3_l37" n="37" type="line" />is in a flourishing condition. Such a statement of accounts, in any pri-<lb corresp="#f3_l38" n="38" type="line" />vate concern, it is clear, would only be indicative of a rapid approach<lb corresp="#f3_l39" n="39" type="line" />to bankruptcy and ruin.' pp. 64, 67.<lb corresp="#f3_l40" n="40" type="line" />' The number of subscribing members admitted in the year between<lb corresp="#f3_l41" n="41" type="line" />the spring of 1789 and that of 1790 was 129; and in like manner of<lb corresp="#f3_l42" n="42" type="line" />the rest, thus :<lb corresp="#f3_l43" n="43" type="line" />In the year <date>1789 -- 1790</date> - 129<lb corresp="#f3_l44" n="44" type="line" />In the year <date>1799-1800</date> - 212<lb corresp="#f3_l45" n="45" type="line" />
+        <date>1790-1791</date> - 120<lb corresp="#f3_l46" n="46" type="line" />
+        <date>1791-1792</date> - 101<lb corresp="#f3_l47" n="47" type="line" />
+        <date>1792-1793</date> - 105<lb corresp="#f3_l48" n="48" type="line" />
+        <date>1793-1794</date> - 112<lb corresp="#f3_l49" n="49" type="line" />
+        <date>1800-1801</date> - 234<lb corresp="#f3_l50" n="50" type="line" />
+        <date>1801-1802</date> - 204<lb corresp="#f3_l51" n="51" type="line" />
+        <date>1802-1803</date> - 216<lb corresp="#f3_l52" n="52" type="line" />
+        <date>1803-1804</date> - 235<lb corresp="#f3_l53" n="53" type="line" />-<lb corresp="#f3_l54" n="54" type="line" />東洋文庫<lb corresp="#f3_l55" n="55" type="line" />P= I-a<lb corresp="#f3_l56" n="56" type="line" />P-f·a<lb corresp="#f3_l57" n="57" type="line" />567<lb corresp="#f3_l58" n="58" type="line" />1101<lb corresp="#f3_l59" n="59" type="line" />In<lb corresp="#f3_l60" n="60" type="line" />1<lb corresp="#f3_l61" n="61" type="line" />1<pb n="4" facs="#f4" />
+        <lb corresp="#f4_l1" n="1" type="line" />80 <persName>Dr. Wordsworth</persName> &amp; <persName>Ld. Teignmouth</persName> on the <orgName>Bible Society</orgName>. AUG.<lb corresp="#f4_l2" n="2" type="line" />In the year <date>1794-1795</date> - 91<lb corresp="#f4_l3" n="3" type="line" />
+        <date>1795-1796</date> - 100<lb corresp="#f4_l4" n="4" type="line" />
+        <date>1796-1797</date> - 105<lb corresp="#f4_l5" n="5" type="line" />
+        <date>1797-1798</date> - 133<lb corresp="#f4_l6" n="6" type="line" />
+        <date>1798-1799</date> - 154<lb corresp="#f4_l7" n="7" type="line" />In the year <date>1804-1805</date> - 163<lb corresp="#f4_l8" n="8" type="line" />
+        <date>1805-1806</date> - 199<lb corresp="#f4_l9" n="9" type="line" />
+        <date>1806-1807</date> - 223<lb corresp="#f4_l10" n="10" type="line" />
+        <date>1807-1808</date> - 265<lb corresp="#f4_l11" n="11" type="line" />
+        <date>1808-1809</date> - 270<lb corresp="#f4_l12" n="12" type="line" />583<lb corresp="#f4_l13" n="13" type="line" />1120<lb corresp="#f4_l14" n="14" type="line" />" The <orgName>Bible Society</orgName>, it must be remembered, was instituted in the<lb corresp="#f4_l15" n="15" type="line" />month of March, in the year <date>1804</date>, (<persName>Mr. D.</persName> p. 19.) Now look at this<lb corresp="#f4_l16" n="16" type="line" />statement, and you will see, that the number of our admissions in that<lb corresp="#f4_l17" n="17" type="line" />year was less by 72 than in the year immediately preceding ; and that<lb corresp="#f4_l18" n="18" type="line" />it was not till <date>1807</date> that we again reached the numbers of <date>1803</date>.<lb corresp="#f4_l19" n="19" type="line" />' Again : compare the number of admissions in the ten years pre-<lb corresp="#f4_l20" n="20" type="line" />ceding, and in the five subsequent, to your institution, and you will<lb corresp="#f4_l21" n="21" type="line" />perceive, that till your Society began, ours was making (and especially<lb corresp="#f4_l22" n="22" type="line" />in the later years) a rapid and tolerably regular progress. The admis-<lb corresp="#f4_l23" n="23" type="line" />sions were, in the second half of that ten, nearly twice as many as they<lb corresp="#f4_l24" n="24" type="line" />were in the former, the excess being 518; while the number admitted<lb corresp="#f4_l25" n="25" type="line" />in the five subsequent years exceeds that of the preceding five only by<lb corresp="#f4_l26" n="26" type="line" />19. How " highly favourable," (<persName>Mr. D.</persName> p. 22.) then, the influence of<lb corresp="#f4_l27" n="27" type="line" />your Society may appear to have been, in this respect, let all men judge.<lb corresp="#f4_l28" n="28" type="line" />If against this poor number 19, we set off the deduction of those who<lb corresp="#f4_l29" n="29" type="line" />have actually withdrawn their names from us, in consequence of their<lb corresp="#f4_l30" n="30" type="line" />becoming members of the <orgName>Bible Society</orgName>, I think we have good cause to<lb corresp="#f4_l31" n="31" type="line" />" attach very little value to the favours in this way conferred upon us,"<lb corresp="#f4_l32" n="32" type="line" />(<persName>Mr. D.</persName> p. 22.) It is by no means clear, that you did not give a very<lb corresp="#f4_l33" n="33" type="line" />severe shock and check to our course, when it was in the most thriving<lb corresp="#f4_l34" n="34" type="line" />and prosperous condition.'<lb corresp="#f4_l35" n="35" type="line" />ART. VI. Travels of <persName>Mirza Abu Taleb Khan</persName> (commonly called<lb corresp="#f4_l36" n="36" type="line" />the Persian Prince,) in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>, during the<lb corresp="#f4_l37" n="37" type="line" />Years <date>1799, 1800, 1801, and 1802</date>. Written by himself in the<lb corresp="#f4_l38" n="38" type="line" />Persian Language, and translated by <persName>Charles Stewart, Esq.</persName>
+        <lb corresp="#f4_l39" n="39" type="line" />With a Portrait of the Author. 2 Volumes. Svo. pp. 738.<lb corresp="#f4_l40" n="40" type="line" />
+        <placeName>London</placeName>. <orgName>Longman and Co.</orgName>
+        <date>1810</date>.<lb corresp="#f4_l41" n="41" type="line" />IT is difficult to imagine any character whose first impressions<lb corresp="#f4_l42" n="42" type="line" />would excite more natural curiosity, than an Asiatic traveller in<lb corresp="#f4_l43" n="43" type="line" />Europe. There is so much value in even the most common know-<lb corresp="#f4_l44" n="44" type="line" />ledge, that the pride of man is secretly gratified by the surprise of a<lb corresp="#f4_l45" n="45" type="line" />stranger at objects which are familiar to us, even where that famili-<lb corresp="#f4_l46" n="46" type="line" />arity confers no merit on ourselves ; and this is perhaps the secret<lb corresp="#f4_l47" n="47" type="line" />charm, which, fortunately for travellers, makes their society courted<lb corresp="#f4_l48" n="48" type="line" />in foreign countries, and which constitutes in no small degree, what<lb corresp="#f4_l49" n="49" type="line" />all<lb corresp="#f4_l50" n="50" type="line" />
+        <date>1810</date>. <persName>Abu Talel</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>.<lb corresp="#f4_l51" n="51" type="line" />.00<lb corresp="#f4_l52" n="52" type="line" />all of us have sometimes felt,-the pleasure of shewing the lions.<lb corresp="#f4_l53" n="53" type="line" />There is, too, a vivid shrewdness which generally accompanies the<lb corresp="#f4_l54" n="54" type="line" />observations of a sensible man on objects which are new to him,<lb corresp="#f4_l55" n="55" type="line" />altogether unattainable by those whose perceptions already are<lb corresp="#f4_l56" n="56" type="line" />deadened by habit. We may hope then for instruction, as well as<lb corresp="#f4_l57" n="57" type="line" />entertainment, in such society; and it is not irrational, except in the<lb corresp="#f4_l58" n="58" type="line" />extreme to which it has been sometimes carried, that an <persName>Omai</persName>, a<lb corresp="#f4_l59" n="59" type="line" />
+        <persName>Bannelong</persName>, or any other far-fetched curiosity in human form, should<lb corresp="#f4_l60" n="60" type="line" />be feasted by the great, courted by the fair, and attended to<lb corresp="#f4_l61" n="61" type="line" />public places by crowds of gaping observers. After all, however,<lb corresp="#f4_l62" n="62" type="line" />on a mere savage, the wonders he witnesses are too many and too<lb corresp="#f4_l63" n="63" type="line" />unintelligible to make any distinct impression. To him, a paper<lb corresp="#f4_l64" n="64" type="line" />kite and a balloon are equally miraculous ; every step he takes is on<lb corresp="#f4_l65" n="65" type="line" />enchanted ground ; and, like a child who reads a fairy tale, he soon<lb corresp="#f4_l66" n="66" type="line" />ceases to be surprised at wonders; because he expected to meet<lb corresp="#f4_l67" n="67" type="line" />with nothing else, and because in such a place, such wonders are<lb corresp="#f4_l68" n="68" type="line" />only natural. Again, people care little for what is totally above<lb corresp="#f4_l69" n="69" type="line" />their comprehension, and a savage would be more interested<lb corresp="#f4_l70" n="70" type="line" />in an ironmonger's shop, than in all the curiosities of the British<lb corresp="#f4_l71" n="71" type="line" />Museum, or all the magnificence of <placeName>St. Paul's</placeName> or <placeName>Blenheim</placeName>.<lb corresp="#f4_l72" n="72" type="line" />With the Asiatic, however, the case is different ; he brings with<lb corresp="#f4_l73" n="73" type="line" />him a sufficiently cultivated judgment to distinguish between our<lb corresp="#f4_l74" n="74" type="line" />customs and his own; a mind to which the objects he meets with<lb corresp="#f4_l75" n="75" type="line" />are not so new as to be incomprehensible, though they are so dif-<lb corresp="#f4_l76" n="76" type="line" />ferently modified in form and circumstance from those to which he<lb corresp="#f4_l77" n="77" type="line" />is accustomed, that another planet could hardly produce a greater<lb corresp="#f4_l78" n="78" type="line" />variety; it is a variety which he understands and feels, and it is the<lb corresp="#f4_l79" n="79" type="line" />same in kind (though from evident reasons, much greater in degree)<lb corresp="#f4_l80" n="80" type="line" />as that which an European, prepared as he is by hundreds of pre-<lb corresp="#f4_l81" n="81" type="line" />cursors, and tens of hundreds of descriptions, must ever experience<lb corresp="#f4_l82" n="82" type="line" />on entering for the first time, a Mahommedan or Hindoo country.<lb corresp="#f4_l83" n="83" type="line" />Accordingly, as no real oriental traveller had yet appeared, his<lb corresp="#f4_l84" n="84" type="line" />place and character were eagerly assumed by European writers,<lb corresp="#f4_l85" n="85" type="line" />who, under the names of Turkish Spies, Ambassadors of Bantam,<lb corresp="#f4_l86" n="86" type="line" />and Chinese or Persian Tourists, endeavoured to instruct, as im-<lb corresp="#f4_l87" n="87" type="line" />partial spectators of our European feuds and follies; or to amuse,<lb corresp="#f4_l88" n="88" type="line" />by ridiculous oppositions of our manners and character with their<lb corresp="#f4_l89" n="89" type="line" />own. That the experiment succeeded, is evident by the number of<lb corresp="#f4_l90" n="90" type="line" />imitators which every generation has produced; but still, amusing<lb corresp="#f4_l91" n="91" type="line" />as they were, these Turks and Persians wanted the charm of reality.<lb corresp="#f4_l92" n="92" type="line" />They were Brigg's ' French beads, and Bristol stones,' in com-<lb corresp="#f4_l93" n="93" type="line" />parison with the genuine treasures of Golconda; and the difference<lb corresp="#f4_l94" n="94" type="line" />in interest was almost the same, as between a view of the Great<lb corresp="#f4_l95" n="95" type="line" />Mogul himself, and the well-bred Sultan of a French tragedy, or an<lb corresp="#f4_l96" n="96" type="line" />English masquerade.<lb corresp="#f4_l97" n="97" type="line" />VOL. IV. NO. VII.<lb corresp="#f4_l98" n="98" type="line" />The<pb n="5" facs="#f5" />
+        <lb corresp="#f5_l1" n="1" type="line" />82<lb corresp="#f5_l2" n="2" type="line" />
+        <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>. AUG.<lb corresp="#f5_l3" n="3" type="line" />The reality, however, prefigured by so many types, has at last<lb corresp="#f5_l4" n="4" type="line" />made his appearance. A bona fide Mahommedan has produced a<lb corresp="#f5_l5" n="5" type="line" />tour ; and, as luck would have it, this tour has appeared at a time,<lb corresp="#f5_l6" n="6" type="line" />when all the world, or at least all the idle part of it, was still on<lb corresp="#f5_l7" n="7" type="line" />the stretch of curiosity, respecting His Excellency Mirza Abdul<lb corresp="#f5_l8" n="8" type="line" />Hassan.<lb corresp="#f5_l9" n="9" type="line" />Now, when the ladies had once ascertained, by actual experi-<lb corresp="#f5_l10" n="10" type="line" />ment, the length of a Persian's beard, and the texture of his skin<lb corresp="#f5_l11" n="11" type="line" />and clothing; when their minds were pretty well made up what to<lb corresp="#f5_l12" n="12" type="line" />think of their formidable guest, it was surely no unnatural desire to<lb corresp="#f5_l13" n="13" type="line" />know that guest's opinion of them. And as His Excellency's sen-<lb corresp="#f5_l14" n="14" type="line" />timents are not yet to be expected in English, it will no doubt be,<lb corresp="#f5_l15" n="15" type="line" />in the mean time, acceptable to learn what was thought and said<lb corresp="#f5_l16" n="16" type="line" />under almost similar circumstances, by a man, who was every inch<lb corresp="#f5_l17" n="17" type="line" />of him, as true a mussulman (as ' catholic a devil,' as <persName>Sancho Panza</persName>
+        <lb corresp="#f5_l18" n="18" type="line" />hath it,) as if, like his aforesaid Excellency, he had borne creden-<lb corresp="#f5_l19" n="19" type="line" />tials from the King of <placeName>Iran</placeName> and <placeName>Touran</placeName>, and excited by his presence<lb corresp="#f5_l20" n="20" type="line" />and supposed intrigues, the jealousy both of the eastern and western<lb corresp="#f5_l21" n="21" type="line" />Cæsar. This lucky coincidence has, we are afraid, even made the<lb corresp="#f5_l22" n="22" type="line" />reality of our tourist suspected, and many have too rashly classed<lb corresp="#f5_l23" n="23" type="line" />him, without examination, with the <persName>Anacharsis</persName> of our continental<lb corresp="#f5_l24" n="24" type="line" />neighbours, or our own ingenious Hidalgo Don Manuel de Es-<lb corresp="#f5_l25" n="25" type="line" />priella. In this, however, they have done <persName>Abu Taleb</persName> a great in-<lb corresp="#f5_l26" n="26" type="line" />justice; though not so learned as the first, nor so entertaining as<lb corresp="#f5_l27" n="27" type="line" />the last of these gentlemen, he is, or rather was, a more substantial<lb corresp="#f5_l28" n="28" type="line" />personage than either. Under the name of the Persian Prince, he<lb corresp="#f5_l29" n="29" type="line" />was seen and known in fleshly form in the several countries which<lb corresp="#f5_l30" n="30" type="line" />he has undertaken to describe, and was generally allowed, in the<lb corresp="#f5_l31" n="31" type="line" />words of <persName>Massinger's Borachia</persName>,<lb corresp="#f5_l32" n="32" type="line" />as absolute a Turk<lb corresp="#f5_l33" n="33" type="line" />In all that appertains to a true Turk,'<lb corresp="#f5_l34" n="34" type="line" />as any former candidate for public notice.<lb corresp="#f5_l35" n="35" type="line" />And it will be owned that few inhabitants of east or west, have<lb corresp="#f5_l36" n="36" type="line" />gone over so large or so interesting a tract of earth and sea. Re-<lb corresp="#f5_l37" n="37" type="line" />duced in his circumstances by events which he himself very modest-<lb corresp="#f5_l38" n="38" type="line" />ly and briefly relates, and deprived, though by no fault of his own,<lb corresp="#f5_l39" n="39" type="line" />of an appointment which he held under our <orgName>East India Company</orgName>,-<lb corresp="#f5_l40" n="40" type="line" />. an opportunity was thrown in his way of undertaking a journey,<lb corresp="#f5_l41" n="41" type="line" />which, to an oriental, must have appeared desperate; and which he<lb corresp="#f5_l42" n="42" type="line" />began, as he informs us, in the comfortable hope, that in a voyage<lb corresp="#f5_l43" n="43" type="line" />so replete with danger ' some accident might cause his death; and<lb corresp="#f5_l44" n="44" type="line" />thus deliver him from the anxieties of this world, and the ingratitude<lb corresp="#f5_l45" n="45" type="line" />of mankind.' Accidents, however, and elements were kinder than<lb corresp="#f5_l46" n="46" type="line" />he expected; and after visiting the <placeName>Cape</placeName>, <placeName>St. Helena</placeName>, and many<lb corresp="#f5_l47" n="47" type="line" />parts of <placeName>Ireland</placeName> and <placeName>England</placeName>, he returned by <placeName>France</placeName>, <placeName>Italy</placeName>, Con-<lb corresp="#f5_l48" n="48" type="line" />stantinople,<lb corresp="#f5_l49" n="49" type="line" />
+        <date>1810</date>. <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>.<lb corresp="#f5_l50" n="50" type="line" />83<lb corresp="#f5_l51" n="51" type="line" />stantinople, and <placeName>Busserah</placeName>, to his native province in <placeName>India</placeName>, where he<lb corresp="#f5_l52" n="52" type="line" />was appointed once more collector of a district in <placeName>Bundelcund</placeName>, and<lb corresp="#f5_l53" n="53" type="line" />died in that situation in the year <date>1806</date>.<lb corresp="#f5_l54" n="54" type="line" />During the latter years of his life, he prepared and digested his<lb corresp="#f5_l55" n="55" type="line" />journal, in which he styles himself ' the wanderer over the face of<lb corresp="#f5_l56" n="56" type="line" />the earth, <persName>Abu Taleb</persName>, the son of <persName>Mohammed of Ispahan</persName>, who as-<lb corresp="#f5_l57" n="57" type="line" />sociated with men of all nations, and beheld various wonders both<lb corresp="#f5_l58" n="58" type="line" />by sea and land;' and which he commences with true oriental<lb corresp="#f5_l59" n="59" type="line" />piety, by thanksgivings to God, the Lord of all the world, and ' to<lb corresp="#f5_l60" n="60" type="line" />the chosen of mankind, the traveller over the whole expanse of the<lb corresp="#f5_l61" n="61" type="line" />heavens, (<persName>Mohammed</persName>,) and benedictions without end on his de-<lb corresp="#f5_l62" n="62" type="line" />scendants, and companions.'<lb corresp="#f5_l63" n="63" type="line" />The first misfortune which befel him on his expedition, was<lb corresp="#f5_l64" n="64" type="line" />embarking on board a Danish vessel, manned chiefly by indolent,<lb corresp="#f5_l65" n="65" type="line" />and inexperienced Lascars, of whose filth, confusion, and insubor-<lb corresp="#f5_l66" n="66" type="line" />dination he complains most bitterly.<lb corresp="#f5_l67" n="67" type="line" />' The captain was a proud self-sufficient fellow. His first officer,<lb corresp="#f5_l68" n="68" type="line" />who was by birth an American, resembled an ill-tempered growling<lb corresp="#f5_l69" n="69" type="line" />mastiff, but understood his duty very well. The second officer, and<lb corresp="#f5_l70" n="70" type="line" />the other mates were low people, not worthy of being spoken to, and<lb corresp="#f5_l71" n="71" type="line" />quite ignorant of navigation.'-vol. i. p. 22.<lb corresp="#f5_l72" n="72" type="line" />After many days of suffering from the united plagues of stinks,<lb corresp="#f5_l73" n="73" type="line" />bad provisions, and a cabin, ' the very recollection of which makes<lb corresp="#f5_l74" n="74" type="line" />him melancholy,' he arrived at the <placeName>Nicobar Islands</placeName>, where the usual<lb corresp="#f5_l75" n="75" type="line" />phenomenon of refraction, by making a flat shore visible to the eye,<lb corresp="#f5_l76" n="76" type="line" />though not to the telescope, and the usual solution of it by a ring in<lb corresp="#f5_l77" n="77" type="line" />a bowl of water, excited his surprise. The explanation, however,<lb corresp="#f5_l78" n="78" type="line" />does not, in his opinion, solve the phenomenon. Sixteen of the<lb corresp="#f5_l79" n="79" type="line" />Lascars deserted here, and <persName>Abu Taleb</persName> himself was so much capti-<lb corresp="#f5_l80" n="80" type="line" />vated with the ' mildness of the climate, the beauty of the plains<lb corresp="#f5_l81" n="81" type="line" />and rivulets, and the kind of life which the men enjoyed, that he<lb corresp="#f5_l82" n="82" type="line" />had nearly resolved to take up his abode among them.' The pas-<lb corresp="#f5_l83" n="83" type="line" />sage of the equinoctial line, and the ceremony of dipping are next<lb corresp="#f5_l84" n="84" type="line" />described, and he saw what he had never before believed, nume-<lb corresp="#f5_l85" n="85" type="line" />rous shoals of flying fish. He was disappointed at not finding a<lb corresp="#f5_l86" n="86" type="line" />southern polar star, nor any constellation which exactly correspond-<lb corresp="#f5_l87" n="87" type="line" />ed with the Ursa Minor or Major, and was astonished that the<lb corresp="#f5_l88" n="88" type="line" />month of May, so hot in <placeName>Bengal</placeName>, should be so extremely cold in<lb corresp="#f5_l89" n="89" type="line" />the Antarctic hemisphere.<lb corresp="#f5_l90" n="90" type="line" />' On the 24th of May, we had a view of part of the continent of<lb corresp="#f5_l91" n="91" type="line" />
+        <placeName>Africa</placeName>, about 200 miles to the north of the <placeName>Cape of Good Hope</placeName>; and<lb corresp="#f5_l92" n="92" type="line" />although we had not the most distant intention of going on shore here,<lb corresp="#f5_l93" n="93" type="line" />yet the sight of land brought tears into my eyes. While sailing along<lb corresp="#f5_l94" n="94" type="line" />the coast, we had frequent opportunities of seeing one of the wonders<lb corresp="#f5_l95" n="95" type="line" />of the deep. Several fish, called whales, approached so close to the ship<lb corresp="#f5_l96" n="96" type="line" />F 2<lb corresp="#f5_l97" n="97" type="line" />that<pb n="6" facs="#f6" />
+        <lb corresp="#f6_l1" n="1" type="line" />84<lb corresp="#f6_l2" n="2" type="line" />
+        <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>. AUG.<lb corresp="#f6_l3" n="3" type="line" />that we could view them distinctly. They were four times the size of<lb corresp="#f6_l4" n="4" type="line" />the largest elephant, and had immense nostrils, whence they threw up<lb corresp="#f6_l5" n="5" type="line" />the water to the height of fifteen yards.' vol. i. p. 44.<lb corresp="#f6_l6" n="6" type="line" />His voyage to the <placeName>Cape</placeName> was a dismal one; he had repeated<lb corresp="#f6_l7" n="7" type="line" />storms to encounter, and his cabin was placed between those of a<lb corresp="#f6_l8" n="8" type="line" />corpulent and surly gentleman, who when the ship rolled, rolled<lb corresp="#f6_l9" n="9" type="line" />also, and of three crying and ill-tempered children; to whom, if he<lb corresp="#f6_l10" n="10" type="line" />had known the poetry of <persName>Simonides</persName>, he would doubtless have ex-<lb corresp="#f6_l11" n="11" type="line" />claimed with <persName>Danae</persName> in a similar situation ' EUdes EpEpos.' As it<lb corresp="#f6_l12" n="12" type="line" />was, he thought of the verse of <persName>Hafiz</persName>, which did just as well :<lb corresp="#f6_l13" n="13" type="line" />' Dark is the night, and dreadful the noise of the waves and whirlpool,<lb corresp="#f6_l14" n="14" type="line" />Little do they know of our situation, who are travelling merrily on the<lb corresp="#f6_l15" n="15" type="line" />shore.'<lb corresp="#f6_l16" n="16" type="line" />The miseries of a voyage he classes under four genera, subdivided<lb corresp="#f6_l17" n="17" type="line" />into many distinct species, of which we shall only mention ' the<lb corresp="#f6_l18" n="18" type="line" />impurity of being shut up with dogs and hogs, the necessity of eat-<lb corresp="#f6_l19" n="19" type="line" />ing with a knife and fork, and the impossibility of purification.'<lb corresp="#f6_l20" n="20" type="line" />On the whole, however, he had ample reason to complain, and to<lb corresp="#f6_l21" n="21" type="line" />advise his countrymen never to undertake a voyage, unless they have<lb corresp="#f6_l22" n="22" type="line" />money to purchase every comfort ; nor to embark, except in an<lb corresp="#f6_l23" n="23" type="line" />English vessel. At the <placeName>Cape</placeName>, he was highly delighted with the<lb corresp="#f6_l24" n="24" type="line" />neatness of the houses, the pavement of the streets, the shady trees,<lb corresp="#f6_l25" n="25" type="line" />and the benches for smoking a pipe in summer evenings; a custom<lb corresp="#f6_l26" n="26" type="line" />which ' appeared to him excellent.'<lb corresp="#f6_l27" n="27" type="line" />"" In short, the splendour of this town quite obliterated from my mind<lb corresp="#f6_l28" n="28" type="line" />all the magnificence of <placeName>Calcutta</placeName>, which I had previously considered as<lb corresp="#f6_l29" n="29" type="line" />superior to any thing to be found between <placeName>India</placeName> and <placeName>Europe</placeName>. In the<lb corresp="#f6_l30" n="30" type="line" />·sequel, I changed my opinion respecting the <placeName>Cape</placeName>; and indeed I may<lb corresp="#f6_l31" n="31" type="line" />say, that from my first setting out on this journey, till my arrival in<lb corresp="#f6_l32" n="32" type="line" />
+        <placeName>England</placeName>, I ascended the pinnacle of magnificence and luxury ; the se-<lb corresp="#f6_l33" n="33" type="line" />veral degrees or stages of which, were <placeName>Calcutta</placeName>, the <placeName>Cape</placeName>, <placeName>Cork</placeName>, Dub-<lb corresp="#f6_l34" n="34" type="line" />lin, and <placeName>London</placeName>; the beauty and grandeur of each city effacing that of<lb corresp="#f6_l35" n="35" type="line" />the former. On my return towards <placeName>India</placeName>, every thing was reversed,<lb corresp="#f6_l36" n="36" type="line" />the last place being always inferior to that I had quitted. Thus, after<lb corresp="#f6_l37" n="37" type="line" />a long residence in <placeName>London</placeName>, <placeName>Paris</placeName> appeared to me much inferior; for<lb corresp="#f6_l38" n="38" type="line" />although the latter contains more superb buildings, it is neither so re-<lb corresp="#f6_l39" n="39" type="line" />gular, so clean, nor so well lighted at night, as the former, nor<lb corresp="#f6_l40" n="40" type="line" />does it possess so many gardens and squares in its vicinity ; in short,<lb corresp="#f6_l41" n="41" type="line" />I thought I had fallen from Paradise into Hell. But when I arrived in<lb corresp="#f6_l42" n="42" type="line" />
+        <placeName>Italy</placeName>, I was made sensible of the beauty of <placeName>Paris</placeName>; the cities of <placeName>Italy</placeName>
+        <lb corresp="#f6_l43" n="43" type="line" />rose in my estimation when I arrived at <placeName>Constantinople</placeName>; and the latter<lb corresp="#f6_l44" n="44" type="line" />is a perfect Paradise, compared to <placeName>Bagdad</placeName>, <placeName>Monsul</placeName>, and other towns in<lb corresp="#f6_l45" n="45" type="line" />the territory of the Faithful.' vol. i. pp. 64, 65.<lb corresp="#f6_l46" n="46" type="line" />Of the Dutch, both male and female, <persName>Abu Taleb</persName> formed no fa-<lb corresp="#f6_l47" n="47" type="line" />vourable opinion. He describes the men as low-minded and inhos-<lb corresp="#f6_l48" n="48" type="line" />pitable, and more oppressive to their slaves than any other people<lb corresp="#f6_l49" n="49" type="line" />m<lb corresp="#f6_l50" n="50" type="line" />
+        <date>1810</date>. <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>.<lb corresp="#f6_l51" n="51" type="line" />85<lb corresp="#f6_l52" n="52" type="line" />in the world. The women he stigmatizes at once as vulgar and<lb corresp="#f6_l53" n="53" type="line" />immodest; but here we must allow a little for the prejudices of a<lb corresp="#f6_l54" n="54" type="line" />Persian. The girls, who so much offended him, were perhaps only<lb corresp="#f6_l55" n="55" type="line" />laughing hoydeus, who would have been heartily frightened, had<lb corresp="#f6_l56" n="56" type="line" />they known how he interpreted their airs and glances. It may<lb corresp="#f6_l57" n="57" type="line" />however be an useful hint to some females nearer home. Lord<lb corresp="#f6_l58" n="58" type="line" />Valentia imagines that Mahommedans confound all European ladies<lb corresp="#f6_l59" n="59" type="line" />with nautch girls, and it must be owned, that recent oriental tra-<lb corresp="#f6_l60" n="60" type="line" />vellers have had tolerably good reason for their mistake.<lb corresp="#f6_l61" n="61" type="line" />Among the various inhabitants of the <placeName>Cape</placeName>, he found ' many<lb corresp="#f6_l62" n="62" type="line" />pious good Mussulmans, some of whom possessed considerable<lb corresp="#f6_l63" n="63" type="line" />property;' with these, and in the hospitable society of the English<lb corresp="#f6_l64" n="64" type="line" />officers, (whose ladies, it is pleasing to observe, he excepts from the<lb corresp="#f6_l65" n="65" type="line" />general scandal, and compares to the elegant reserve of Indian<lb corresp="#f6_l66" n="66" type="line" />Princesses,) he passed his time pleasantly, though expensively.<lb corresp="#f6_l67" n="67" type="line" />At length, being heartily tired of his Danish captain, who had<lb corresp="#f6_l68" n="68" type="line" />cheated him in every possible manner, he submitted to the loss of<lb corresp="#f6_l69" n="69" type="line" />his passage money, and embarked the 29th of September, on<lb corresp="#f6_l70" n="70" type="line" />board an English South Sea whaler. The superior comforts of<lb corresp="#f6_l71" n="71" type="line" />this ship, he praises highly, though he still seems to have had some<lb corresp="#f6_l72" n="72" type="line" />apprehensions; ' it being the practice of Europe, that whenever<lb corresp="#f6_l73" n="73" type="line" />the ships of two enemies meet at sea, the most powerful carries his<lb corresp="#f6_l74" n="74" type="line" />adversary with him into one of his own ports, and there sells both<lb corresp="#f6_l75" n="75" type="line" />ship and cargo for his own advantage.'<lb corresp="#f6_l76" n="76" type="line" />Of <placeName>St. Helena</placeName> he gives one of the best descriptions we have yet<lb corresp="#f6_l77" n="77" type="line" />seen; and relates a fearful battle, which his captain had, in a former<lb corresp="#f6_l78" n="78" type="line" />voyage, sustained with a number of marine animals, ' of a size be-<lb corresp="#f6_l79" n="79" type="line" />tween a horse and an ass, which they call sea-horses.' He notices<lb corresp="#f6_l80" n="80" type="line" />in his course, ' the Fortunate Isles, whence the Mahommedans<lb corresp="#f6_l81" n="81" type="line" />commence their longitude;' and the ' entrance into the Mediter-<lb corresp="#f6_l82" n="82" type="line" />ranean Sea, which runs east as far as <placeName>Aleppo</placeName>.' And being driven<lb corresp="#f6_l83" n="83" type="line" />by unfavourable winds from the <placeName>English Channel</placeName>, (the meaning of<lb corresp="#f6_l84" n="84" type="line" />which term he explains, as well as that of ' bay and sea,') he an-<lb corresp="#f6_l85" n="85" type="line" />chored on the 6th of December in the <placeName>Cove of Cork</placeName>.<lb corresp="#f6_l86" n="86" type="line" />" We found here not less than 40 or 50 vessels of different sizes, three<lb corresp="#f6_l87" n="87" type="line" />of which were ships of war. The Bay resembles a round basin, sixteen<lb corresp="#f6_l88" n="88" type="line" />miles in circumference. On its shore is situated the town, which is<lb corresp="#f6_l89" n="89" type="line" />built in the form of a crescent, and defended at each end by small forts.<lb corresp="#f6_l90" n="90" type="line" />On one side of the bay, a large river, resembling the <placeName>Ganges</placeName>, disem-<lb corresp="#f6_l91" n="91" type="line" />bogues itself; this river extends a great way inland, and passes by the<lb corresp="#f6_l92" n="92" type="line" />city of <placeName>Cork</placeName>. The circular form of this extensive sheet of water, the<lb corresp="#f6_l93" n="93" type="line" />verdure of the hills, the comfortable appearance of the town on one<lb corresp="#f6_l94" n="94" type="line" />side, and the number of elegant houses and romantic cottages on the<lb corresp="#f6_l95" n="95" type="line" />other, with the formidable aspect of the forts, and so many large ships<lb corresp="#f6_l96" n="96" type="line" />lying securely in the harbour, conveyed to my mind such sensations as<lb corresp="#f6_l97" n="97" type="line" />I had never before experienced; and although in the course of my tra-<lb corresp="#f6_l98" n="98" type="line" />F 3<lb corresp="#f6_l99" n="99" type="line" />vels,<pb n="7" facs="#f7" />
+        <lb corresp="#f7_l1" n="1" type="line" />86<lb corresp="#f7_l2" n="2" type="line" />
+        <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>. Auc.<lb corresp="#f7_l3" n="3" type="line" />vels, I had an opportunity of seeing the <placeName>Bay of Genoa</placeName>, and the Straits of<lb corresp="#f7_l4" n="4" type="line" />
+        <placeName>Constantinople</placeName>, I do not think either of them is to be compared with<lb corresp="#f7_l5" n="5" type="line" />this.' vol. i. pp. 94, 95.<lb corresp="#f7_l6" n="6" type="line" />Nor, though the Cove on a nearer view disappointed him, did he<lb corresp="#f7_l7" n="7" type="line" />fail to be delighted with the fertility of the neighbourhood, and the<lb corresp="#f7_l8" n="8" type="line" />hospitality of the mistress of the Post-Office, whose mature charms<lb corresp="#f7_l9" n="9" type="line" />(for though the mother of 21 children, she had still the appearance<lb corresp="#f7_l10" n="10" type="line" />of youth,) astonished the inhabitant of a country, where a woman is<lb corresp="#f7_l11" n="11" type="line" />old at five and twenty.<lb corresp="#f7_l12" n="12" type="line" />It is a pleasing circumstance in this Persian's journal, that in<lb corresp="#f7_l13" n="13" type="line" />every part of our United Kingdom, he met with hospitality and<lb corresp="#f7_l14" n="14" type="line" />kindness. He here left his vessel, and was proceeding to <placeName>Dublin</placeName>
+        <lb corresp="#f7_l15" n="15" type="line" />to wait on <persName>Lord Cornwallis</persName>, when he received a visit from an officer<lb corresp="#f7_l16" n="16" type="line" />whom he had known in India, and who conducted him to his house<lb corresp="#f7_l17" n="17" type="line" />in the neighbourhood of <placeName>Cork</placeName>, where, on an estate of a few hundreds<lb corresp="#f7_l18" n="18" type="line" />a year, he was enjoying, as <persName>Abu Taleb</persName> assures us, more comfort and<lb corresp="#f7_l19" n="19" type="line" />plenty than an English gentleman could in <placeName>India</placeName>, upon an income<lb corresp="#f7_l20" n="20" type="line" />of a lack of rupees. At <placeName>Cove</placeName>, he had seen a spit turned by a dog,<lb corresp="#f7_l21" n="21" type="line" />but here the machinery for roasting was moved by smoke, and to-<lb corresp="#f7_l22" n="22" type="line" />gether with the dressers for holding china, and the pipes and ar-<lb corresp="#f7_l23" n="23" type="line" />rangement of a steam kitchen, excited his warmest admiration.<lb corresp="#f7_l24" n="24" type="line" />This officer had two fair neices, who, ' during dinner,' says the<lb corresp="#f7_l25" n="25" type="line" />Mussulman, ' honoured me with the most marked attention.'<lb corresp="#f7_l26" n="26" type="line" />" After dinner, these angels made tea for us, and one of them having<lb corresp="#f7_l27" n="27" type="line" />asked me if it was sweet enough, I replied, that having been made by<lb corresp="#f7_l28" n="28" type="line" />such hands, it could not be but sweet. On hearing this, all the com-<lb corresp="#f7_l29" n="29" type="line" />pany laughed, and my fair one blushed like the rose of <placeName>Damascus</placeName>.' v. i.<lb corresp="#f7_l30" n="30" type="line" />p. 103.<lb corresp="#f7_l31" n="31" type="line" />We shall not follow him minutely through his journey by <placeName>Dublin</placeName>
+        <lb corresp="#f7_l32" n="32" type="line" />and <placeName>Chester</placeName>, to <placeName>London</placeName>; we must however observe, that in the<lb corresp="#f7_l33" n="33" type="line" />former place, where he spent some time, he first beheld the pheno-<lb corresp="#f7_l34" n="34" type="line" />menon of a fall of snow, which greatly delighted him by its novelty,<lb corresp="#f7_l35" n="35" type="line" />and that he was quite reconciled to the coldness of the climate, by<lb corresp="#f7_l36" n="36" type="line" />the power it gave him to bear fatigue, and by the many advantages<lb corresp="#f7_l37" n="37" type="line" />which it confers on the inhabitants; making, as he asserts, the men<lb corresp="#f7_l38" n="38" type="line" />vigorous, the women handsome, and both sexes open-hearted and<lb corresp="#f7_l39" n="39" type="line" />sincere. ' Boys and girls of fifteen years of age, are here as inno-<lb corresp="#f7_l40" n="40" type="line" />cent,' in the Persian's opinion, ' as the children of <placeName>India</placeName> of 5 or 6,<lb corresp="#f7_l41" n="41" type="line" />and have no wish beyond the amusement of play-things, or the pro-<lb corresp="#f7_l42" n="42" type="line" />duce of a pastry-cook's shop.' Nay many grown persons of wealth<lb corresp="#f7_l43" n="43" type="line" />and rank are, as he assures us, in an almost similar predicament !<lb corresp="#f7_l44" n="44" type="line" />" What I am now to relate, will, I fear, not be credited by my coun-<lb corresp="#f7_l45" n="45" type="line" />trymen, but is, nevertheless, an absolute fact. In these countries, it<lb corresp="#f7_l46" n="46" type="line" />frequently happens, that the ponds and rivers are frozen over; and the<lb corresp="#f7_l47" n="47" type="line" />ice<lb corresp="#f7_l48" n="48" type="line" />
+        <date>1810</date>. <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>.<lb corresp="#f7_l49" n="49" type="line" />87<lb corresp="#f7_l50" n="50" type="line" />ice being of sufficient strength to bear a great weight, numbers of people<lb corresp="#f7_l51" n="51" type="line" />assemble thereon, and amuse themselves in skating.' vol. i. p. 147.<lb corresp="#f7_l52" n="52" type="line" />On the whole, he seems more delighted with Ireland than with<lb corresp="#f7_l53" n="53" type="line" />any other place which he visited, and manifests a very natural pre-<lb corresp="#f7_l54" n="54" type="line" />ference of the urbanity, good-nature and intelligence of these, his<lb corresp="#f7_l55" n="55" type="line" />first European friends, over all other nations. Some of the traits<lb corresp="#f7_l56" n="56" type="line" />which he mentions are indeed really national, and shew in a strong<lb corresp="#f7_l57" n="57" type="line" />light the peculiar character of that hospitable and good-natured<lb corresp="#f7_l58" n="58" type="line" />race; but it must not be forgotten, that here every thing was new,<lb corresp="#f7_l59" n="59" type="line" />and that consequently all the amusements of which he partook<lb corresp="#f7_l60" n="60" type="line" />were more attractive in his eyes. Here, for instance, he was first<lb corresp="#f7_l61" n="61" type="line" />at a theatre, where he received the greatest entertainment from the<lb corresp="#f7_l62" n="62" type="line" />adventures of an ' Ethiopian magician called Harlequin.' Mr.<lb corresp="#f7_l63" n="63" type="line" />
+        <persName>Astley</persName>'s horsemanship, and the Panorama of <placeName>Gibraltar</placeName>, gave him<lb corresp="#f7_l64" n="64" type="line" />great delight; but he was rather scandalized than pleased with the<lb corresp="#f7_l65" n="65" type="line" />estimation, approaching to idolatry, in which statues of lead and<lb corresp="#f7_l66" n="66" type="line" />marble are held.<lb corresp="#f7_l67" n="67" type="line" />" It is really astonishing that people possessing so much knowledge<lb corresp="#f7_l68" n="68" type="line" />and good sense, and who reproach the nobility of <placeName>Hindostan</placeName> with wear-<lb corresp="#f7_l69" n="69" type="line" />ing gold and silver ornaments like women, should be thus tempted by<lb corresp="#f7_l70" n="70" type="line" />Satan to throw away their money on useless blocks,' Vol. i. p. 129.<lb corresp="#f7_l71" n="71" type="line" />Of the meanness of the hot-baths he bitterly complains ; and<lb corresp="#f7_l72" n="72" type="line" />though he expresses a pious hope that the flesh-brush was composed<lb corresp="#f7_l73" n="73" type="line" />of horse-hair, yet a doubt seems lurking in his mind, that its bristles<lb corresp="#f7_l74" n="74" type="line" />were shorn from a less holy animal. He noticed, on his road from<lb corresp="#f7_l75" n="75" type="line" />
+        <placeName>Holyhead</placeName>, <placeName>Conway</placeName>, with its ancient walls resembling those of Alla-<lb corresp="#f7_l76" n="76" type="line" />habad; and <placeName>Chester</placeName>, with the verandahs which line the principal<lb corresp="#f7_l77" n="77" type="line" />streets ; and on the 25th of Shaban, corresponding to the 21st of<lb corresp="#f7_l78" n="78" type="line" />
+        <date>January, 1800</date>, arrived safe in <placeName>London</placeName>, being five days short of a<lb corresp="#f7_l79" n="79" type="line" />lunar year from the period of his leaving <placeName>Calcutta</placeName>.<lb corresp="#f7_l80" n="80" type="line" />In <placeName>London</placeName> he appears to have chiefly remained during the rest<lb corresp="#f7_l81" n="81" type="line" />of his stay in <placeName>England</placeName>. He made indeed an excursion with some<lb corresp="#f7_l82" n="82" type="line" />friends to <placeName>Windsor</placeName>, <placeName>Oxford</placeName>, and <placeName>Blenheim</placeName> ; and at the second of<lb corresp="#f7_l83" n="83" type="line" />these places was greatly delighted with the 10,000 Oriental manu-<lb corresp="#f7_l84" n="84" type="line" />scripts in the <placeName>Bodleian</placeName>, and the different specimens in the Anatomy<lb corresp="#f7_l85" n="85" type="line" />school. The public buildings, he observes, are ' of hewn stone,<lb corresp="#f7_l86" n="86" type="line" />and much resemble, in form, some of the Hindoo temples.'<lb corresp="#f7_l87" n="87" type="line" />But not all these wonders, nor even the charms of <persName>Mr. Hastings</persName>'<lb corresp="#f7_l88" n="88" type="line" />dairy and farm-yard, could long detain him from <placeName>London</placeName>, where,<lb corresp="#f7_l89" n="89" type="line" />with a naïveté almost equal to that of <persName>Mr. Ker Porter</persName>, ' Cupid,'<lb corresp="#f7_l90" n="90" type="line" />he observes, ' had planted one of his arrows in his bosom ;' and<lb corresp="#f7_l91" n="91" type="line" />whose ' heart-alluring damsels' he celebrated in a Persian ode, in<lb corresp="#f7_l92" n="92" type="line" />which he asserts,<lb corresp="#f7_l93" n="93" type="line" />" We have no longing for the Tubah, or Sudreh, or other trees of Paradise,<lb corresp="#f7_l94" n="94" type="line" />We are content to rest under the shade of these terrestrial cypresses."<lb corresp="#f7_l95" n="95" type="line" />F 4<lb corresp="#f7_l96" n="96" type="line" />Abu<pb n="8" facs="#f8" />
+        <lb corresp="#f8_l1" n="1" type="line" />88<lb corresp="#f8_l2" n="2" type="line" />
+        <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>. AUG.<lb corresp="#f8_l3" n="3" type="line" />
+        <persName>Abu Taleb</persName> seems, indeed, notwithstanding his horror of hog's<lb corresp="#f8_l4" n="4" type="line" />bristles, to have been soon very completely reconciled to the habits<lb corresp="#f8_l5" n="5" type="line" />and liquors of infidels, and, ' according to the advice of the divine<lb corresp="#f8_l6" n="6" type="line" />
+        <persName>Hafiz</persName>,' to have given himself up to love and gaiety.<lb corresp="#f8_l7" n="7" type="line" />It may be well imagined, that the head of a man, who had been<lb corresp="#f8_l8" n="8" type="line" />so far elated by the attentions of the provincial beauties of <placeName>Cork</placeName>,<lb corresp="#f8_l9" n="9" type="line" />would be completely turned by the blandishments of rank, fashion<lb corresp="#f8_l10" n="10" type="line" />and luxury which surrounded him in <placeName>London</placeName> ; and it is truly amus-<lb corresp="#f8_l11" n="11" type="line" />ing to observe the complacency with which he relates how much his<lb corresp="#f8_l12" n="12" type="line" />society was courted, while his ' wit and repartees, with some im-<lb corresp="#f8_l13" n="13" type="line" />promptu applications of Oriental poetry, were the subject of con-<lb corresp="#f8_l14" n="14" type="line" />versation in the politest circles.'-Poor Abu ! he little suspected<lb corresp="#f8_l15" n="15" type="line" />that all the while he was only entertaining from the Caftan outwards.<lb corresp="#f8_l16" n="16" type="line" />In the middle, however, of dissipation, more serious studies were<lb corresp="#f8_l17" n="17" type="line" />not neglected : he saw the Tower, and the Freemasons, and the<lb corresp="#f8_l18" n="18" type="line" />Eidouranion, and the Irish giant ; and amidst all the curiosities of<lb corresp="#f8_l19" n="19" type="line" />the <orgName>British Museum</orgName>, selected, as most worth notice, the good<lb corresp="#f8_l20" n="20" type="line" />woman whose forehead was decorated with horns. And though<lb corresp="#f8_l21" n="21" type="line" />the slight mention of the joys of Paradise, and his ready com-<lb corresp="#f8_l22" n="22" type="line" />pliance with the use of wine, may be considered as blots in his cha-<lb corresp="#f8_l23" n="23" type="line" />racter among the True Believers, yet, on the other hand, he takes<lb corresp="#f8_l24" n="24" type="line" />care to inform those of his own faith, that, in a conversation with an<lb corresp="#f8_l25" n="25" type="line" />English Bishop, he stoutly maintained the divinity of <persName>Mohammed</persName>'s<lb corresp="#f8_l26" n="26" type="line" />commission, and almost, as he imagined, persuaded his right reve-<lb corresp="#f8_l27" n="27" type="line" />rend friend to embrace the tenets of Islam. There are, however,<lb corresp="#f8_l28" n="28" type="line" />many better things in his book, and which really evince an active<lb corresp="#f8_l29" n="29" type="line" />and curious mind, bent on acquiring knowledge, and, when acquired,<lb corresp="#f8_l30" n="30" type="line" />able to digest it. The following observation would not be, perhaps,<lb corresp="#f8_l31" n="31" type="line" />unworthy of the most civilized and philosophic describer of the<lb corresp="#f8_l32" n="32" type="line" />effects of English mechanism.<lb corresp="#f8_l33" n="33" type="line" />" On entering one of the extensive manufactories in <placeName>England</placeName>, the<lb corresp="#f8_l34" n="34" type="line" />mind is at first bewildered by the number and variety of articles dis-<lb corresp="#f8_l35" n="35" type="line" />played therein ; but after recovering from this first impression, and hav-<lb corresp="#f8_l36" n="36" type="line" />ing coolly surveyed all the objects around, every thing appears con-<lb corresp="#f8_l37" n="37" type="line" />ducted with so much regularity and precision, that a person is induced<lb corresp="#f8_l38" n="38" type="line" />to suppose one of the meanest capacity might superintend and direct<lb corresp="#f8_l39" n="39" type="line" />the whole process. Whatever requires strength or numbers, is effected<lb corresp="#f8_l40" n="40" type="line" />by engines ; if clearness of sight is wanted, magnifying glasses are at<lb corresp="#f8_l41" n="41" type="line" />hand; and if deep reflection is necessary to combine all the parts,<lb corresp="#f8_l42" n="42" type="line" />whereby to insure a unity of action, so many aids are derived from the<lb corresp="#f8_l43" n="43" type="line" />numerous artists employed in the different parts of the work, that the<lb corresp="#f8_l44" n="44" type="line" />union of the whole seems not to require any great exertion of genius.'<lb corresp="#f8_l45" n="45" type="line" />Vol.i. pp. 244, 245.<lb corresp="#f8_l46" n="46" type="line" />In his miscellaneous observations on the English character, edu-<lb corresp="#f8_l47" n="47" type="line" />cation, and form of government, we are often forcibly reminded of<lb corresp="#f8_l48" n="48" type="line" />the<lb corresp="#f8_l49" n="49" type="line" />
+        <date>1810</date>. <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>.<lb corresp="#f8_l50" n="50" type="line" />89<lb corresp="#f8_l51" n="51" type="line" />the Spanish worthy, to whose travels we lately alluded; and it is<lb corresp="#f8_l52" n="52" type="line" />no slight praise to the author of that entertaining work, that the<lb corresp="#f8_l53" n="53" type="line" />sentiments which he gives to his hero are so nearly the same with<lb corresp="#f8_l54" n="54" type="line" />those of a traveller to whom all was new. The praise which he<lb corresp="#f8_l55" n="55" type="line" />lavishes on all the higher powers, however deserved, is not perhaps<lb corresp="#f8_l56" n="56" type="line" />free from suspicion, since at the time of publishing his Persian<lb corresp="#f8_l57" n="57" type="line" />journal, he was still subject to British governors, and still a candi-<lb corresp="#f8_l58" n="58" type="line" />date for British patronage. But the detail is curious; and though<lb corresp="#f8_l59" n="59" type="line" />he taxes us pretty smartly with pride, philosophy (meaning atheism)<lb corresp="#f8_l60" n="60" type="line" />and laziness, (for which last vice he recommends, as a cure, shorter<lb corresp="#f8_l61" n="61" type="line" />meals and longer beards,) yet the impressions which he evidently<lb corresp="#f8_l62" n="62" type="line" />feels are most flattering to our nation.<lb corresp="#f8_l63" n="63" type="line" />It is of course impossible that his views of every subject should<lb corresp="#f8_l64" n="64" type="line" />be just ; and we find, accordingly, that many misconceptions relating<lb corresp="#f8_l65" n="65" type="line" />to laws, juries, and government, are to be found in every part of his<lb corresp="#f8_l66" n="66" type="line" />work ; and when he compares a certain honourable house to two<lb corresp="#f8_l67" n="67" type="line" />parties of parroquets, scolding on opposite mango trees, it is evi-<lb corresp="#f8_l68" n="68" type="line" />dent that he describes from fancy. But though he is often misin-<lb corresp="#f8_l69" n="69" type="line" />formed, he is seldom absurd; and, in truth, we are not sure whether<lb corresp="#f8_l70" n="70" type="line" />his journal would not be more entertaining, if it had more of the<lb corresp="#f8_l71" n="71" type="line" />Oriental leaven. The following observation, however, may be ex-<lb corresp="#f8_l72" n="72" type="line" />cepted from this stigma. He is speaking of an unfortunate class<lb corresp="#f8_l73" n="73" type="line" />of females, whom he considers as more numerous in <placeName>London</placeName> than<lb corresp="#f8_l74" n="74" type="line" />the truth, we believe, will warrant.<lb corresp="#f8_l75" n="75" type="line" />" The conduct of these women is rendered still more blameable, by<lb corresp="#f8_l76" n="76" type="line" />their hiring lodgings in, or frequenting streets which, from their names,<lb corresp="#f8_l77" n="77" type="line" />ought only to be the abode of virtue and religion ;- for instance, " Pro-<lb corresp="#f8_l78" n="78" type="line" />vidence-street," " Modest-court," "" <placeName>St. James's-street</placeName>," " St. Martin's-<lb corresp="#f8_l79" n="79" type="line" />lane," and " <placeName>St. Paul's Church-yard</placeName>." The first of these is one of the<lb corresp="#f8_l80" n="80" type="line" />epithets of God, the second implies virtue, and the others are named<lb corresp="#f8_l81" n="81" type="line" />after the holy apostles of the blessed Messiah. Then there is " Queen-<lb corresp="#f8_l82" n="82" type="line" />Anne-street," and " <placeName>Charlotte-street</placeName>;" the one named after the greatest,<lb corresp="#f8_l83" n="83" type="line" />the other after the best of queens. I, however, think that the persons<lb corresp="#f8_l84" n="84" type="line" />who let the lodgings are more reprehensible than the unfortunate wo-'<lb corresp="#f8_l85" n="85" type="line" />men themselves.' Vol. ii. pp. 45, 46 ..<lb corresp="#f8_l86" n="86" type="line" />His summary of the last war, and of the politics of <placeName>Europe</placeName>,<lb corresp="#f8_l87" n="87" type="line" />though not free from error, is really, considering his situation, ex-<lb corresp="#f8_l88" n="88" type="line" />traordinary ; and we rejoice that such an account, from an impartial<lb corresp="#f8_l89" n="89" type="line" />quarter, of British heroism by land and sea, exists in the universal<lb corresp="#f8_l90" n="90" type="line" />language of the East. It would be, in our opinion, an object wor-<lb corresp="#f8_l91" n="91" type="line" />thy of an enlightened policy, by the aid of the press, to give cur-<lb corresp="#f8_l92" n="92" type="line" />rency in every possible manner to the original, both in <placeName>Persia</placeName> and<lb corresp="#f8_l93" n="93" type="line" />
+        <placeName>Hindostan</placeName>. There are some few things which are offensive to<lb corresp="#f8_l94" n="94" type="line" />English nationality; but we may well endure that, where so much,<lb corresp="#f8_l95" n="95" type="line" />is said in our favour, some blame should be mingled ; and, at any<lb corresp="#f8_l96" n="96" type="line" />rate,<pb n="9" facs="#f9" />
+        <lb corresp="#f9_l1" n="1" type="line" />90<lb corresp="#f9_l2" n="2" type="line" />
+        <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>. AUG.<lb corresp="#f9_l3" n="3" type="line" />rate, a clear and sensible view of the manners of <placeName>Europe</placeName>, as it may<lb corresp="#f9_l4" n="4" type="line" />tend to reconcile the nations of the East to a preponderance, which<lb corresp="#f9_l5" n="5" type="line" />must be chiefly supported by opinion, is of the greatest advantage<lb corresp="#f9_l6" n="6" type="line" />to the country which has the greatest stake there.<lb corresp="#f9_l7" n="7" type="line" />Of <placeName>Paris</placeName>, which the author next visited, as compared to <placeName>London</placeName>,<lb corresp="#f9_l8" n="8" type="line" />we have already given his sentiments ; but it is fair to own, that he<lb corresp="#f9_l9" n="9" type="line" />expresses, in pretty strong terms, his preference of French to English<lb corresp="#f9_l10" n="10" type="line" />politeness. He had complained before of our aversion to taking<lb corresp="#f9_l11" n="11" type="line" />any trouble, even for a friend; and in this respect he says our<lb corresp="#f9_l12" n="12" type="line" />neighbours are very superior ' to the irritable and surly Englishman.'<lb corresp="#f9_l13" n="13" type="line" />On the whole, however, he did not like a residence among them, and<lb corresp="#f9_l14" n="14" type="line" />complains heavily of their idle, slovenly, and trifling habits, which<lb corresp="#f9_l15" n="15" type="line" />he thinks will effectually prevent their gaining a superiority over<lb corresp="#f9_l16" n="16" type="line" />their insular neighbours. "The women, too, he does not like ; ' they<lb corresp="#f9_l17" n="17" type="line" />were painted to an excessive degree, were very forward, and great<lb corresp="#f9_l18" n="18" type="line" />talkers.' Amorous as he confesses himself by nature to be, and<lb corresp="#f9_l19" n="19" type="line" />easily affected at the sight of beauty, he never met with a French-<lb corresp="#f9_l20" n="20" type="line" />woman who interested him. In the English chargé des affaires<lb corresp="#f9_l21" n="21" type="line" />then at <placeName>Paris</placeName>, he seems, if his report is correct, to have had a to-<lb corresp="#f9_l22" n="22" type="line" />lerable specimen of the indolence, nonchalance, and utter want of<lb corresp="#f9_l23" n="23" type="line" />information, which too often characterize the young men who fill<lb corresp="#f9_l24" n="24" type="line" />that important office. By his advice he was persuaded to abandon<lb corresp="#f9_l25" n="25" type="line" />the usual road to <placeName>Constantinople</placeName>, through <placeName>Germany</placeName> and <placeName>Hungary</placeName>,<lb corresp="#f9_l26" n="26" type="line" />for the more tedious course of <placeName>Italy</placeName> and the <placeName>Mediterranean</placeName>. The<lb corresp="#f9_l27" n="27" type="line" />ever-waking eye, which is turned so wistfully towards the East, did<lb corresp="#f9_l28" n="28" type="line" />not overlook our tourist; the sgavans, <persName>Langlais</persName> and <persName>De Sacy</persName>, were<lb corresp="#f9_l29" n="29" type="line" />employed to cultivate his acquaintance ; and he received repeated<lb corresp="#f9_l30" n="30" type="line" />invitations from <persName>Talleyrand</persName>, and at length from <persName>Buonaparte</persName>. In-<lb corresp="#f9_l31" n="31" type="line" />disposition, however, prevented his accepting them, and he passed<lb corresp="#f9_l32" n="32" type="line" />on by <placeName>Lyons</placeName> and <placeName>Avignon</placeName> to <placeName>Marseilles</placeName>. During this journey he<lb corresp="#f9_l33" n="33" type="line" />noticed the famous bridge of <placeName>St. Esprit</placeName>, as having been built by<lb corresp="#f9_l34" n="34" type="line" />order of one of the Cæsars; and in the diligence, between <placeName>Avignon</placeName>
+        <lb corresp="#f9_l35" n="35" type="line" />and <placeName>Marseilles</placeName>, witnessed a kind of brutality in his fellow passen-<lb corresp="#f9_l36" n="36" type="line" />gers to a handsome Egyptian girl who was in the coach, which it is<lb corresp="#f9_l37" n="37" type="line" />painful to conceive possible in any country, and which may be<lb corresp="#f9_l38" n="38" type="line" />safely pronounced peculiar to <placeName>France</placeName>. Not content with the most<lb corresp="#f9_l39" n="39" type="line" />licentious freedoms, they even snatched his cane, and struck her<lb corresp="#f9_l40" n="40" type="line" />several severe blows with it. Surely this was enough to make Abu<lb corresp="#f9_l41" n="41" type="line" />Taleb recal his assertion of the superiority of French politeness<lb corresp="#f9_l42" n="42" type="line" />and delicacy.<lb corresp="#f9_l43" n="43" type="line" />
+        <placeName>Genoa</placeName>, <placeName>Leghorn</placeName>, and <placeName>Malta</placeName>, are in their turn described; at the<lb corresp="#f9_l44" n="44" type="line" />first of these places he gives us a natural testimony in favour of<lb corresp="#f9_l45" n="45" type="line" />Italian music ; <placeName>Leghorn</placeName> he did not like, and prays that ' the curse<lb corresp="#f9_l46" n="46" type="line" />of God may light on such a city and such a people.'<lb corresp="#f9_l47" n="47" type="line" />At <placeName>Constantinople</placeName> he only found four praiseworthy institutions ;<lb corresp="#f9_l48" n="48" type="line" />‘ the<lb corresp="#f9_l49" n="49" type="line" />
+        <date>1810</date>. <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>.<lb corresp="#f9_l50" n="50" type="line" />£<lb corresp="#f9_l51" n="51" type="line" />91<lb corresp="#f9_l52" n="52" type="line" />" the boats'-' the horses kept for hire'-' the public fountains' --<lb corresp="#f9_l53" n="53" type="line" />and ' the several bazars for merchandize.' Of the Turks he says but<lb corresp="#f9_l54" n="54" type="line" />little ; his stay in <placeName>Constantinople</placeName> was short, and they and the Per-<lb corresp="#f9_l55" n="55" type="line" />sians have no liking for each other. He allows them, however,<lb corresp="#f9_l56" n="56" type="line" />many amiable qualities ; and, what is singular, does not consider the<lb corresp="#f9_l57" n="57" type="line" />power of their Sultan as absolute.<lb corresp="#f9_l58" n="58" type="line" />The relation of his journey by <placeName>Amasia</placeName>, <placeName>Diarbekir</placeName>, <placeName>Mousul</placeName>, and<lb corresp="#f9_l59" n="59" type="line" />
+        <placeName>Bagdad</placeName>, is very brief, and not particularly interesting :- he was now<lb corresp="#f9_l60" n="60" type="line" />among nations whose manners and faith were familiar to his coun-<lb corresp="#f9_l61" n="61" type="line" />trymen ; and the only things which he appears to consider as worth<lb corresp="#f9_l62" n="62" type="line" />their notice, or his own, are the shrines and tombs of saints on<lb corresp="#f9_l63" n="63" type="line" />the road. Perhaps he was a little anxious to efface, at the sepul-<lb corresp="#f9_l64" n="64" type="line" />chre of <persName>Ali</persName>, the guilt of his compliances with infidel customs, on<lb corresp="#f9_l65" n="65" type="line" />the banks of the <placeName>Thames</placeName> and the <placeName>Liffey</placeName>. He curses the Turks<lb corresp="#f9_l66" n="66" type="line" />heartily for heretics and soonys ; and notices a minaret which shakes<lb corresp="#f9_l67" n="67" type="line" />and trembles at the name of <persName>Ali</persName>, while it remains immoveable by<lb corresp="#f9_l68" n="68" type="line" />all possible mention of <persName>Omar</persName>. There are, however, many parti-<lb corresp="#f9_l69" n="69" type="line" />culars in this part of his work, worth the attention of future tra-<lb corresp="#f9_l70" n="70" type="line" />vellers, who may take this little frequented route ; and we have not<lb corresp="#f9_l71" n="71" type="line" />yet seen a more satisfactory account than is here given of the Vaha-<lb corresp="#f9_l72" n="72" type="line" />bies. The founder of this powerful sect, <persName>Abdul Vechab</persName>, it is well<lb corresp="#f9_l73" n="73" type="line" />known, forbad all worship of <persName>Mohammed</persName>, and all reverence to<lb corresp="#f9_l74" n="74" type="line" />tombs and shrines as idolatrous, and giving partners to God. He<lb corresp="#f9_l75" n="75" type="line" />was, like the original impostor of <placeName>Arabia</placeName>, a warlike fanatic ; and<lb corresp="#f9_l76" n="76" type="line" />though his son <persName>Mohammed</persName>, to whom he transmitted his authority,<lb corresp="#f9_l77" n="77" type="line" />is blind, he is ably supported by an adopted brother of his father's,<lb corresp="#f9_l78" n="78" type="line" />named <persName>Abd al Aziz</persName>, an extraordinary man of gigantic stature, and,<lb corresp="#f9_l79" n="79" type="line" />though eighty years old, possessing all the vigour of youth, which<lb corresp="#f9_l80" n="80" type="line" />he predicts he shall retain, till the <orgName>Vahaby</orgName> religion is perfectly esta-<lb corresp="#f9_l81" n="81" type="line" />blished over <placeName>Arabia</placeName>.<lb corresp="#f9_l82" n="82" type="line" />' Although the Vahabies have collected immense wealth, they still<lb corresp="#f9_l83" n="83" type="line" />retain the greatest simplicity of manners, and moderation in their de-<lb corresp="#f9_l84" n="84" type="line" />sires : they sit down on the ground without ceremony, content them-<lb corresp="#f9_l85" n="85" type="line" />selves with a few dates for their food, and a coarse large cloak serves<lb corresp="#f9_l86" n="86" type="line" />them for clothing and bed, for two or three years. Their horses are of<lb corresp="#f9_l87" n="87" type="line" />the genuine <placeName>Nejid</placeName> breed, of well-known pedigrees; none of which will<lb corresp="#f9_l88" n="88" type="line" />they permit to be taken out of their country.' Vol. ii. pp. 332, 333.<lb corresp="#f9_l89" n="89" type="line" />The successes and sacrilege of this ' wicked tribe' grievously of-<lb corresp="#f9_l90" n="90" type="line" />fend <persName>Abu Taleb</persName>, and he calls on the Sultan and the Shah to unite<lb corresp="#f9_l91" n="91" type="line" />in repressing them. Both Sultan and Shah, however, have need,<lb corresp="#f9_l92" n="92" type="line" />as it should seem, themselves to tremble before them ; and ' the<lb corresp="#f9_l93" n="93" type="line" />least of the Servants of God' (so this Eastern Pontiff styles himself)<lb corresp="#f9_l94" n="94" type="line" />has written to both these monarchs, denouncing, ' in the name of<lb corresp="#f9_l95" n="95" type="line" />God the compassionate and merciful,' fire and sword, and destruc-<lb corresp="#f9_l96" n="96" type="line" />tion on them and their impenitent subjects.<lb corresp="#f9_l97" n="97" type="line" />What<pb n="10" facs="#f10" />
+        <lb corresp="#f10_l1" n="1" type="line" />92<lb corresp="#f10_l2" n="2" type="line" />
+        <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>. AUG.<lb corresp="#f10_l3" n="3" type="line" />What part they may yet be destined to perform, is only known<lb corresp="#f10_l4" n="4" type="line" />to that wisdom, which seems to have set apart the portion of the<lb corresp="#f10_l5" n="5" type="line" />world where they are placed, as the theatre of the most important<lb corresp="#f10_l6" n="6" type="line" />scenes and the most singular revolutions. At <placeName>Busserah</placeName>, <persName>Abu Taleb</persName>
+        <lb corresp="#f10_l7" n="7" type="line" />quarrelled with the English resident, and took a singular method of<lb corresp="#f10_l8" n="8" type="line" />revenge, by ' writing a satirical poem on him,' and repeating some<lb corresp="#f10_l9" n="9" type="line" />of the lines in his hearing. On the other hand, the Englishman<lb corresp="#f10_l10" n="10" type="line" />retorted, perhaps with reason, that <persName>Abu Taleb</persName> was spoilt ' by the<lb corresp="#f10_l11" n="11" type="line" />luxury and attentions of <placeName>London</placeName>, and that it was now impossible to<lb corresp="#f10_l12" n="12" type="line" />please him.' These bickerings, after being carried on between jest<lb corresp="#f10_l13" n="13" type="line" />and earnest some time, were terminated by his departure for Bom-<lb corresp="#f10_l14" n="14" type="line" />bay. After a pleasant residence of some months in that island, and<lb corresp="#f10_l15" n="15" type="line" />an agreeable voyage in one of the Company's vessels, ' on the even-<lb corresp="#f10_l16" n="16" type="line" />ing of the <date>15th Rubby Assany 1218</date>, corresponding with the 4th of<lb corresp="#f10_l17" n="17" type="line" />August, 1803, he landed safely in <placeName>Calcutta</placeName>, and returned thanks to<lb corresp="#f10_l18" n="18" type="line" />God for his preservation and safe return to his native shores.'<lb corresp="#f10_l19" n="19" type="line" />We have been hitherto so much engrossed with <persName>Abu Taleb</persName> him-<lb corresp="#f10_l20" n="20" type="line" />self, as to have no opportunity of mentioning <persName>Mr. Stewart</persName>, to whom<lb corresp="#f10_l21" n="21" type="line" />we are obliged for these Travels in their English dress. He assures<lb corresp="#f10_l22" n="22" type="line" />us, in the Preface, that they are as literally translated as the nature<lb corresp="#f10_l23" n="23" type="line" />of the two languages will allow, and that he has only omitted some<lb corresp="#f10_l24" n="24" type="line" />part of the poetry, and two discussions, one on anatomy, and the<lb corresp="#f10_l25" n="25" type="line" />other on the construction of a hot-house, which, though full of in-<lb corresp="#f10_l26" n="26" type="line" />formation to <persName>Abu Taleb</persName>'s Oriental readers, he rightly judged would<lb corresp="#f10_l27" n="27" type="line" />be tedious to those who peruse him in <placeName>Europe</placeName>. To this merit of<lb corresp="#f10_l28" n="28" type="line" />fidelity, which, from <persName>Mr. Stewart</persName>'s character, we are fully disposed<lb corresp="#f10_l29" n="29" type="line" />to take for granted, may be added the praise of an easy natural<lb corresp="#f10_l30" n="30" type="line" />English style, which makes on the whole the Travels of <persName>Abu Taleb</persName>
+        <lb corresp="#f10_l31" n="31" type="line" />Khan not only a curious, but a very agreeable present to the Western<lb corresp="#f10_l32" n="32" type="line" />world, for which we owe no trifling obligation to his ingenious<lb corresp="#f10_l33" n="33" type="line" />translator. To the work itself, indeed, we cannot help attaching a<lb corresp="#f10_l34" n="34" type="line" />stronger interest, than the apparent abilities of <persName>Abu Taleb</persName> claim ;<lb corresp="#f10_l35" n="35" type="line" />it is the first description of European manners and character, which<lb corresp="#f10_l36" n="36" type="line" />has, as far as we know, appeared in an Oriental language; and if<lb corresp="#f10_l37" n="37" type="line" />sufficient circulation be once given to this production of a Persian,<lb corresp="#f10_l38" n="38" type="line" />and a descendant of <persName>Mohammed</persName>, (Vol. ii. p. 245.) it is impossible,<lb corresp="#f10_l39" n="39" type="line" />from the novelty, and peculiar interest of the subject, that it should<lb corresp="#f10_l40" n="40" type="line" />not become a common and fashionable study among the polite<lb corresp="#f10_l41" n="41" type="line" />and learned of those climates. We have already hinted, that to<lb corresp="#f10_l42" n="42" type="line" />
+        <placeName>England</placeName> this must be advantageous; but we do not stop here.<lb corresp="#f10_l43" n="43" type="line" />When we consider the other circumstances of the East, it is pro-<lb corresp="#f10_l44" n="44" type="line" />bable that the improvements and knowledge thus revealed in part,<lb corresp="#f10_l45" n="45" type="line" />-no longer coming under the suspicious garb of the report of an<lb corresp="#f10_l46" n="46" type="line" />enemy and a conqueror,-will excite a spirit of imitation among<lb corresp="#f10_l47" n="47" type="line" />those, who before considered the Europeans as a race of warlike<lb corresp="#f10_l48" n="48" type="line" />savages.<lb corresp="#f10_l49" n="49" type="line" />
+        <date>1810</date>. <persName>Abu Taleb</persName>'s Travels in <placeName>Asia</placeName>, <placeName>Africa</placeName>, and <placeName>Europe</placeName>. 93<lb corresp="#f10_l50" n="50" type="line" />savages. One effect will perhaps speedily follow,-that other<lb corresp="#f10_l51" n="51" type="line" />orientals will pursue the example of <persName>Abu Taleb</persName> in visiting coun-<lb corresp="#f10_l52" n="52" type="line" />tries, where, though there are ' Giants,' there are no man-eaters;<lb corresp="#f10_l53" n="53" type="line" />where, though the sheep are without ' broad tails,' the mutton is<lb corresp="#f10_l54" n="54" type="line" />confessedly tolerable; and though the men are ' sellers of wine,'<lb corresp="#f10_l55" n="55" type="line" />the women are stately as the trees of Paradise. From such in-<lb corresp="#f10_l56" n="56" type="line" />tercourse, good-will must follow, and where an European is now<lb corresp="#f10_l57" n="57" type="line" />considered as accursed, he will not, in future, want protectors or<lb corresp="#f10_l58" n="58" type="line" />imitators. There is a possibility of even greater advantages.<lb corresp="#f10_l59" n="59" type="line" />When we witness, as in the present tour, the reverence with which<lb corresp="#f10_l60" n="60" type="line" />a Mussulman has learnt to regard the founder of our religion ; and<lb corresp="#f10_l61" n="61" type="line" />when we consider that internal divisions are, at this moment, weak-<lb corresp="#f10_l62" n="62" type="line" />ening his attachment to his own peculiar tenets; there is a chance,<lb corresp="#f10_l63" n="63" type="line" />which (if not spoiled by indiscreet zeal on the one hand, or selfish<lb corresp="#f10_l64" n="64" type="line" />indifference on the other,) will grow stronger every day, that the<lb corresp="#f10_l65" n="65" type="line" />cause of religion, as well as that of civilization, may profit by our<lb corresp="#f10_l66" n="66" type="line" />connexions with <placeName>Asia</placeName>.<lb corresp="#f10_l67" n="67" type="line" />ART. VI. Ecclesiastical Biography, or Lives of eminent Men con-<lb corresp="#f10_l68" n="68" type="line" />nected with the History of Religion in <placeName>England</placeName>, from the Com-<lb corresp="#f10_l69" n="69" type="line" />mencement of the Reformation to the Revolution. Selected and<lb corresp="#f10_l70" n="70" type="line" />illustrated with Notes, by <persName>Christopher Wordsworth</persName>, A. M.<lb corresp="#f10_l71" n="71" type="line" />(now D. D.) Dean and Rector of <placeName>Bocking</placeName>, and Domestic Chap-<lb corresp="#f10_l72" n="72" type="line" />lain to his Grace the Archbishop of <placeName>Canterbury</placeName>. In 6 volumes.<lb corresp="#f10_l73" n="73" type="line" />AFTER a repose of two reigns, something resembling the<lb corresp="#f10_l74" n="74" type="line" />ancient activity and intellectual exertions of <placeName>Lambeth</placeName> has<lb corresp="#f10_l75" n="75" type="line" />revived under the auspices of the present liberal and spirited metro-<lb corresp="#f10_l76" n="76" type="line" />politan. The great learning and industry of all the prelates who<lb corresp="#f10_l77" n="77" type="line" />filled that high station from <persName>Cranmer</persName> to <persName>Tillotson</persName>, and their in-<lb corresp="#f10_l78" n="78" type="line" />timate acquaintance with every transaction relating to the history<lb corresp="#f10_l79" n="79" type="line" />of the church during the times in which they respectively flourished,<lb corresp="#f10_l80" n="80" type="line" />are well known to have been the means of accumulating treasures<lb corresp="#f10_l81" n="81" type="line" />of valuable matter on the subject, which have been reposited from<lb corresp="#f10_l82" n="82" type="line" />time to time in the domestic library of the See. But a decent<lb corresp="#f10_l83" n="83" type="line" />respect for the retirement of the metropolitan, and a certain so-<lb corresp="#f10_l84" n="84" type="line" />lemnity, which, in defiance of the great change lately wrought in<lb corresp="#f10_l85" n="85" type="line" />public opinion, still continues, in some degree, to surround his<lb corresp="#f10_l86" n="86" type="line" />mansion, have probably contributed, among other causes, to render<lb corresp="#f10_l87" n="87" type="line" />these stores of information less generally accessible than those<lb corresp="#f10_l88" n="88" type="line" />which are contained in libraries professedly adapted to public use,<lb corresp="#f10_l89" n="89" type="line" />and even than those belonging to private colleges in the uni-<lb corresp="#f10_l90" n="90" type="line" />versities.<lb corresp="#f10_l91" n="91" type="line" />To<pb n="11" facs="#f11" />
+        <lb corresp="#f11_l1" n="1" type="line" />94<lb corresp="#f11_l2" n="2" type="line" />
+        <persName>Dr. Wordsworth</persName>'s Ecclesiastical Biography. AUG.<lb corresp="#f11_l3" n="3" type="line" />To scholars of one description the <placeName>Lambeth</placeName> library has always<lb corresp="#f11_l4" n="4" type="line" />been accessible ; and in the selection of chaplains the archbishops<lb corresp="#f11_l5" n="5" type="line" />of <placeName>Canterbury</placeName> have usually considered erudition as a necessary<lb corresp="#f11_l6" n="6" type="line" />accomplishment. Few, it may be presumed, have been received<lb corresp="#f11_l7" n="7" type="line" />into that respectable service who were not qualified to avail them-<lb corresp="#f11_l8" n="8" type="line" />selves of the ample sources of information which the archiepiscopal<lb corresp="#f11_l9" n="9" type="line" />library affords ; and many, no doubt, who entered already learned<lb corresp="#f11_l10" n="10" type="line" />within those venerable walls, have gone out into the world with<lb corresp="#f11_l11" n="11" type="line" />much larger and more curious stores of literature than they could in<lb corresp="#f11_l12" n="12" type="line" />any other situation have attained. In this capacity <persName>Joscelyn</persName>, under<lb corresp="#f11_l13" n="13" type="line" />
+        <persName>Archbishop Parker</persName>, and <persName>Henry Wharton</persName>, under Archbishop San-<lb corresp="#f11_l14" n="14" type="line" />croft, are deservedly remembered. The name of <persName>Dr. Wordsworth</persName>
+        <lb corresp="#f11_l15" n="15" type="line" />will hereafter assume an honourable station in the same catalogue.<lb corresp="#f11_l16" n="16" type="line" />The principles upon which the present compilation has been<lb corresp="#f11_l17" n="17" type="line" />made, may best be explained in his own words, Preface, p. xiii.<lb corresp="#f11_l18" n="18" type="line" />" It appeared to the present writer that there were extant among the<lb corresp="#f11_l19" n="19" type="line" />literary productions of our country many scattered narratives of the<lb corresp="#f11_l20" n="20" type="line" />lives of men eminent for piety, sufferings, learning, and such other vir-<lb corresp="#f11_l21" n="21" type="line" />tues or such vices as render their possessors interesting and profitable<lb corresp="#f11_l22" n="22" type="line" />subjects for history, many of which were very difficult to be procured,<lb corresp="#f11_l23" n="23" type="line" />and some of them little known; and that therefore the benefit which<lb corresp="#f11_l24" n="24" type="line" />might be expected from their influence was in a great degree lost.<lb corresp="#f11_l25" n="25" type="line" />These I thought it might be a labour well bestowed to restore to a<lb corresp="#f11_l26" n="26" type="line" />capacity of more extensive usefulness, and to republish them in one<lb corresp="#f11_l27" n="27" type="line" />collection, not merely to afford to many readers an opportunity of what<lb corresp="#f11_l28" n="28" type="line" />they could not otherwise enjoy, but also from the hopes that the ser-<lb corresp="#f11_l29" n="29" type="line" />viceable effect of each might be increased by their union and juxta-<lb corresp="#f11_l30" n="30" type="line" />position, and that, through the help of a chronological arrangement,<lb corresp="#f11_l31" n="31" type="line" />a species of ecclesiastical -history might result, which, though un-<lb corresp="#f11_l32" n="32" type="line" />doubtedly very imperfect, might yet answer, even in that view, several<lb corresp="#f11_l33" n="33" type="line" />valuable purposes, while it would possess some peculiar charms and<lb corresp="#f11_l34" n="34" type="line" />recommendations .- A scheme of this nature, it is easy to conceive,<lb corresp="#f11_l35" n="35" type="line" />could not well be undertaken without many limitations. Besides those<lb corresp="#f11_l36" n="36" type="line" />obvious ones of restricting the history to that of our own country, and<lb corresp="#f11_l37" n="37" type="line" />to the lives of our fellow countrymen, there appeared to me many<lb corresp="#f11_l38" n="38" type="line" />reasons why the work should begin with the preparations towards a<lb corresp="#f11_l39" n="39" type="line" />reformation made by the labours of <persName>Wicliffe</persName> and his followers, and not<lb corresp="#f11_l40" n="40" type="line" />a few why it might well stop at the revolution. Within these limits<lb corresp="#f11_l41" n="41" type="line" />are comprehended, if we except the first establishment of Christianity<lb corresp="#f11_l42" n="42" type="line" />among us, the rise, progress, and issue of the principal agitations and re-<lb corresp="#f11_l43" n="43" type="line" />volutions of the public mind of this country in regard to matters of re-<lb corresp="#f11_l44" n="44" type="line" />ligion : namely, the Reformation from <orgName>Popery</orgName>, and the glories and ho-<lb corresp="#f11_l45" n="45" type="line" />nours attending that hard-fought struggle; the subsequent exorbitances<lb corresp="#f11_l46" n="46" type="line" />of the anti-popish spirit as exemplified by the <orgName>Puritans</orgName> ; the victory of<lb corresp="#f11_l47" n="47" type="line" />that spirit in ill-suited alliance with the principles of civil liberty, over<lb corresp="#f11_l48" n="48" type="line" />loyalty and the <orgName>Established Church</orgName> in the times of <persName>Charles the First</persName> :<lb corresp="#f11_l49" n="49" type="line" />the wretched systems and practices of the Sectaries during the Com-<lb corresp="#f11_l50" n="50" type="line" />monwealth, and the contests for establishments between the Presbyte-<lb corresp="#f11_l51" n="51" type="line" />rians</p>
+    </body>
+  </text>
+</TEI>

@@ -173,9 +173,32 @@ async function build() {
   const sources = JSON.parse(
     await readFile(join(DOCS, 'xml', 'sources.json'), 'utf8'));
 
-  /* --- XML documents --- */
+  /* --- XML documents ---
+   * Bundled XML are auto-discovered from docs/xml/<id>/tei.xml (same spirit
+   * as the XSL scan below) so a new sample needs no manual manifest edit.
+   * sources.json is still read for: (a) remote documents (can't be scanned),
+   * and (b) explicit ordering/overrides of bundled entries listed there.
+   * Final order = manifest entries first (curated order), then any
+   * auto-discovered bundled dir not already in the manifest. */
+  const manifestXml = sources.xml || [];
+  const manifestIds = new Set(manifestXml.map(e => e.id));
+  const xmlDir = join(DOCS, 'xml');
+  const discovered = [];
+  for (const d of await readdir(xmlDir, { withFileTypes: true })) {
+    if (!d.isDirectory()) continue;
+    const inner = await readdir(join(xmlDir, d.name));
+    if (inner.includes('tei.xml')) {
+      discovered.push({ id: d.name, scope: 'bundled', path: `xml/${d.name}/tei.xml` });
+    }
+  }
+  discovered.sort((a, b) => a.id.localeCompare(b.id));
+  const xmlEntries = [
+    ...manifestXml,
+    ...discovered.filter(e => !manifestIds.has(e.id)),
+  ];
+
   const xml = [];
-  for (const entry of sources.xml) {
+  for (const entry of xmlEntries) {
     let meta;
     if (entry.scope === 'remote') {
       try {
