@@ -79,11 +79,23 @@
     overlayEl.addEventListener("mouseleave", off);
     targetEl.addEventListener("mouseenter", on);
     targetEl.addEventListener("mouseleave", off);
-    /* zone click → reveal the text line */
-    overlayEl.addEventListener("click", function () {
+    /* zone click → reveal the text line.
+       OpenSeadragon captures pointer events on the viewer (setPointerCapture +
+       preventDefault) for pan/zoom, which suppresses the *native* `click` on
+       overlay elements — so addEventListener("click") never fires on a real
+       mouse click. Detect the click through an OSD MouseTracker instead, which
+       lives inside OSD's gesture model. Fall back to a DOM listener if the OSD
+       library is somehow absent. */
+    var jumpToText = function () {
       setActive(overlayEl, targetEl);
       targetEl.scrollIntoView({ behavior: "smooth", block: "center" });
-    });
+    };
+    if (window.OpenSeadragon && OpenSeadragon.MouseTracker) {
+      new OpenSeadragon.MouseTracker({ element: overlayEl, clickHandler: jumpToText })
+        .setTracking(true);
+    } else {
+      overlayEl.addEventListener("click", jumpToText);
+    }
     /* text-line click → pan the image to the zone */
     targetEl.addEventListener("click", function () {
       setActive(overlayEl, targetEl);
