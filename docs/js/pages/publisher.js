@@ -90,6 +90,29 @@ function viewLink(url, labelKey) {
     viewContent(labelKey) + '</a>';
 }
 
+/* Recommended pairing for an XML card — the document's suggested stylesheet
+   (catalog field `recommendedXsl`, set in xml/sources.json or auto-derived
+   from the XSL whose Sample is this document). When set, renders a single
+   link, aligned to the card's bottom-right, that opens the combination
+   full-screen in a new tab. Renders nothing when unset or pointing at an
+   XSL no longer in the catalog. */
+function recommendRow(entry) {
+  if (!entry.recommendedXsl) return '';
+  const xsl = (catalog.xsl || []).find(x => x.id === entry.recommendedXsl);
+  if (!xsl) return '';
+  const href = 'view.html?url=' + encodeURIComponent(entry.url) +
+    '&xsl=' + encodeURIComponent(xsl.url);
+  const name = esc(xsl.title || xsl.id);
+  return '<div class="pub-recommend-row">' +
+      '<a class="pub-recommend" href="' + esc(href) + '" ' +
+        'target="_blank" rel="noopener" title="' + esc(t('pubRecommendTitle')) + '">' +
+        OPEN_ICON +
+        '<span class="pub-recommend-label">' + esc(t('pubRecommend')) + '</span>' +
+        '<span class="pub-recommend-name">' + name + '</span>' +
+      '</a>' +
+    '</div>';
+}
+
 /* ---- Filtering ----
    Text needle is OR-joined across (title, description, category, id, url).
    Facet sets are AND-joined across kinds; within a kind any one value
@@ -246,9 +269,11 @@ function renderXmlItem(entry) {
     (entry.description
       ? '<p class="pub-item-note">' + esc(entry.description) + '</p>' : '') +
     metaRow(entry) +
+    recommendRow(entry) +
     licenseRow(entry);
   li.addEventListener('click', e => {
-    if (e.target.closest('.pub-open')) return;
+    // ignore clicks on the "view" / "recommended view" links
+    if (e.target.closest('a')) return;
     selectedXml = entry; refresh(); syncUrl();
   });
   return li;

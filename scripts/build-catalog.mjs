@@ -153,6 +153,16 @@ function stripEmpty(o) {
     ([, v]) => !(v === '' || (Array.isArray(v) && v.length === 0))));
 }
 
+/* Reconstruct an XSL Sample's full path so it can be matched against an
+ * XML document's url: a `file` sample is its path as-is; a `folder` sample
+ * is dir + '/' + xml. Returns null when the XSL declares no sample. */
+function sampleFullPath(sample) {
+  if (!sample) return null;
+  if (sample.kind === 'file')   return sample.path;
+  if (sample.kind === 'folder') return sample.dir.replace(/\/$/, '') + '/' + sample.xml;
+  return null;
+}
+
 /* ---- remote fetch (with timeout + graceful fallback) ------------- */
 
 async function fetchText(url, ms = 20000) {
@@ -197,10 +207,54 @@ async function build() {
     ...discovered.filter(e => !manifestIds.has(e.id)),
   ];
 
+  /* --- XSL stylesheets ---
+   * Built before the XML documents so each document's recommended
+   * stylesheet (below) can be resolved against this list. */
+  const xsl = [];
+  const xslDir = join(DOCS, 'xsl');
+  for (const file of (await readdir(xslDir)).filter(f => f.endsWith('.xsl')).sort()) {
+    const meta = xslMeta(await readFile(join(xslDir, file), 'utf8'));
+    xsl.push({ url: 'xsl/' + file, ...meta });
+    console.log(`  xsl         ${file}`);
+  }
+
+  /* Recommended XML × XSL pairing.
+   * Each XSL declares the Sample document it is written for, so that sample
+   * doubles as the document's recommended stylesheet — we reverse that
+   * relationship here (sample full path -> XSL ids). A manifest entry may
+   * override it with an explicit `recommend: "<xsl-id>"` (or `recommend: ""`
+   * to suppress one); the override also resolves the ambiguity when several
+   * XSLs share one sample (e.g. the tutorial guide). */
+  const xslIds = new Set(xsl.map(x => x.id).filter(Boolean));
+  const sampleToXsl = new Map();
+  for (const x of xsl) {
+    const p = sampleFullPath(x.sample);
+    if (!p || !x.id) continue;
+    if (!sampleToXsl.has(p)) sampleToXsl.set(p, []);
+    sampleToXsl.get(p).push(x.id);
+  }
+  function resolveRecommend(entry, url) {
+    let id;
+    if (Object.prototype.hasOwnProperty.call(entry, 'recommend')) {
+      id = entry.recommend;                        // explicit ('' suppresses)
+    } else {
+      const cands = sampleToXsl.get(url) || [];    // auto: the XSL sampling this doc
+      if (cands.length === 1) id = cands[0];
+    }
+    if (!id) return null;
+    if (!xslIds.has(id)) {
+      console.warn(`  recommend ?  ${entry.id}: no XSL with id "${id}" — skipped`);
+      return null;
+    }
+    return id;
+  }
+
+  /* --- XML documents --- */
   const xml = [];
   for (const entry of xmlEntries) {
-    let meta;
+    let meta, url;
     if (entry.scope === 'remote') {
+      url = entry.url;
       try {
         // Fetched metadata wins where present; the fallback fills any
         // field the remote TEI omits (and is used wholesale on error).
@@ -210,21 +264,15 @@ async function build() {
         meta = { ...entry.fallback };
         console.warn(`  remote FAIL ${entry.id} (${err.message}) — using fallback`);
       }
-      xml.push({ id: entry.id, scope: 'remote', url: entry.url, ...meta });
     } else {
+      url = entry.path;
       meta = xmlMeta(await readFile(join(DOCS, entry.path), 'utf8'));
       console.log(`  bundled     ${entry.id}`);
-      xml.push({ id: entry.id, scope: 'bundled', url: entry.path, ...meta });
     }
-  }
-
-  /* --- XSL stylesheets --- */
-  const xsl = [];
-  const xslDir = join(DOCS, 'xsl');
-  for (const file of (await readdir(xslDir)).filter(f => f.endsWith('.xsl')).sort()) {
-    const meta = xslMeta(await readFile(join(xslDir, file), 'utf8'));
-    xsl.push({ url: 'xsl/' + file, ...meta });
-    console.log(`  xsl         ${file}`);
+    const out = { id: entry.id, scope: entry.scope, url, ...meta };
+    const rec = resolveRecommend(entry, url);
+    if (rec) out.recommendedXsl = rec;
+    xml.push(out);
   }
 
   const catalog = { generated: new Date().toISOString(), xml, xsl };
