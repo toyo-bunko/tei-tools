@@ -48,9 +48,16 @@
       ".tei-home svg { width: 1em; height: 1em; opacity: .8; }" +
       ".tei-brand { font-size: .9rem; font-weight: 600; flex: 1; min-width: 0;" +
         " white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }" +
-      ".tei-nav { display: flex; gap: .25rem; flex: none; flex-wrap: wrap;" +
-        " justify-content: flex-end; }" +
+      /* nav は縮められるようにし (min-width:0)、入り切らない時はバー内で
+         横スクロールさせる。flex:none のままだと最小幅が viewport を超え、
+         ページ全体が横スクロール → 右側に空白、という事故になる。 */
+      ".tei-nav { display: flex; gap: .25rem; flex: 0 1 auto; min-width: 0;" +
+        " flex-wrap: nowrap; justify-content: flex-end;" +
+        " overflow-x: auto; scrollbar-width: none; }" +
+      ".tei-nav::-webkit-scrollbar { display: none; }" +
+      ".tei-nav > * { flex: none; }" +
       ".tei-nav button { font: inherit; font-size: .8rem; cursor: pointer;" +
+        " white-space: nowrap;" +
         " color: var(--tei-bar-fg, #f3f1ea); background: transparent; border: 0;" +
         " padding: .4rem .7rem; border-radius: 6px; }" +
       ".tei-nav button:hover { background: var(--tei-bar-hover, rgba(255,255,255,.14)); }" +
