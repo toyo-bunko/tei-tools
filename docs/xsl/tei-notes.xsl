@@ -26,6 +26,8 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>注釈一覧 — <xsl:value-of select="$title"/></title>
+        <!-- 東洋文庫デザインシステム トークン (正本 css/theme.css) -->
+        <link rel="stylesheet" href="css/theme.css"/>
         <style>
           body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
                  line-height: 1.7; color: #1a1a1a; background: #fff; margin: 0; }

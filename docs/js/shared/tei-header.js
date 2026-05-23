@@ -29,57 +29,63 @@
 
   function injectCss() {
     if (document.getElementById("tei-header-css")) return;
+    /* Colors/fonts read 東洋文庫デザインシステム tokens (css/theme.css) with the
+       original hardcoded values as var() fallbacks, so views that don't link
+       theme.css render exactly as before, while views that do (e.g.
+       tei-ocr-facsimile) drive the whole chrome from the design tokens. */
     var css =
       ":root { --tei-bar-h: 52px; }" +
       ".tei-topbar { position: sticky; top: 0; z-index: 40;" +
         " height: var(--tei-bar-h); display: flex; align-items: center;" +
-        " gap: 1rem; padding: 0 1rem; background: #2c2622; color: #f3f1ea; }" +
+        " gap: 1rem; padding: 0 1rem;" +
+        " background: var(--tei-bar-bg, #2c2622);" +
+        " color: var(--tei-bar-fg, #f3f1ea); }" +
       ".tei-home { flex: none; font-size: .85rem; font-weight: 600;" +
-        " color: #d8b88a; text-decoration: none; white-space: nowrap;" +
-        " padding: .35rem .55rem; border-radius: 6px;" +
+        " color: var(--tei-bar-accent, #d8b88a); text-decoration: none;" +
+        " white-space: nowrap; padding: .35rem .55rem; border-radius: 6px;" +
         " display: inline-flex; align-items: center; gap: .35em; }" +
-      ".tei-home:hover { background: rgba(255,255,255,.10); }" +
+      ".tei-home:hover { background: var(--tei-bar-hover-soft, rgba(255,255,255,.10)); }" +
       ".tei-home svg { width: 1em; height: 1em; opacity: .8; }" +
       ".tei-brand { font-size: .9rem; font-weight: 600; flex: 1; min-width: 0;" +
         " white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }" +
       ".tei-nav { display: flex; gap: .25rem; flex: none; flex-wrap: wrap;" +
         " justify-content: flex-end; }" +
       ".tei-nav button { font: inherit; font-size: .8rem; cursor: pointer;" +
-        " color: #f3f1ea; background: transparent; border: 0;" +
+        " color: var(--tei-bar-fg, #f3f1ea); background: transparent; border: 0;" +
         " padding: .4rem .7rem; border-radius: 6px; }" +
-      ".tei-nav button:hover { background: rgba(255,255,255,.14); }" +
-      ".tei-nav button.tei-extra-on { background: rgba(216,184,138,.3); }" +
+      ".tei-nav button:hover { background: var(--tei-bar-hover, rgba(255,255,255,.14)); }" +
+      ".tei-nav button.tei-extra-on { background: var(--tei-bar-accent-strong, rgba(216,184,138,.3)); }" +
       ".tei-nav a.tei-srclink { font: inherit; font-size: .8rem;" +
-        " color: #f3f1ea; text-decoration: none;" +
+        " color: var(--tei-bar-fg, #f3f1ea); text-decoration: none;" +
         " padding: .4rem .7rem; border-radius: 6px;" +
         " display: inline-flex; align-items: center; gap: .3em; }" +
-      ".tei-nav a.tei-srclink:hover { background: rgba(255,255,255,.14); }" +
+      ".tei-nav a.tei-srclink:hover { background: var(--tei-bar-hover, rgba(255,255,255,.14)); }" +
       ".tei-nav a.tei-srclink svg { width: .85em; height: .85em;" +
         " opacity: .6; }" +
       ".tei-srclink-sep { width: 1px; align-self: stretch;" +
-        " background: rgba(255,255,255,.18); margin: .5rem .25rem; }" +
+        " background: var(--tei-bar-divider, rgba(255,255,255,.18)); margin: .5rem .25rem; }" +
       ".tei-modal { display: none; position: fixed; inset: 0; z-index: 50;" +
-        " background: rgba(20,17,14,.55);" +
+        " background: var(--tei-overlay, rgba(20,17,14,.55));" +
         " padding: calc(var(--tei-bar-h) + 1rem) 1rem 1rem; }" +
       ".tei-modal.open { display: flex; justify-content: center;" +
         " align-items: flex-start; }" +
-      ".tei-modal-box { background: #fff; border-radius: 12px; max-width: 640px;" +
-        " width: 100%; max-height: 100%; overflow: auto;" +
+      ".tei-modal-box { background: var(--surface-raised, #fff); border-radius: 12px;" +
+        " max-width: 640px; width: 100%; max-height: 100%; overflow: auto;" +
         " padding: 1.3rem 1.6rem 1.6rem; position: relative;" +
-        " font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;" +
-        " color: #1a1a1a; }" +
+        " font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif);" +
+        " color: var(--ink, #1a1a1a); }" +
       ".tei-modal-close { position: absolute; top: .7rem; right: .8rem;" +
         " font-size: 1.3rem; line-height: 1; cursor: pointer;" +
-        " background: transparent; border: 0; color: #888; }" +
+        " background: transparent; border: 0; color: var(--ink-subtle, #888); }" +
       ".tei-modal-section h2 { font-size: 1.1rem; margin: 0 0 .9rem;" +
-        " color: #8a6d3b; }" +
+        " color: var(--tei-modal-head, #8a6d3b); }" +
       ".tei-modal-section h3 { font-size: .9rem; margin: 1.1rem 0 .3rem; }" +
       ".tei-modal-section p { font-size: .86rem; line-height: 1.7;" +
         " margin: .4rem 0; }" +
       ".tei-modal-section dl.kv { display: grid;" +
         " grid-template-columns: max-content 1fr; gap: .35rem .9rem;" +
         " margin: 0; font-size: .87rem; }" +
-      ".tei-modal-section dl.kv dt { color: #8a8275; white-space: nowrap; }" +
+      ".tei-modal-section dl.kv dt { color: var(--ink-subtle, #8a8275); white-space: nowrap; }" +
       ".tei-modal-section dl.kv dd { margin: 0; }" +
       ".tei-modal-section .tei-bibl { padding-left: 1.1em;" +
         " text-indent: -1.1em; }";

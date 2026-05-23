@@ -1,0 +1,107 @@
+/* =============================================================================
+ * theme.css — Toyo Bunko design tokens (static viewer, no build step)
+ *
+ * Plain-CSS port of the canonical design system:
+ *   @toyo/design-system  (repo: toyo-ui)  →  src/theme.css  (Tailwind v4 @theme)
+ *
+ * Why a port instead of importing it: toyo-ui/theme.css is a Tailwind v4 `@theme`
+ * block (and uses `--color-*` / `--font-*` names so Tailwind can generate
+ * utilities). A plain browser ignores unknown at-rules, so `@theme {}` would not
+ * cascade here. The transformed TEI views (view.html replaces the whole document)
+ * have no build step, so we mirror the *values* into a real `:root` with the bare
+ * names the XSL + js/shared scripts already reference. Keep values in sync with toyo-ui;
+ * a perfect 1:1 is not possible without Tailwind (per project decision).
+ *
+ * Loaded via <link> (parse-time → no FOUC). Layers, mirroring toyo-ui:
+ *   1. enji brand ramp           (= toyo-ui --color-enji-*)
+ *   2. semantic brand            (= --color-brand*)
+ *   3. surfaces / ink / line     (= --color-surface, -ink, -line families)
+ *   4. category accents          (= --color-museum/-library/-research/-academia)
+ *      …reused as the named-entity colors (--ne-*) the OCR view needs.
+ *   5. typography                (= --font-sans/-serif/-display) + --text-display
+ *   6. dark scheme overrides     (= toyo-ui @layer base .dark)
+ *   7. chrome (--tei-*)          viewer-only top bar/modal, themed to match the
+ *                                site header (docs/style.css .site-header = enji).
+ * ============================================================================= */
+:root {
+  /* 1. 臙脂 (enji) brand ramp — anchored on the official #76161b */
+  --enji-50: #fbf2f2;
+  --enji-100: #f6e0e1;
+  --enji-200: #ecc1c3;
+  --enji-300: #db9598;
+  --enji-400: #c5666b;
+  --enji-500: #a83f45;
+  --enji-600: #8c2a2f;
+  --enji-700: #76161b; /* brand DEFAULT (official) */
+  --enji-800: #5f1216;
+  --enji-900: #4c1013;
+  --enji-950: #2d090b;
+
+  /* 2. Semantic brand (re-pointed under .dark below) */
+  --brand: var(--enji-700);
+  --brand-strong: var(--enji-800);
+  --brand-soft: var(--enji-50);
+
+  /* 3. Surfaces / ink / rules */
+  --surface: #f5f0ed;        /* page background (warm cream) */
+  --surface-raised: #ffffff; /* cards, panels, modal */
+  --surface-sunken: #ece4dd; /* wells, alt rows */
+  --ink: #1a1714;            /* primary text (warm near-black) */
+  --ink-muted: #5a5a5a;      /* secondary text */
+  --ink-subtle: #8a857c;     /* tertiary text */
+  --line: #e0d8cf;           /* hairline borders on cream */
+
+  /* 4. Category accents (official taxonomy; white text on each — see toyo-ui
+        ACCESSIBILITY.md). The OCR view reuses these as named-entity colors. */
+  --museum: #573b21;   /* 茶 cha    — 博物館 */
+  --library: #1e3c69;  /* 紺 kon    — 図書館 */
+  --research: #827826; /* 古色 kosho — 研究 (white 4.50:1 — AA min) */
+  --academia: #1b6b63; /* 緑青 rokusho — アカデミア */
+
+  --ne-pers: var(--library);   /* 人名  → 紺 */
+  --ne-place: var(--academia); /* 地名  → 緑青 */
+  --ne-org: var(--museum);     /* 団体名 → 茶 */
+  --ne-date: var(--research);  /* 日付  → 古色 */
+
+  /* 5. Typography (webfonts loaded per-view; literals are the fallbacks).
+        toyo-ui: sans = Gothic (UI/data-dense), serif = Mincho (headings/prose),
+        display = EB Garamond (Latin/numerals). --font-text is the OCR view's
+        transcription face = display. */
+  --font-sans: "BIZ UDPGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  --font-serif: "BIZ UDPMincho", "Hiragino Mincho ProN", "Yu Mincho", "游明朝", serif;
+  --font-display: "EB Garamond", "BIZ UDPMincho", serif;
+  --font-text: var(--font-display); /* back-compat alias used by .linetext */
+
+  --text-display: 2.5rem; /* 40px — page titles / 大見出し */
+
+  /* 7. Chrome: shared top bar + modal (js/shared/tei-header.js).
+        Themed to match the site header (docs/style.css .site-header): enji
+        gradient + white text. Override here, never in the script. */
+  --tei-bar-bg: linear-gradient(135deg, var(--enji-700) 0%, var(--enji-600) 100%);
+  --tei-bar-fg: #ffffff;                            /* bar text (white on enji) */
+  --tei-bar-accent: #ffffff;                        /* home link / wordmark */
+  --tei-bar-accent-strong: rgba(255, 255, 255, .22); /* active toggle bg */
+  --tei-bar-hover: rgba(255, 255, 255, .16);         /* button hover bg */
+  --tei-bar-hover-soft: rgba(255, 255, 255, .10);    /* home hover bg */
+  --tei-bar-divider: rgba(255, 255, 255, .28);       /* src-link separator */
+  --tei-overlay: rgba(20, 17, 14, .55);              /* modal backdrop scrim */
+  --tei-modal-head: var(--brand);                    /* modal section heading → enji */
+}
+
+/* 6. Dark scheme — mirrors toyo-ui @layer base .dark. The viewer doesn't toggle
+      .dark today, but keeping this makes the port faithful and future-ready. */
+.dark {
+  --brand: var(--enji-300);
+  --brand-strong: var(--enji-200);
+  --brand-soft: var(--enji-950);
+
+  --surface: #1c1a18;
+  --surface-raised: #26231f;
+  --surface-sunken: #15130f;
+
+  --ink: #ece6df;
+  --ink-muted: #b7b0a6;
+  --ink-subtle: #8f8a82;
+
+  --line: #3a342d;
+}

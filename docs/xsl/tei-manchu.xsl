@@ -52,6 +52,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mongolian&amp;family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
+        <!-- 東洋文庫デザインシステム トークン (正本 css/theme.css) -->
+        <link rel="stylesheet" href="css/theme.css"/>
         <style>
           :root {
             --paper: #efe3c7;

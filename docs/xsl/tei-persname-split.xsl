@@ -34,6 +34,8 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title><xsl:value-of select="$title"/></title>
+        <!-- 東洋文庫デザインシステム トークン (正本 css/theme.css) -->
+        <link rel="stylesheet" href="css/theme.css"/>
         <style>
           * { box-sizing: border-box; }
           body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
