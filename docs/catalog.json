@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-22T09:01:32.654Z",
+  "generated": "2026-05-23T03:24:01.433Z",
   "xml": [
     {
       "id": "tei-guide",
@@ -12,7 +12,8 @@
         "ja"
       ],
       "category": "Tutorial / 入門サンプル",
-      "license": "Demonstration sample — free to use and adapt. / デモンストレーション用サンプル — 自由に利用・改変できます。"
+      "license": "Demonstration sample — free to use and adapt. / デモンストレーション用サンプル — 自由に利用・改変できます。",
+      "recommendedXsl": "reading"
     },
     {
       "id": "ocr-sample",
@@ -24,7 +25,8 @@
         "ja"
       ],
       "category": "OCR transcription / OCR 翻刻",
-      "license": "Demonstration sample — free to use. / デモンストレーション用サンプル — 自由に利用できます。"
+      "license": "Demonstration sample — free to use. / デモンストレーション用サンプル — 自由に利用できます。",
+      "recommendedXsl": "ocr"
     },
     {
       "id": "vellum",
@@ -37,7 +39,8 @@
         "en"
       ],
       "category": "Vellum contract documents / 羊皮紙契約文書",
-      "license": "Available for research purposes"
+      "license": "Available for research purposes",
+      "recommendedXsl": "vellum"
     },
     {
       "id": "manchu",
@@ -50,7 +53,8 @@
         "ko"
       ],
       "category": "満州語会話教本 / Manchu-language phrasebook",
-      "license": "CC BY 4.0"
+      "license": "CC BY 4.0",
+      "recommendedXsl": "manchu"
     },
     {
       "id": "persname-split",
@@ -63,19 +67,21 @@
         "ja"
       ],
       "category": "Tutorial / 入門サンプル",
-      "license": "Demonstration sample — CC BY 4.0. Free to use and adapt. / デモンストレーション用サンプル — CC BY 4.0。自由に利用・改変できます。"
+      "license": "Demonstration sample — CC BY 4.0. Free to use and adapt. / デモンストレーション用サンプル — CC BY 4.0。自由に利用・改変できます。",
+      "recommendedXsl": "persname-split"
     },
     {
       "id": "morrison-ner",
       "scope": "bundled",
       "url": "xml/morrison-ner/tei.xml",
-      "title": "Morrison Pamphlet P-I-a-0001",
-      "description": "TEI facsimile document with one <surface> per page image and one <zone> per recognized line, converted from ALTO OCR output.",
+      "title": "The geography of China",
+      "description": "The text is a detailed account of the geography of China, presented by Consul T. L. Bullock in 1898. It distinguishes between China proper, consisting of eighteen provinces governed directly from Peking, and the larger Chinese Empire, which includes regions like Manchuria, Mongolia, and Tibet. The text describes the diverse ethnic groups within China, such as the Miao-tse and Lolos, and highlights the significant Chinese presence in Manchuria. It outlines China's natural boundaries, including the Pamir Plateau, Tien Shan, and Altai Mountains, and discusses the major river systems, particularly the Yangtse and Yellow Rivers. The text also covers China's climate zones, agricultural products, and the loess soil's impact on agriculture. Additionally, it touches on China's mineral resources, emphasizing the potential of coal deposits. The challenges posed by the Yellow River's frequent course changes and the importance of addressing these issues for China's future are also discussed. 中国の地理について、1898年にマンチェスター地理学会で行われた講演の要約です。中国の地理を理解する際には、中国本土とそれを含む広大な中国帝国を区別する必要があります。中国本土は18の省から成り、北京から直接統治されています。南西部には、ミャオ族などの少数民族が住んでおり、彼らは独自の文化を保持しています。中国帝国には満州、モンゴル、新疆、チベットなどが含まれますが、これらの地域には中国人は少なく、特に満州では中国人が多数を占めています。中国の国境は自然の地形によって明確に区切られており、例えば西端のパミール高原や天山山脈などがあります。中国の主要な河川には長江、黄河、西江があり、それぞれが異なる気候帯を形成しています。北部は乾燥しており、南部は湿潤で、中央部はその中間です。中国の地理的特徴として、黄土（ロエス）の存在が挙げられ、これは風によって運ばれた堆積物と考えられています。中国の農業は主に河川の流域やデルタ地帯で行われており、特に長江と黄河のデルタ地帯は非常に肥沃です。黄河はしばしば氾濫し、その流路を変えることがあります。中国の鉱物資源には石炭が豊富で、特に山西省の炭田は世界最大級とされています。",
       "languages": [
         "en"
       ],
-      "category": "OCR transcription / OCR 翻刻",
-      "license": "Morrison Pamphlets collection, provided by Toyo Bunko under CC BY 4.0."
+      "category": "III. CHINA",
+      "license": "Morrison Pamphlets collection, provided by Toyo Bunko under CC BY 4.0.",
+      "recommendedXsl": "ocr"
     },
     {
       "id": "urenja-001-01",
@@ -87,7 +93,8 @@
         "ja"
       ],
       "category": "古典籍OCR / Classical-book OCR",
-      "license": "—"
+      "license": "—",
+      "recommendedXsl": "urenja"
     }
   ],
   "xsl": [
@@ -140,7 +147,7 @@
         "path": "xml/morrison-ner/tei.xml"
       },
       "title": "Named-entity overview / 固有表現の一覧・可視化",
-      "description": "本文中にインライン付与された固有表現 (persName / placeName / orgName / date) を集計し、種別ごとの件数・頻出表現の棒グラフ（HTML/CSS のみ）と、異なり一覧テーブルで可視化します。LLM 等で NE タグを付けた TEI の俯瞰に。/ Aggregates inline named entities (persName / placeName / orgName / date) and visualizes them with per-type and top-frequency bar charts (pure HTML/CSS) plus a distinct-entity table. For surveying TEI marked up with NE tags (e.g. by an LLM).",
+      "description": "本文中にインライン付与された固有表現 (persName / placeName / orgName / date) を集計し、種別ごとの件数・頻出表現の棒グラフ（HTML/CSS のみ）と、異なり一覧テーブルで可視化します。一覧の各表現はクリックでき、ページ送りの本文ビューでその最初の出現ページへ移動して該当行をハイライトします。LLM 等で NE タグを付けた TEI の俯瞰に。/ Aggregates inline named entities (persName / placeName / orgName / date) and visualizes them with per-type and top-frequency bar charts (pure HTML/CSS) plus a distinct-entity table. Each listed entity is clickable: it jumps the paged full-text view to that entity's first occurrence and highlights the line. For surveying TEI marked up with NE tags (e.g. by an LLM).",
       "category": "分析 / Analysis",
       "license": "自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0)."
     },
@@ -167,7 +174,7 @@
         "xml": "tei.xml"
       },
       "title": "OCR transcription view / OCR 翻刻ビュー",
-      "description": "OCR 出力の TEI を、ページ画像と行ごとの翻刻テキストを左右に並べて表示する検証ビューです。/ A verification view placing each page image beside its numbered OCR lines.",
+      "description": "OCR 出力の TEI を、ページ画像と行ごとの翻刻テキストを左右に全画面で並べて表示する検証ビュー。固有表現 (persName/placeName/orgName/date) を色分けし、ヘッダーから一覧できる。/ A full-screen verification view placing each page image beside its numbered OCR lines, colour-coding named entities with a list in the header.",
       "category": "汎用 / General-purpose",
       "license": "自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0)."
     },
