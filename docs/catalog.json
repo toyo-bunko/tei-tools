@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-23T03:24:01.433Z",
+  "generated": "2026-05-23T05:15:31.934Z",
   "xml": [
     {
       "id": "tei-guide",
@@ -147,7 +147,7 @@
         "path": "xml/morrison-ner/tei.xml"
       },
       "title": "Named-entity overview / 固有表現の一覧・可視化",
-      "description": "本文中にインライン付与された固有表現 (persName / placeName / orgName / date) を集計し、種別ごとの件数・頻出表現の棒グラフ（HTML/CSS のみ）と、異なり一覧テーブルで可視化します。一覧の各表現はクリックでき、ページ送りの本文ビューでその最初の出現ページへ移動して該当行をハイライトします。LLM 等で NE タグを付けた TEI の俯瞰に。/ Aggregates inline named entities (persName / placeName / orgName / date) and visualizes them with per-type and top-frequency bar charts (pure HTML/CSS) plus a distinct-entity table. Each listed entity is clickable: it jumps the paged full-text view to that entity's first occurrence and highlights the line. For surveying TEI marked up with NE tags (e.g. by an LLM).",
+      "description": "本文中にインライン付与された固有表現 (persName / placeName / orgName / date) を集計し、種別ごとの件数・頻出表現の棒グラフ（HTML/CSS のみ）と、異なり一覧テーブルで可視化します。LLM 等で NE タグを付けた TEI の俯瞰に。/ Aggregates inline named entities (persName / placeName / orgName / date) and visualizes them with per-type and top-frequency bar charts (pure HTML/CSS) plus a distinct-entity table. For surveying TEI marked up with NE tags (e.g. by an LLM).",
       "category": "分析 / Analysis",
       "license": "自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0)."
     },

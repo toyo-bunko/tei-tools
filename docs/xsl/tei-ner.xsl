@@ -6,20 +6,15 @@
   Input:       file
   Sample (file): xml/morrison-ner/tei.xml
   Title:       Named-entity overview / 固有表現の一覧・可視化
-  Description: 本文中にインライン付与された固有表現 (persName / placeName / orgName / date) を集計し、種別ごとの件数・頻出表現の棒グラフ（HTML/CSS のみ）と、異なり一覧テーブルで可視化します。一覧の各表現はクリックでき、ページ送りの本文ビューでその最初の出現ページへ移動して該当行をハイライトします。LLM 等で NE タグを付けた TEI の俯瞰に。/ Aggregates inline named entities (persName / placeName / orgName / date) and visualizes them with per-type and top-frequency bar charts (pure HTML/CSS) plus a distinct-entity table. Each listed entity is clickable: it jumps the paged full-text view to that entity's first occurrence and highlights the line. For surveying TEI marked up with NE tags (e.g. by an LLM).
+  Description: 本文中にインライン付与された固有表現 (persName / placeName / orgName / date) を集計し、種別ごとの件数・頻出表現の棒グラフ（HTML/CSS のみ）と、異なり一覧テーブルで可視化します。LLM 等で NE タグを付けた TEI の俯瞰に。/ Aggregates inline named entities (persName / placeName / orgName / date) and visualizes them with per-type and top-frequency bar charts (pure HTML/CSS) plus a distinct-entity table. For surveying TEI marked up with NE tags (e.g. by an LLM).
   Category:    分析 / Analysis
   License:     自由に利用・改変できます（XSLT 1.0）。/ Free to use and adapt (XSLT 1.0).
 
   集計対象は本文 (tei:text) 内の persName / placeName / orgName / date 要素。
   異なり (distinct) は「種別 + 正規化テキスト」で Muenchian grouping。
   グラフは外部ライブラリを使わず HTML/CSS のみ。共有ヘッダー
-  (js/shared/tei-header.js) に teiHeader 情報を渡す。
-
-  本文は <pb> でページ分割し、<lb> ごとに行 (.ln) へグループ化した
-  ページ送りビュー (.tei-pager / js/shared/tei-pager.js) として描画する。
-  各固有表現には id="ne-<generate-id>" を振り、一覧側のリンク
-  (data-target) と一致させる。クリック時は window.TEIPager.goTo() で
-  その出現を含むページへ切り替え、該当行を一時的にフラッシュする。
+  (js/shared/tei-header.js) に teiHeader 情報を渡す。本文そのものは
+  描画しない（俯瞰・集計に特化したビュー）。
 -->
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -111,37 +106,6 @@
           table.ents td.num { text-align: right; font-variant-numeric: tabular-nums; width: 4rem; }
           .empty { color: #bbb; }
           @media (max-width: 560px) { .bar-row { grid-template-columns: 8rem 1fr 3.4rem; } }
-
-          /* ---- クリックで該当行へ飛ぶリンク ---- */
-          .ent-link { color: #2563eb; cursor: pointer; text-decoration: none; }
-          .ent-link:hover { text-decoration: underline; }
-
-          /* ---- 本文リーダー (tei-pager.js でページ送り) ---- */
-          .reader-hint { color: #666; font-size: .85rem; margin: .2rem 0 1rem; }
-          .reader { border: 1px solid #e3e3e3; border-radius: 8px;
-                    background: #fff; overflow: hidden; }
-          .reader .tei-page { padding: 1rem clamp(.6rem, 3vw, 1.6rem) 2rem; }
-          .pg-head { font-size: .78rem; color: #999; font-weight: 600;
-                     letter-spacing: .04em; margin: 0 0 .8rem; }
-          .ln { display: grid; grid-template-columns: 2.4rem 1fr; gap: .6rem;
-                align-items: baseline; padding: .08rem .3rem; border-radius: 4px;
-                scroll-margin-top: calc(var(--tei-bar-h, 52px)
-                                        + var(--tei-pager-h, 46px) + 1rem); }
-          .ln-n { color: #c7c7c7; font-size: .72rem; text-align: right;
-                  font-variant-numeric: tabular-nums; user-select: none; }
-          .ln-tx { font-size: .95rem; }
-          .ne { border-radius: 3px; padding: 0 .12em; }
-          .ne-persName { background: #dbeafe; box-shadow: inset 0 -2px #2563eb; }
-          .ne-placeName{ background: #d1fae5; box-shadow: inset 0 -2px #059669; }
-          .ne-orgName  { background: #fef3c7; box-shadow: inset 0 -2px #d97706; }
-          .ne-date     { background: #ede9fe; box-shadow: inset 0 -2px #7c3aed; }
-          /* 該当行の一時ハイライト (クリック後 約2秒でフェード) */
-          .ln-flash { animation: lnflash 2.1s ease-out; }
-          @keyframes lnflash {
-            0%, 25% { background: #fff3bf; }
-            100%    { background: transparent; }
-          }
-          .ne-flash { outline: 2px solid #f59e0b; outline-offset: 1px; }
         </style>
       </head>
       <body>
@@ -210,10 +174,9 @@
                     <xsl:variable name="c"
                         select="count(key('entKey', concat(local-name(), '#', normalize-space(.))))"/>
                     <div class="bar-row">
-                      <a class="bar-label ent-link" href="#ne-{generate-id()}"
-                         data-target="ne-{generate-id()}" title="{normalize-space(.)}">
+                      <span class="bar-label" title="{normalize-space(.)}">
                         <xsl:value-of select="normalize-space(.)"/>
-                      </a>
+                      </span>
                       <span class="bar-track">
                         <span class="bar-fill t-{local-name()}"
                               style="width:{format-number($c div $freqMax * 100, '0.#')}%"></span>
@@ -235,40 +198,13 @@
                   <xsl:sort select="normalize-space(.)"/>
                   <tr>
                     <td><span class="badge b-{local-name()}"><xsl:value-of select="local-name()"/></span></td>
-                    <td><a class="ent-link" href="#ne-{generate-id()}"
-                           data-target="ne-{generate-id()}"><xsl:value-of select="normalize-space(.)"/></a></td>
+                    <td><xsl:value-of select="normalize-space(.)"/></td>
                     <td class="num">
                       <xsl:value-of select="count(key('entKey', concat(local-name(), '#', normalize-space(.))))"/>
                     </td>
                   </tr>
                 </xsl:for-each>
               </table>
-
-              <!-- 本文リーダー: ページ送り (tei-pager.js)。上の一覧の表現を
-                   クリックすると最初の出現ページへ移動し、その行を強調する。 -->
-              <h2>本文 / Full text</h2>
-              <p class="reader-hint">上の一覧の表現をクリックすると、最初の出現ページへ移動し、その行を強調します。 / Click an entity above to jump to its first occurrence and highlight the line.</p>
-              <div class="tei-pager reader">
-                <xsl:for-each select="//tei:text//tei:pb">
-                  <xsl:variable name="pb" select="."/>
-                  <section class="tei-page" data-page-label="p.{@n}">
-                    <div class="pg-head">p. <xsl:value-of select="@n"/></div>
-                    <xsl:for-each select="following-sibling::tei:lb[
-                        generate-id(preceding-sibling::tei:pb[1]) = generate-id($pb)]">
-                      <xsl:variable name="lb" select="."/>
-                      <div class="ln" id="ln-{substring-after(@facs, '#')}">
-                        <span class="ln-n"><xsl:value-of select="@n"/></span>
-                        <span class="ln-tx">
-                          <xsl:apply-templates mode="ftext" select="
-                              following-sibling::node()[
-                                generate-id(preceding-sibling::tei:lb[1]) = generate-id($lb)
-                                and not(self::tei:lb) and not(self::tei:pb)]"/>
-                        </span>
-                      </div>
-                    </xsl:for-each>
-                  </section>
-                </xsl:for-each>
-              </div>
             </xsl:otherwise>
           </xsl:choose>
         </main>
@@ -297,49 +233,9 @@
           </section>
         </div>
         <script src="js/shared/tei-header.js"></script>
-        <script src="js/shared/tei-pager.js"></script>
-        <!-- 一覧の .ent-link クリック → 該当ページへ切替 + 該当行をフラッシュ。
-             && / < を避け escaping 問題を回避 (xsl:output method=html)。 -->
-        <script>
-          (function () {
-            function flashLine(ln) {
-              if (!ln) { return; }
-              ln.classList.remove("ln-flash");
-              void ln.offsetWidth;                /* reflow して再アニメーション */
-              ln.classList.add("ln-flash");
-              setTimeout(function () { ln.classList.remove("ln-flash"); }, 2200);
-            }
-            document.addEventListener("click", function (e) {
-              var a = e.target.closest ? e.target.closest(".ent-link") : null;
-              if (!a) { return; }
-              e.preventDefault();
-              var id = a.getAttribute("data-target");
-              var el = id ? document.getElementById(id) : null;
-              if (!el) { return; }
-              if (window.TEIPager) {
-                if (window.TEIPager.goTo) { window.TEIPager.goTo(el); }
-              }
-              var ln = el.closest ? el.closest(".ln") : null;
-              setTimeout(function () {
-                (ln || el).scrollIntoView({ behavior: "smooth", block: "center" });
-                flashLine(ln);
-                el.classList.add("ne-flash");
-                setTimeout(function () { el.classList.remove("ne-flash"); }, 2200);
-              }, 50);
-            });
-          })();
-        </script>
       </body>
     </html>
   </xsl:template>
-
-  <!-- 本文インライン描画 (mode=ftext)。固有表現に id を振り、一覧からの
-       リンク先 (#ne-<generate-id>) と一致させる。 -->
-  <xsl:template match="tei:persName|tei:placeName|tei:orgName|tei:date" mode="ftext">
-    <span class="ne ne-{local-name()}" id="ne-{generate-id()}"><xsl:apply-templates mode="ftext"/></span>
-  </xsl:template>
-  <xsl:template match="text()" mode="ftext"><xsl:value-of select="."/></xsl:template>
-  <xsl:template match="*" mode="ftext"><xsl:apply-templates mode="ftext"/></xsl:template>
 
   <!-- 要約カード -->
   <xsl:template name="card">
