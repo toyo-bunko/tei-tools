@@ -58,6 +58,8 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title><xsl:value-of select="$title"/></title>
+        <!-- 東洋文庫デザインシステム トークン (正本 css/theme.css) -->
+        <link rel="stylesheet" href="css/theme.css"/>
         <style>
           :root { --accent: #8a6d3b; }
           * { box-sizing: border-box; }
@@ -331,6 +333,8 @@
 
         <script src="js/shared/tei-header.js"></script>
         <script src="js/shared/osd-facsimile.js"></script>
+        <script src="js/shared/osd-zone-link.js"></script>
+        <script src="js/shared/osd-zone-toggle.js"></script>
       </body>
     </html>
   </xsl:template>

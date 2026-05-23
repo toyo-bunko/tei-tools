@@ -48,6 +48,26 @@
     document.head.appendChild(style);
   }
 
+  /* ---- current page <-> URL ?page=N (1-based) ----
+     ページ送りで GET パラメータに残し、リロード時はそのページから再開する。
+     既存の ?url= / ?xsl= 等は保持。履歴は汚さない (replaceState)。 */
+  var PAGE_PARAM = "page";
+
+  function readPageParam() {
+    try {
+      var n = parseInt(new URLSearchParams(window.location.search).get(PAGE_PARAM), 10);
+      return (isFinite(n) && n >= 1) ? n : null;
+    } catch (e) { return null; }
+  }
+
+  function writePageParam(n) {
+    try {
+      var u = new URL(window.location.href);
+      u.searchParams.set(PAGE_PARAM, String(n));
+      window.history.replaceState(null, "", u.href);
+    } catch (e) { /* history 不可な環境では何もしない */ }
+  }
+
   function boot() {
     var pager = document.querySelector(".tei-pager");
     if (!pager) return;
@@ -70,9 +90,20 @@
 
     /* Single page: just show it, no navigation bar. */
     if (pages.length === 1) {
+      document.documentElement.style.setProperty("--tei-pager-h", "0px");
       pages[0].style.display = "block";
       pages[0].classList.add("tei-page-active");
       mountViewers(pages[0]);
+      /* 単一ページでも外部から goTo できるよう API を公開 (切替不要・要素を返すだけ) */
+      window.TEIPager = {
+        show: function () {},
+        goTo: function (x) {
+          return (typeof x === "string") ? document.getElementById(x) : x;
+        },
+        indexOf: function (p) { return pages.indexOf(p); },
+        current: function () { return 0; },
+        pageCount: 1
+      };
       return;
     }
 
@@ -91,6 +122,12 @@
     bar.appendChild(counter);
     bar.appendChild(next);
     pager.insertBefore(bar, pager.firstChild);
+    /* バー実高を CSS 変数に。全画面レイアウトが height 計算に使える
+       (例: height: calc(100vh - var(--tei-bar-h) - var(--tei-pager-h)))。 */
+    try {
+      document.documentElement.style.setProperty(
+        "--tei-pager-h", bar.offsetHeight + "px");
+    } catch (e) { /* no-op */ }
 
     function label(i) {
       var l = pages[i].getAttribute("data-page-label");
@@ -109,6 +146,7 @@
       counter.textContent = label(i);
       prev.disabled = (i === 0);
       next.disabled = (i === pages.length - 1);
+      writePageParam(i + 1);                   // GET パラメータ ?page=N に反映
       mountViewers(pages[i]);                 // lazy-mount this page's viewers
       bar.scrollIntoView({ block: "nearest" });
     }
@@ -121,7 +159,29 @@
       else if (e.key === "ArrowRight") show(current + 1);
     });
 
-    show(0);
+    /* 外部 API: 任意の要素 (または id) を含むページへ切り替えて、その要素を返す。
+       NER 一覧などからクリックで該当ページへジャンプするのに使う。 */
+    window.TEIPager = {
+      show: show,
+      goTo: function (x) {
+        var el = (typeof x === "string") ? document.getElementById(x) : x;
+        if (!el) return null;
+        var pg = el.closest ? el.closest(".tei-page") : null;
+        var i = pg ? pages.indexOf(pg) : -1;
+        if (i >= 0) show(i);
+        return el;
+      },
+      indexOf: function (p) { return pages.indexOf(p); },
+      current: function () { return current; },
+      pageCount: pages.length
+    };
+
+    /* リロード時は ?page=N から再開 (範囲外は端に丸める)。無ければ先頭。 */
+    var startParam = readPageParam();
+    var start = (startParam !== null)
+      ? Math.max(0, Math.min(startParam - 1, pages.length - 1))
+      : 0;
+    show(start);
   }
 
   if (document.readyState === "loading") {

@@ -1,8 +1,20 @@
-/* ======== osd-facsimile.js ========
+/* ======== osd-facsimile.js (core) ========
    Reusable IIIF facsimile viewer with zone overlays, built on OpenSeadragon.
 
-   Any XSL/HTML output can use it — no build step, no per-project code — by
-   emitting this markup and including this script:
+   This is the CORE: it loads OpenSeadragon, mounts `.facsimile` containers,
+   and draws the zone overlays. Two optional companion modules add behaviour
+   without touching the core (load them AFTER this file):
+
+     * osd-zone-link.js   … hover = mutual highlight, click = focus, between a
+                            zone and its text element (zone.target → element id)
+     * osd-zone-toggle.js … a [data-zone-toggle] button shows/hides overlays,
+                            persisted to the URL (?zones=on|off)
+
+   Companion modules register via the small plugin API exposed here:
+     OSDFacsimile.onOverlay(fn)  fn(zone, overlayEl, viewer) per overlay
+     OSDFacsimile.onMount(fn)    fn(container, viewer) per mounted container
+
+   Markup (no build step, no per-project code):
 
      <div class="facsimile" data-iiif="https://…/image.tif/info.json">
        <script type="application/json" class="facsimile-zones">
@@ -11,18 +23,19 @@
        </script>
      </div>
      <script src="js/shared/osd-facsimile.js"></script>
+     <script src="js/shared/osd-zone-link.js"></script>    <!-- optional -->
+     <script src="js/shared/osd-zone-toggle.js"></script>  <!-- optional -->
 
    * data-iiif — a IIIF `info.json` URL, a IIIF image id (→ `/info.json` is
      appended), a plain image URL, or a blob:/data: URL (→ a non-tiled image).
    * zones — array of { x, y, w, h, type, label?, target? } in the image's
      native pixel coordinates. `type` becomes a CSS modifier (osdz-<type>);
-     `label` is shown at the zone's corner; `target`, if set, makes the label
-     clickable and scrolls the element with that id into view.
-   * A `[data-zone-toggle]` button anywhere on the page toggles zone overlays.
+     `label` is shown at the zone's corner; `target` is consumed by
+     osd-zone-link.js.
 
-   Lazy mounting: containers that are visible on load are mounted immediately;
-   hidden containers (e.g. inside a paged view — see tei-pager.js) are mounted
-   on demand via `window.OSDFacsimile.mount(container)`.
+   Lazy mounting: containers visible on load are mounted immediately; hidden
+   ones (e.g. inside a paged view — see tei-pager.js) are mounted on demand via
+   `window.OSDFacsimile.mount(container)`.
 
    Used by tei-vellum.xsl and tei-ocr-facsimile.xsl; reusable by any project.
    OpenSeadragon is loaded on demand from a CDN. */
@@ -38,7 +51,11 @@
   var osdState = "idle";   // idle | loading | ready | failed
   var queue = [];          // containers waiting for the OSD library
 
-  /* ---- inject the (one-time) stylesheet ---- */
+  /* plugin hooks (companion modules register here) */
+  var overlayHooks = [];   // fn(zone, overlayEl, viewer)
+  var mountHooks = [];     // fn(container, viewer)
+
+  /* ---- inject the (one-time) core stylesheet ---- */
   function injectCss() {
     if (document.getElementById("osd-facsimile-css")) return;
     var css =
@@ -58,15 +75,14 @@
         " font: 600 11px/1.5 monospace; padding: 0 4px;" +
         " white-space: nowrap; pointer-events: auto; cursor: default;" +
         " color: #fff; }" +
+      /* line numbers: sit in the left margin, outside the rectangle, so they
+         never cover the line's own text (vertically centred on the line). */
+      ".osdz-line .osdz-label { top: 50%; left: auto; right: 100%;" +
+        " transform: translateY(-50%); margin-right: 3px; border-radius: 2px; }" +
       ".osdz-deed .osdz-label { background: rgba(220,140,40,.95); }" +
       ".osdz-signature .osdz-label { background: rgba(70,120,210,.95); }" +
       ".osdz-line .osdz-label { background: rgba(40,170,110,.95); }" +
       ".osdz-zone .osdz-label { background: rgba(90,90,90,.95); }" +
-      ".osdz-label.clickable { cursor: pointer; }" +
-      ".osdz-label.clickable:hover { filter: brightness(1.15); }" +
-      /* !important: OpenSeadragon sets `display` inline on overlay
-         elements, so a plain class rule would be overridden. */
-      ".facsimile.zones-hidden .osdz { display: none !important; }" +
       ".facsimile-error { color: #d88; font: 14px/1.6 sans-serif;" +
         " padding: 1rem; }";
     var style = document.createElement("style");
@@ -154,6 +170,7 @@
       gestureSettingsMouse: { clickToZoom: false }
     });
     container._osdViewer = viewer;
+    mountHooks.forEach(function (fn) { try { fn(container, viewer); } catch (e) {} });
 
     viewer.addHandler("open", function () {
       zones.forEach(function (z) {
@@ -164,16 +181,10 @@
           var lab = document.createElement("span");
           lab.className = "osdz-label";
           lab.textContent = z.label;
-          if (z.target) {
-            lab.className += " clickable";
-            lab.title = "本文へ移動 / jump to text";
-            lab.addEventListener("click", function () {
-              var t = document.getElementById(z.target);
-              if (t) t.scrollIntoView({ behavior: "smooth", block: "center" });
-            });
-          }
           el.appendChild(lab);
         }
+        /* companion modules decorate the overlay (e.g. zone<->text linking) */
+        overlayHooks.forEach(function (fn) { try { fn(z, el, viewer); } catch (e) {} });
         viewer.addOverlay({
           element: el,
           location: viewer.viewport.imageToViewportRectangle(z.x, z.y, z.w, z.h)
@@ -207,41 +218,35 @@
     return !!(el.offsetParent || el.offsetWidth || el.offsetHeight);
   }
 
-  /* ---- wire any [data-zone-toggle] button to show/hide overlays ---- */
-  function wireToggles() {
-    document.querySelectorAll("[data-zone-toggle]").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        document.querySelectorAll(".facsimile").forEach(function (c) {
-          c.classList.toggle("zones-hidden");
-        });
-      });
-    });
-  }
-
-  /* Public API — paged views (tei-pager.js) call mount() when a hidden
-     page becomes visible. */
+  /* Public API. mount()/mountWithin() are called by paged views (tei-pager.js)
+     when a hidden page becomes visible; onOverlay()/onMount() let companion
+     modules extend behaviour. Defined synchronously so companion scripts that
+     load right after this one can register before the first mount. */
   window.OSDFacsimile = {
     mount: requestMount,
     mountWithin: function (root) {
       (root || document).querySelectorAll(".facsimile[data-iiif]")
         .forEach(requestMount);
-    }
+    },
+    onOverlay: function (fn) { if (typeof fn === "function") overlayHooks.push(fn); },
+    onMount:   function (fn) { if (typeof fn === "function") mountHooks.push(fn); }
   };
 
   function boot() {
     var containers = document.querySelectorAll(".facsimile[data-iiif]");
     if (!containers.length) return;
     injectCss();
-    wireToggles();
     /* Mount visible containers now; hidden ones wait for OSDFacsimile.mount. */
     containers.forEach(function (c) {
       if (isVisible(c)) requestMount(c);
     });
   }
 
+  /* Defer boot so companion modules loaded right after this one have registered
+     their hooks first (setTimeout 0 = after the current sync script run). */
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", boot);
   } else {
-    boot();
+    setTimeout(boot, 0);
   }
 })();
