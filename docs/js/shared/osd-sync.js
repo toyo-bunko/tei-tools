@@ -125,8 +125,7 @@
       var viewer = OpenSeadragon({
         element: osdEl,
         prefixUrl: OSD_IMG,
-        showNavigator: true,
-        navigatorPosition: "BOTTOM_RIGHT",
+        showNavigator: false,
         visibilityRatio: 1,
         minZoomImageRatio: 0.6,
         gestureSettingsMouse: { clickToZoom: false }
