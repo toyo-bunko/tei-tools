@@ -150,14 +150,6 @@ button, input, select, textarea { font-family: var(--font-sans); }
   max-width: 540px;
   margin: 0 auto;
 }
-.hero-credit {
-  font-family: var(--font-sans);
-  font-size: .78rem;
-  line-height: 1.7;
-  color: var(--text-muted);
-  max-width: 540px;
-  margin: 1.5rem auto 0;
-}
 
 /* ---- landing: news / お知らせ ---- */
 .news-section {
@@ -231,7 +223,7 @@ button, input, select, textarea { font-family: var(--font-sans); }
 /* ---- landing process flow ---- */
 /* Desktop: the 3 steps sit side by side. Stacks to one column below 820px
    (see media query) so phones / small tablets read it top-to-bottom. */
-.main-content:has(.process-flow) { max-width: 1040px; }
+.main-content:has(.process-flow) { max-width: 1200px; }
 .process-flow {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -265,7 +257,7 @@ button, input, select, textarea { font-family: var(--font-sans); }
 /* ---- landing page cards ---- */
 .landing-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
 }
 .landing-card {
@@ -1197,6 +1189,8 @@ a.pub-recommend:hover { background: rgba(118,22,27,.11); }
   margin-top: auto;
 }
 .site-footer a { color: rgba(255,255,255,.8); }
+.site-footer .site-footer-sep { margin: 0 .6em; opacity: .5; }
+.priv-updated { margin-top: 2.5rem; font-size: .85rem; color: var(--muted, #6e6e73); }
 
 /* ---- responsive ---- */
 /* Stack the 3-step landing flow before it gets cramped (covers phones + small tablets). */
