@@ -145,7 +145,7 @@
     bar.className = "tei-topbar";
     var home = document.createElement("a");
     home.className = "tei-home";
-    home.href = "https://toyo-bunko.github.io/tei-tools/";
+    home.href = "https://tei-tools.toyobunko-lab.jp/";
     home.title = "TEI Tools home";
     home.innerHTML =
       '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">' +

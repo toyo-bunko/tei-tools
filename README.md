@@ -6,7 +6,7 @@ A static web application for DOCX to TEI/XML conversion and TEI/XML viewing, wit
 
 ## Demo / デモ
 
-**https://toyo-bunko.github.io/tei-tools/**
+**https://tei-tools.toyobunko-lab.jp/**
 
 ## Features / 機能
 
