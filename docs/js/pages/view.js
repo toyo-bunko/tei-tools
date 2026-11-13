@@ -1,7 +1,8 @@
 /* ======== Full-screen TEI renderer ========
    Standalone (no common.js): reads ?url= and ?xsl= from the query string,
-   transforms the TEI/XML with the browser's XSLTProcessor (XSLT 1.0), and
-   replaces the whole document with the result.
+   transforms the TEI/XML with XSLTProcessor (XSLT 1.0) — the browser's own,
+   or the polyfill that js/shared/xslt-loader.js loads when the browser has
+   none (Chrome 158+) — and replaces the whole document with the result.
 
    ?url=  the TEI/XML URL to render (relative or absolute)        [required]
    ?xsl=  a path/URL to an XSL stylesheet (preferred), or a
@@ -88,6 +89,7 @@
         }
       }
 
+      await window.ensureXSLT();
       var proc = new XSLTProcessor();
       proc.importStylesheet(xslDoc);
       var outDoc = proc.transformToDocument(xmlDoc);

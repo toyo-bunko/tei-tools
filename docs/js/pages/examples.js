@@ -132,6 +132,7 @@ async function runTransform() {
     const xslDoc = parser.parseFromString(await xslRes.text(), 'application/xml');
     if (xslDoc.querySelector('parsererror')) throw new Error(t('errXsl'));
 
+    await window.ensureXSLT();
     const proc = new XSLTProcessor();
     proc.importStylesheet(xslDoc);
     const outDoc = proc.transformToDocument(xmlDoc);
